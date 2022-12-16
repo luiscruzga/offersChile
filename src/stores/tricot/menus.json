@@ -1,0 +1,670 @@
+[
+	{
+		"lev2": "Mujer",
+		"lev2_id": 34,
+		"lev2_slug": "mujer",
+		"lev2_img": "menu_34.jpg",
+		"subcategorias": [
+			{
+				"lev3": "POLERAS",
+				"lev3_id": 299,
+				"lev3_slug": "poleras-mujer0",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "BLUSAS",
+				"lev3_id": 298,
+				"lev3_slug": "blusas-mujer",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "JEANS",
+				"lev3_id": 130,
+				"lev3_slug": "jeans-0",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "PANTALONES",
+				"lev3_id": 207,
+				"lev3_slug": "pantalones-mujer0",
+				"subcategorias2": [
+					{
+						"lev4": "PANTALONES",
+						"lev4_id": 599,
+						"lev4_slug": "pantaloness"
+					}
+				]
+			},
+			{
+				"lev3": "ENTERITOS",
+				"lev3_id": 301,
+				"lev3_slug": "enterito",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "VESTIDOS",
+				"lev3_id": 313,
+				"lev3_slug": "vestidos",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "FALDAS",
+				"lev3_id": 133,
+				"lev3_slug": "faldas",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "SHORT Y BERMUDAS",
+				"lev3_id": 633,
+				"lev3_slug": "short",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "TRAJES DE BAÑO",
+				"lev3_id": 635,
+				"lev3_slug": "trajes-de-bano",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "CHAQUETAS",
+				"lev3_id": 297,
+				"lev3_slug": "chaquetas-mujer-0",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "POLERONES",
+				"lev3_id": 178,
+				"lev3_slug": "polerones-mujer",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "TEJIDOS",
+				"lev3_id": 527,
+				"lev3_slug": "lanas",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "PIJAMAS",
+				"lev3_id": 569,
+				"lev3_slug": "mujer-pijamas",
+				"subcategorias2": [
+					{
+						"lev4": "BATAS",
+						"lev4_id": 347,
+						"lev4_slug": "batas-mujer"
+					},
+					{
+						"lev4": "CAMISOLAS",
+						"lev4_id": 307,
+						"lev4_slug": "camisolas-mujer"
+					},
+					{
+						"lev4": "PANTUFLAS",
+						"lev4_id": 291,
+						"lev4_slug": "zapatillas-de-levant-mujer"
+					},
+					{
+						"lev4": "PIJAMAS",
+						"lev4_id": 306,
+						"lev4_slug": "pijamas-mujer0"
+					}
+				]
+			},
+			{
+				"lev3": "KIMONOS",
+				"lev3_id": 530,
+				"lev3_slug": "kimonos",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "ROPA INTERIOR",
+				"lev3_id": 93,
+				"lev3_slug": "ropa-interior-mujer-1",
+				"subcategorias2": [
+					{
+						"lev4": "BIKINI",
+						"lev4_id": 416,
+						"lev4_slug": "bikini"
+					},
+					{
+						"lev4": "BODIES",
+						"lev4_id": 492,
+						"lev4_slug": "bodies-mujer"
+					},
+					{
+						"lev4": "CAMISETAS",
+						"lev4_id": 518,
+						"lev4_slug": "camisetas-mujer0"
+					},
+					{
+						"lev4": "COLALESS",
+						"lev4_id": 414,
+						"lev4_slug": "colaless"
+					},
+					{
+						"lev4": "Minis & Shorts",
+						"lev4_id": 534,
+						"lev4_slug": "calzones"
+					},
+					{
+						"lev4": "MODELADOR",
+						"lev4_id": 603,
+						"lev4_slug": "nueva"
+					},
+					{
+						"lev4": "PANTALETAS",
+						"lev4_id": 412,
+						"lev4_slug": "pantaletas"
+					},
+					{
+						"lev4": "PANTYS Y CALCETINES",
+						"lev4_id": 593,
+						"lev4_slug": "pantys-y-calcetines"
+					},
+					{
+						"lev4": "SET",
+						"lev4_id": 487,
+						"lev4_slug": "set-1"
+					},
+					{
+						"lev4": "SOSTENES",
+						"lev4_id": 413,
+						"lev4_slug": "sostenes"
+					},
+					{
+						"lev4": "TANGAS",
+						"lev4_id": 415,
+						"lev4_slug": "tangas"
+					}
+				]
+			},
+			{
+				"lev3": "DEPORTE",
+				"lev3_id": 123,
+				"lev3_slug": "deporte-mujer-0",
+				"subcategorias2": [
+					{
+						"lev4": "ACCESORIOS",
+						"lev4_id": 512,
+						"lev4_slug": "accesorios"
+					},
+					{
+						"lev4": "CALZAS",
+						"lev4_id": 303,
+						"lev4_slug": "calzas-mujer"
+					},
+					{
+						"lev4": "CHAQUETAS",
+						"lev4_id": 395,
+						"lev4_slug": "chaquetas"
+					},
+					{
+						"lev4": "PANTALONES Y BUZOS",
+						"lev4_id": 340,
+						"lev4_slug": "buzos-mujer0"
+					},
+					{
+						"lev4": "PETOS",
+						"lev4_id": 532,
+						"lev4_slug": "petos"
+					},
+					{
+						"lev4": "POLERAS",
+						"lev4_id": 354,
+						"lev4_slug": "poleras-0"
+					},
+					{
+						"lev4": "POLERONES",
+						"lev4_id": 322,
+						"lev4_slug": "polerones-0"
+					},
+					{
+						"lev4": "SHORTS Y BERMUDAS",
+						"lev4_id": 342,
+						"lev4_slug": "short-y-bermudas-mujer"
+					}
+				]
+			},
+			{
+				"lev3": "ACCESORIOS",
+				"lev3_id": 428,
+				"lev3_slug": "accesorios-mujer",
+				"subcategorias2": [
+					{
+						"lev4": "ACCESORIOS PELO",
+						"lev4_id": 625,
+						"lev4_slug": "accesorios-pelo"
+					},
+					{
+						"lev4": "BUFANDAS Y PAÑUELOS",
+						"lev4_id": 427,
+						"lev4_slug": "bufandas"
+					},
+					{
+						"lev4": "CARTERAS",
+						"lev4_id": 426,
+						"lev4_slug": "carteras"
+					},
+					{
+						"lev4": "CINTURONES",
+						"lev4_id": 441,
+						"lev4_slug": "cinturones"
+					},
+					{
+						"lev4": "GORROS Y SOMBREROS",
+						"lev4_id": 523,
+						"lev4_slug": "gorros-y-sombreros-1"
+					},
+					{
+						"lev4": "JOYAS",
+						"lev4_id": 503,
+						"lev4_slug": "joyas"
+					},
+					{
+						"lev4": "LENTES",
+						"lev4_id": 610,
+						"lev4_slug": "lentes"
+					},
+					{
+						"lev4": "MOCHILAS Y BOLSOS",
+						"lev4_id": 473,
+						"lev4_slug": "mochilas-y-bolsos"
+					},
+					{
+						"lev4": "PAREOS",
+						"lev4_id": 561,
+						"lev4_slug": "pareos"
+					},
+					{
+						"lev4": "PROTECCION",
+						"lev4_id": 608,
+						"lev4_slug": "proteccion"
+					}
+				]
+			},
+			{
+				"lev3": "Regalos Mujer",
+				"lev3_id": 632,
+				"lev3_slug": "regalos-mujer",
+				"subcategorias2": []
+			}
+		]
+	},
+	{
+		"lev2": "Hombre",
+		"lev2_id": 61,
+		"lev2_slug": "hombres",
+		"lev2_img": "menu_61.jpg",
+		"subcategorias": [
+			{
+				"lev3": "POLERAS",
+				"lev3_id": 154,
+				"lev3_slug": "poleras-hombre-3",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "CAMISAS",
+				"lev3_id": 294,
+				"lev3_slug": "camiseria-hombre",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "JEANS",
+				"lev3_id": 314,
+				"lev3_slug": "jeans-hombre",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "PANTALONES",
+				"lev3_id": 315,
+				"lev3_slug": "pantalones-hombre-0",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "SHORTS Y BERMUDAS",
+				"lev3_id": 568,
+				"lev3_slug": "shorts-bermudas-hombre",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "TRAJES DE BAÑO",
+				"lev3_id": 636,
+				"lev3_slug": "trajes-de-bano-1",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "POLERONES",
+				"lev3_id": 151,
+				"lev3_slug": "polerones-hombre",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "CHAQUETAS",
+				"lev3_id": 368,
+				"lev3_slug": "chaquetas-hombre",
+				"subcategorias2": []
+			},
+			{
+				"lev3": "DEPORTE",
+				"lev3_id": 172,
+				"lev3_slug": "deporte-hombre-1",
+				"subcategorias2": [
+					{
+						"lev4": "ACCESORIOS",
+						"lev4_id": 597,
+						"lev4_slug": "accesorios-sp"
+					},
+					{
+						"lev4": "CALCETINES",
+						"lev4_id": 601,
+						"lev4_slug": "calcetines-nr"
+					},
+					{
+						"lev4": "PANTALONES Y BUZOS",
+						"lev4_id": 295,
+						"lev4_slug": "buzos-hombre"
+					},
+					{
+						"lev4": "POLERAS",
+						"lev4_id": 356,
+						"lev4_slug": "poleras-hombre-4"
+					},
+					{
+						"lev4": "POLERONES",
+						"lev4_id": 357,
+						"lev4_slug": "polerones-hombre-1"
+					},
+					{
+						"lev4": "SHORT Y BERMUDAS",
+						"lev4_id": 332,
+						"lev4_slug": "short-y-bermudas"
+					}
+				]
+			},
+			{
+				"lev3": "ROPA INTERIOR",
+				"lev3_id": 353,
+				"lev3_slug": "ropa-interior-hombre-1",
+				"subcategorias2": [
+					{
+						"lev4": "BATAS",
+						"lev4_id": 397,
+						"lev4_slug": "batas"
+					},
+					{
+						"lev4": "BOXER",
+						"lev4_id": 325,
+						"lev4_slug": "boxer"
+					},
+					{
+						"lev4": "CALCETINES",
+						"lev4_id": 594,
+						"lev4_slug": "calcetines"
+					},
+					{
+						"lev4": "CAMISETAS",
+						"lev4_id": 604,
+						"lev4_slug": "camisetasd"
+					},
+					{
+						"lev4": "PANTUFLAS",
+						"lev4_id": 567,
+						"lev4_slug": "pantuflas-hombre"
+					},
+					{
+						"lev4": "SLIP",
+						"lev4_id": 615,
+						"lev4_slug": "slip"
+					}
+				]
+			},
+			{
+				"lev3": "ACCESORIOS",
+				"lev3_id": 456,
+				"lev3_slug": "accesorios-hombre",
+				"subcategorias2": [
+					{
+						"lev4": "CINTURONES",
+						"lev4_id": 592,
+						"lev4_slug": "cinturones-1"
+					},
+					{
+						"lev4": "GORROS Y SOMBREROS",
+						"lev4_id": 446,
+						"lev4_slug": "gorros-y-sombreros"
+					},
+					{
+						"lev4": "LENTES",
+						"lev4_id": 611,
+						"lev4_slug": "lentes-h"
+					}
+				]
+			},
+			{
+				"lev3": "PIJAMAS",
+				"lev3_id": 343,
+				"lev3_slug": "pijamas-hombre",
+				"subcategorias2": []
+			}
+		]
+	},
+	{
+		"lev2": "Niños",
+		"lev2_id": 536,
+		"lev2_slug": "ninos-1",
+		"lev2_img": null,
+		"subcategorias": [
+			{
+				"lev3": "Niñas",
+				"lev3_id": 537,
+				"lev3_slug": "ninas-1",
+				"subcategorias2": [
+					{
+						"lev4": "FALDAS",
+						"lev4_id": 575,
+						"lev4_slug": "nina-faldas"
+					},
+					{
+						"lev4": "JEANS Y PANTALONES",
+						"lev4_id": 541,
+						"lev4_slug": "jeans"
+					},
+					{
+						"lev4": "Poleras",
+						"lev4_id": 545,
+						"lev4_slug": "poleras"
+					},
+					{
+						"lev4": "Polerones",
+						"lev4_id": 546,
+						"lev4_slug": "polerones"
+					},
+					{
+						"lev4": "Regalos Niñas",
+						"lev4_id": 589,
+						"lev4_slug": "regalos-navidad-nino"
+					},
+					{
+						"lev4": "ROPA INTERIOR",
+						"lev4_id": 574,
+						"lev4_slug": "nina-gorros-sombreros"
+					},
+					{
+						"lev4": "SHORTS Y BERMUDAS",
+						"lev4_id": 572,
+						"lev4_slug": "nina-short-bermuda"
+					},
+					{
+						"lev4": "TEJIDOS",
+						"lev4_id": 573,
+						"lev4_slug": "nina-tejidos"
+					},
+					{
+						"lev4": "TRAJES DE BAÑO",
+						"lev4_id": 571,
+						"lev4_slug": "nina-trajes-bano"
+					},
+					{
+						"lev4": "VESTIDOS",
+						"lev4_id": 570,
+						"lev4_slug": "nina-vestidos"
+					}
+				]
+			},
+			{
+				"lev3": "Niños",
+				"lev3_id": 538,
+				"lev3_slug": "ninos-2",
+				"subcategorias2": [
+					{
+						"lev4": "JEANS Y PANTALONES",
+						"lev4_id": 551,
+						"lev4_slug": "jeans-3"
+					},
+					{
+						"lev4": "POLERAS Y CAMISAS",
+						"lev4_id": 549,
+						"lev4_slug": "camiseria-1"
+					},
+					{
+						"lev4": "Polerones",
+						"lev4_id": 559,
+						"lev4_slug": "polerones-1"
+					},
+					{
+						"lev4": "ROPA INTERIOR",
+						"lev4_id": 598,
+						"lev4_slug": "ropa-interior-nin"
+					},
+					{
+						"lev4": "SHORTS Y BERMUDAS",
+						"lev4_id": 579,
+						"lev4_slug": "nino-shorts-bermudas"
+					},
+					{
+						"lev4": "TRAJES DE BAÑO",
+						"lev4_id": 578,
+						"lev4_slug": "nino-trajes-bano"
+					}
+				]
+			},
+			{
+				"lev3": "BEBÉS ",
+				"lev3_id": 431,
+				"lev3_slug": "bebes",
+				"subcategorias2": [
+					{
+						"lev4": "ACCESORIOS",
+						"lev4_id": 606,
+						"lev4_slug": "accesorios-bebe"
+					},
+					{
+						"lev4": "CALCETINES",
+						"lev4_id": 614,
+						"lev4_slug": "calcetines_-1"
+					},
+					{
+						"lev4": "GORROS Y SOMBREROS",
+						"lev4_id": 628,
+						"lev4_slug": "gorros-y-sombreros-b"
+					},
+					{
+						"lev4": "PANTALONES",
+						"lev4_id": 453,
+						"lev4_slug": "pantalones-1"
+					},
+					{
+						"lev4": "POLERAS",
+						"lev4_id": 612,
+						"lev4_slug": "polerasb"
+					},
+					{
+						"lev4": "VESTIDOS",
+						"lev4_id": 613,
+						"lev4_slug": "vestidoss"
+					}
+				]
+			},
+			{
+				"lev3": "Regalos Niños",
+				"lev3_id": 590,
+				"lev3_slug": "regalos-navidad-nina",
+				"subcategorias2": []
+			}
+		]
+	},
+	{
+		"lev2": "CALZADO",
+		"lev2_id": 560,
+		"lev2_slug": "calzado-3",
+		"lev2_img": null,
+		"subcategorias": [
+			{
+				"lev3": "CALZADO MUJER",
+				"lev3_id": 174,
+				"lev3_slug": "calzado-mujer",
+				"subcategorias2": [
+					{
+						"lev4": "SANDALIAS",
+						"lev4_id": 319,
+						"lev4_slug": "sandalias"
+					},
+					{
+						"lev4": "ZAPATILLAS",
+						"lev4_id": 338,
+						"lev4_slug": "zapatillas-mujer0"
+					},
+					{
+						"lev4": "ZAPATOS",
+						"lev4_id": 346,
+						"lev4_slug": "zapato-informal-mujer0"
+					}
+				]
+			},
+			{
+				"lev3": "CALZADO HOMBRE",
+				"lev3_id": 173,
+				"lev3_slug": "calzado-hombre-0",
+				"subcategorias2": [
+					{
+						"lev4": "SANDALIAS",
+						"lev4_id": 351,
+						"lev4_slug": "sandalias-hombre"
+					},
+					{
+						"lev4": "ZAPATILLAS",
+						"lev4_id": 318,
+						"lev4_slug": "zapatillas-0"
+					},
+					{
+						"lev4": "ZAPATOS",
+						"lev4_id": 326,
+						"lev4_slug": "zapato-informal-hombre"
+					}
+				]
+			},
+			{
+				"lev3": "CALZADO INFANTIL",
+				"lev3_id": 539,
+				"lev3_slug": "calzado-1",
+				"subcategorias2": [
+					{
+						"lev4": "SANDALIAS",
+						"lev4_id": 583,
+						"lev4_slug": "sandalias-nina"
+					},
+					{
+						"lev4": "ZAPATILLAS",
+						"lev4_id": 584,
+						"lev4_slug": "zapatillas-nina"
+					},
+					{
+						"lev4": "ZAPATOS",
+						"lev4_id": 585,
+						"lev4_slug": "zapatos-ninas"
+					}
+				]
+			}
+		]
+	}
+]

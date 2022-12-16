@@ -1,0 +1,342 @@
+[
+  {
+    "name": "Tecnología -> TV Video",
+    "url": "https://www.hites.com/tecnologia/tv-video/"
+  },
+  {
+    "name": "Tecnología -> Computación",
+    "url": "https://www.hites.com/tecnologia/computacion/"
+  },
+  {
+    "name": "Tecnología -> Video Juego",
+    "url": "https://www.hites.com/tecnologia/video-juego/"
+  },
+  {
+    "name": "Tecnología -> Audio",
+    "url": "https://www.hites.com/tecnologia/audio/"
+  },
+  {
+    "name": "Tecnología -> Fotografía",
+    "url": "https://www.hites.com/tecnologia/fotografia/"
+  },
+  {
+    "name": "Tecnología -> Accesorios y Otros",
+    "url": "https://www.hites.com/tecnologia/accesorios-y-otros/"
+  },
+  {
+    "name": "Tecnología -> Smart Home",
+    "url": "https://www.hites.com/tecnologia/smart-home/"
+  },
+  {
+    "name": "Tecnología -> Mundo Gamer",
+    "url": "https://www.hites.com/gamer-club.html"
+  },
+  {
+    "name": "Electro Hogar -> Refrigeradores",
+    "url": "https://www.hites.com/electro-hogar/refrigeradores/"
+  },
+  {
+    "name": "Electro Hogar -> Lavado y Secado",
+    "url": "https://www.hites.com/electro-hogar/lavado-y-secado/"
+  },
+  {
+    "name": "Electro Hogar -> Cocina",
+    "url": "https://www.hites.com/electro-hogar/cocina/"
+  },
+  {
+    "name": "Electro Hogar -> Calefacción",
+    "url": "https://www.hites.com/electro-hogar/calefaccion/"
+  },
+  {
+    "name": "Electro Hogar -> Climatización",
+    "url": "https://www.hites.com/electro-hogar/climatizacion/"
+  },
+  {
+    "name": "Electro Hogar -> Electrodomesticos Cocina",
+    "url": "https://www.hites.com/electro-hogar/electrodomesticos-cocina/"
+  },
+  {
+    "name": "Electro Hogar -> Electrodomesticos Hogar",
+    "url": "https://www.hites.com/electro-hogar/electrodomesticos-hogar/"
+  },
+  {
+    "name": "Electro Hogar -> Cuidado Personal",
+    "url": "https://www.hites.com/electro-hogar/cuidado-personal/"
+  },
+  {
+    "name": "Celulares -> Smartphones",
+    "url": "https://www.hites.com/celulares/smartphones/"
+  },
+  {
+    "name": "Celulares -> Accesorios Para Celulares",
+    "url": "https://www.hites.com/celulares/accesorios-para-celulares/"
+  },
+  {
+    "name": "Celulares -> Marcas Telefonía",
+    "url": "https://www.hites.com/celulares/marcas-telefonia/"
+  },
+  {
+    "name": "Hogar -> Menaje Cocina",
+    "url": "https://www.hites.com/hogar/menaje-cocina/"
+  },
+  {
+    "name": "Hogar -> Menaje Mesa",
+    "url": "https://www.hites.com/hogar/menaje-mesa/"
+  },
+  {
+    "name": "Hogar -> Parrillas",
+    "url": "https://www.hites.com/hogar/parrillas/"
+  },
+  {
+    "name": "Hogar -> Baño",
+    "url": "https://www.hites.com/hogar/bano/"
+  },
+  {
+    "name": "Hogar -> Maletería",
+    "url": "https://www.hites.com/hogar/maleteria/"
+  },
+  {
+    "name": "Hogar -> Decoración",
+    "url": "https://www.hites.com/hogar/decoracion/"
+  },
+  {
+    "name": "Hogar -> Organización y Limpieza",
+    "url": "https://www.hites.com/hogar/organizacion-y-limpieza/"
+  },
+  {
+    "name": "Hogar -> Mascotas",
+    "url": "https://www.hites.com/hogar/mascotas/"
+  },
+  {
+    "name": "Hogar -> Navidad",
+    "url": "https://www.hites.com/hogar/navidad/"
+  },
+  {
+    "name": "Mujer -> Ropa Mujer Tops",
+    "url": "https://www.hites.com/mujer/ropa-mujer-tops/"
+  },
+  {
+    "name": "Mujer -> Ropa Mujer Bottoms y Una Pieza",
+    "url": "https://www.hites.com/mujer/ropa-mujer-bottoms-y-una-pieza/"
+  },
+  {
+    "name": "Mujer -> Traje de Baño Mujer",
+    "url": "https://www.hites.com/mujer/traje-de-bano-mujer/"
+  },
+  {
+    "name": "Mujer -> Ropa Deportiva",
+    "url": "https://www.hites.com/mujer/ropa-deportiva/"
+  },
+  {
+    "name": "Mujer -> Pijamas y Ropa Interior Mujer",
+    "url": "https://www.hites.com/mujer/pijamas-y-ropa-interior-mujer/"
+  },
+  {
+    "name": "Mujer -> Accesorios Mujer",
+    "url": "https://www.hites.com/mujer/accesorios-mujer/"
+  },
+  {
+    "name": "Mujer -> Novedades Mujer",
+    "url": "https://www.hites.com/mujer/novedades-mujer/"
+  },
+  {
+    "name": "Mujer -> Marcas Destacadas",
+    "url": "https://www.hites.com/mujer/marcas-destacadas/"
+  },
+  {
+    "name": "Mujer -> Outlet Mujer",
+    "url": "https://www.hites.com/mujer/outlet-mujer/"
+  },
+  {
+    "name": "Hombre -> Ropa Hombre Tops",
+    "url": "https://www.hites.com/hombre/ropa-hombre-tops/"
+  },
+  {
+    "name": "Hombre -> Ropa Hombre Bottoms",
+    "url": "https://www.hites.com/hombre/ropa-hombre-bottoms/"
+  },
+  {
+    "name": "Hombre -> Hombre Formal",
+    "url": "https://www.hites.com/hombre/hombre-formal/"
+  },
+  {
+    "name": "Hombre -> Ropa Deportiva",
+    "url": "https://www.hites.com/hombre/ropa-deportiva/"
+  },
+  {
+    "name": "Hombre -> Pijamas y Ropa Interior Hombre",
+    "url": "https://www.hites.com/hombre/pijamas-y-ropa-interior-hombre/"
+  },
+  {
+    "name": "Hombre -> Accesorios Hombre",
+    "url": "https://www.hites.com/hombre/accesorios-hombre/"
+  },
+  {
+    "name": "Hombre -> Novedades Hombre",
+    "url": "https://www.hites.com/hombre/novedades-hombre/"
+  },
+  {
+    "name": "Hombre -> Marcas Destacadas",
+    "url": "https://www.hites.com/hombre/marcas-destacadas/"
+  },
+  {
+    "name": "Hombre -> Outlet Hombre",
+    "url": "https://www.hites.com/hombre/outlet-hombre/"
+  },
+  {
+    "name": "Zapatos -> Zapatos Mujer",
+    "url": "https://www.hites.com/zapatos/zapatos-mujer/"
+  },
+  {
+    "name": "Zapatos -> Zapatos Hombre",
+    "url": "https://www.hites.com/zapatos/zapatos-hombre/"
+  },
+  {
+    "name": "Zapatos -> Zapatos Infantiles",
+    "url": "https://www.hites.com/zapatos/zapatos-infantiles/"
+  },
+  {
+    "name": "Zapatos -> Marcas Zapatos",
+    "url": "https://www.hites.com/zapatos/marcas-zapatos/"
+  },
+  {
+    "name": "Zapatos -> Outlet Calzado",
+    "url": "https://www.hites.com/zapatos/outlet-calzado/"
+  },
+  {
+    "name": "Zapatos -> Zapatos De Fiesta",
+    "url": "https://www.hites.com/zapatos/zapatos-de-fiesta/"
+  },
+  {
+    "name": "Zapatillas -> Zapatillas Mujer",
+    "url": "https://www.hites.com/zapatillas/zapatillas-mujer/"
+  },
+  {
+    "name": "Zapatillas -> Zapatillas Hombre",
+    "url": "https://www.hites.com/zapatillas/zapatillas-hombre/"
+  },
+  {
+    "name": "Zapatillas -> Zapatillas Infantiles",
+    "url": "https://www.hites.com/zapatillas/zapatillas-infantiles/"
+  },
+  {
+    "name": "Zapatillas -> Zapatillas Deportivas",
+    "url": "https://www.hites.com/zapatillas/zapatillas-deportivas/"
+  },
+  {
+    "name": "Zapatillas -> Marcas Zapatillas",
+    "url": "https://www.hites.com/zapatillas/marcas-zapatillas/"
+  },
+  {
+    "name": "Deportes -> Maquinas de Ejercicios",
+    "url": "https://www.hites.com/deportes/maquinas-de-ejercicios/"
+  },
+  {
+    "name": "Deportes -> Bicicletas",
+    "url": "https://www.hites.com/deportes/bicicletas/"
+  },
+  {
+    "name": "Deportes -> Ropa Deportiva Mujer",
+    "url": "https://www.hites.com/deportes/ropa-deportiva-mujer/"
+  },
+  {
+    "name": "Deportes -> Ropa Deportiva Hombre",
+    "url": "https://www.hites.com/deportes/ropa-deportiva-hombre/"
+  },
+  {
+    "name": "Deportes -> Aire Libre",
+    "url": "https://www.hites.com/deportes/aire-libre/"
+  },
+  {
+    "name": "Deportes -> Camping",
+    "url": "https://www.hites.com/deportes/camping/"
+  },
+  {
+    "name": "Deportes -> Otros Deportes",
+    "url": "https://www.hites.com/deportes/otros-deportes/"
+  },
+  {
+    "name": "Deportes -> Movilidad",
+    "url": "https://www.hites.com/deportes/movilidad/"
+  },
+  {
+    "name": "Deportes -> Accesorios Deportivos",
+    "url": "https://www.hites.com/deportes/accesorios-deportivos/"
+  },
+  {
+    "name": "Deportes -> Marcas Destacadas",
+    "url": "https://www.hites.com/deportes/marcas-destacadas/"
+  },
+  {
+    "name": "Niños y Jugueteria -> Jugueteria",
+    "url": "https://www.hites.com/ninos-y-jugueteria/jugueteria/"
+  },
+  {
+    "name": "Niños y Jugueteria -> Juegos de Exterior",
+    "url": "https://www.hites.com/ninos-y-jugueteria/juegos-de-exterior/"
+  },
+  {
+    "name": "Niños y Jugueteria -> Ropa de Niña",
+    "url": "https://www.hites.com/ninos-y-jugueteria/ropa-de-nina/"
+  },
+  {
+    "name": "Niños y Jugueteria -> Ropa de Niño",
+    "url": "https://www.hites.com/ninos-y-jugueteria/ropa-de-nino/"
+  },
+  {
+    "name": "Niños y Jugueteria -> Ropa Teen",
+    "url": "https://www.hites.com/ninos-y-jugueteria/ropa-teen/"
+  },
+  {
+    "name": "Niños y Jugueteria -> Calzado Infantil",
+    "url": "https://www.hites.com/ninos-y-jugueteria/calzado-infantil/"
+  },
+  {
+    "name": "Niños y Jugueteria -> Novedades",
+    "url": "https://www.hites.com/ninos-y-jugueteria/novedades/"
+  },
+  {
+    "name": "Niños y Jugueteria -> Marcas Destacadas",
+    "url": "https://www.hites.com/ninos-y-jugueteria/marcas-destacadas/"
+  },
+  {
+    "name": "Niños y Jugueteria -> Juguetes Por edad",
+    "url": "https://www.hites.com/ninos-y-jugueteria/juguetes-por-edad/"
+  },
+  {
+    "name": "Outlet -> Outlet Tecnología",
+    "url": "https://www.hites.com/outlet/outlet-tecnologia/"
+  },
+  {
+    "name": "Outlet -> Outlet ElectroHogar",
+    "url": "https://www.hites.com/outlet/outlet-electrohogar/"
+  },
+  {
+    "name": "Outlet -> Outlet Mujer",
+    "url": "https://www.hites.com/outlet/outlet-mujer/"
+  },
+  {
+    "name": "Outlet -> Outlet Hombre",
+    "url": "https://www.hites.com/outlet/outlet-hombre/"
+  },
+  {
+    "name": "Outlet -> Outlet Infantil",
+    "url": "https://www.hites.com/outlet/outlet-infantil/"
+  },
+  {
+    "name": "Outlet -> Outlet Deporte",
+    "url": "https://www.hites.com/outlet/outlet-deporte/"
+  },
+  {
+    "name": "Outlet -> Outlet Calzado",
+    "url": "https://www.hites.com/outlet/outlet--calzado/"
+  },
+  {
+    "name": "Outlet -> Outlet Hogar",
+    "url": "https://www.hites.com/outlet/outlet-hogar/"
+  },
+  {
+    "name": "Outlet -> Outlet Muebles",
+    "url": "https://www.hites.com/outlet/outlet-muebles/"
+  }
+]

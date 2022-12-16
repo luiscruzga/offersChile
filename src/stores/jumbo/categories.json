@@ -1,0 +1,912 @@
+[
+  {
+    "name": "Exclusivo en Jumbo -> Cuisine & Co",
+    "url": "https://www.jumbo.cl/busca?fq=H%3A7545&nombre_promo=menu-cuisine-co-07042022",
+    "path": "/busca?fq=H%3A7545&nombre_promo=menu-cuisine-co-07042022"
+  },
+  {
+    "name": "Exclusivo en Jumbo -> Jumbo Artesanal",
+    "url": "https://www.jumbo.cl/oferta/jumbo-artesanal?nombre_promo=jumbo-artesanal-menu-16082021",
+    "path": "/oferta/jumbo-artesanal?nombre_promo=jumbo-artesanal-menu-16082021"
+  },
+  {
+    "name": "Exclusivo en Jumbo -> Mundo Bio",
+    "url": "https://www.jumbo.cloferta/mundo-bio?nombre_promo=mundo-bio-24092020",
+    "path": "oferta/mundo-bio?nombre_promo=mundo-bio-24092020"
+  },
+  {
+    "name": "Exclusivo en Jumbo -> Home Care",
+    "url": "https://www.jumbo.cl/home-care?nombre_promo=home-care",
+    "path": "/home-care?nombre_promo=home-care"
+  },
+  {
+    "name": "Exclusivo en Jumbo -> Family Care",
+    "url": "https://www.jumbo.cl/family-care?nombre_promo=family-care",
+    "path": "/family-care?nombre_promo=family-care"
+  },
+  {
+    "name": "Botillería -> Bebidas",
+    "url": "https://www.jumbo.cl/bebidas-aguas-y-jugos/bebidas-gaseosas",
+    "path": "/bebidas-aguas-y-jugos/bebidas-gaseosas"
+  },
+  {
+    "name": "Botillería -> Jugos",
+    "url": "https://www.jumbo.cl/bebidas-aguas-y-jugos/jugos",
+    "path": "/bebidas-aguas-y-jugos/jugos"
+  },
+  {
+    "name": "Botillería -> Aguas Minerales ",
+    "url": "https://www.jumbo.cl/bebidas-aguas-y-jugos/aguas-minerales",
+    "path": "/bebidas-aguas-y-jugos/aguas-minerales"
+  },
+  {
+    "name": "Botillería -> Vinos y Espumantes",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/vinos",
+    "path": "/vinos-cervezas-y-licores/vinos"
+  },
+  {
+    "name": "Botillería -> Cervezas",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/cervezas",
+    "path": "/vinos-cervezas-y-licores/cervezas"
+  },
+  {
+    "name": "Botillería -> Licores y Cócteles",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/licores-y-cocteles",
+    "path": "/vinos-cervezas-y-licores/licores-y-cocteles"
+  },
+  {
+    "name": "Botillería -> Destilados",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/destilados",
+    "path": "/vinos-cervezas-y-licores/destilados"
+  },
+  {
+    "name": "Botillería -> Bebidas Energéticas",
+    "url": "https://www.jumbo.cl/bebidas-aguas-y-jugos/bebidas-energeticas",
+    "path": "/bebidas-aguas-y-jugos/bebidas-energeticas"
+  },
+  {
+    "name": "Botillería -> Bebidas Isotónicas",
+    "url": "https://www.jumbo.cl/bebidas-aguas-y-jugos/bebidas-isotonicas",
+    "path": "/bebidas-aguas-y-jugos/bebidas-isotonicas"
+  },
+  {
+    "name": "Botillería -> Hielo",
+    "url": "https://www.jumbo.cl/congelados/hielo",
+    "path": "/congelados/hielo"
+  },
+  {
+    "name": "Botillería -> Sin Alcohol",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/sin-alcohol",
+    "path": "/vinos-cervezas-y-licores/sin-alcohol"
+  },
+  {
+    "name": "Carnicería -> Vacuno",
+    "url": "https://www.jumbo.cl/carniceria/vacuno",
+    "path": "/carniceria/vacuno"
+  },
+  {
+    "name": "Carnicería -> Cerdo",
+    "url": "https://www.jumbo.cl/carniceria/cerdo",
+    "path": "/carniceria/cerdo"
+  },
+  {
+    "name": "Carnicería -> Cordero",
+    "url": "https://www.jumbo.cl/carniceria/cordero",
+    "path": "/carniceria/cordero"
+  },
+  {
+    "name": "Carnicería -> Pavo",
+    "url": "https://www.jumbo.cl/carniceria/pavo",
+    "path": "/carniceria/pavo"
+  },
+  {
+    "name": "Carnicería -> Pollo",
+    "url": "https://www.jumbo.cl/carniceria/pollo",
+    "path": "/carniceria/pollo"
+  },
+  {
+    "name": "Bebé -> Pañales y Toallas Húmedas",
+    "url": "https://www.jumbo.cl/mi-bebe/panales-y-toallas-humedas",
+    "path": "/mi-bebe/panales-y-toallas-humedas"
+  },
+  {
+    "name": "Bebé -> Colados, Picados y Otros",
+    "url": "https://www.jumbo.cl/mi-bebe/colados-picados-y-otros",
+    "path": "/mi-bebe/colados-picados-y-otros"
+  },
+  {
+    "name": "Bebé -> Leche y Suplementos Infantiles",
+    "url": "https://www.jumbo.cl/mi-bebe/leche-y-suplementos-infantiles",
+    "path": "/mi-bebe/leche-y-suplementos-infantiles"
+  },
+  {
+    "name": "Bebé -> Perfumería Infantil",
+    "url": "https://www.jumbo.cl/mi-bebe/perfumeria-infantil",
+    "path": "/mi-bebe/perfumeria-infantil"
+  },
+  {
+    "name": "Bebé -> Accesorios de Bebé",
+    "url": "https://www.jumbo.cl/mi-bebe/accesorios-de-bebe",
+    "path": "/mi-bebe/accesorios-de-bebe"
+  },
+  {
+    "name": "Bebé -> Vestuario Bebé",
+    "url": "https://www.jumbo.cl/mi-bebe/vestuario-bebe",
+    "path": "/mi-bebe/vestuario-bebe"
+  },
+  {
+    "name": "Bebé -> Rodados",
+    "url": "https://www.jumbo.cl/mi-bebe/rodados",
+    "path": "/mi-bebe/rodados"
+  },
+  {
+    "name": "Congelados -> Verduras Congeladas",
+    "url": "https://www.jumbo.cl/congelados/verduras-congeladas",
+    "path": "/congelados/verduras-congeladas"
+  },
+  {
+    "name": "Congelados -> Frutas Congeladas",
+    "url": "https://www.jumbo.cl/congelados/frutas-congeladas",
+    "path": "/congelados/frutas-congeladas"
+  },
+  {
+    "name": "Congelados -> Hamburguesas",
+    "url": "https://www.jumbo.cl/congelados/hamburguesas",
+    "path": "/congelados/hamburguesas"
+  },
+  {
+    "name": "Congelados -> Nuggets y Apanados",
+    "url": "https://www.jumbo.cl/congelados/nuggets-y-apanados",
+    "path": "/congelados/nuggets-y-apanados"
+  },
+  {
+    "name": "Congelados -> Helados y Postres",
+    "url": "https://www.jumbo.cl/congelados/helados-y-postres",
+    "path": "/congelados/helados-y-postres"
+  },
+  {
+    "name": "Congelados -> Churrascos, Lomitos y Otros",
+    "url": "https://www.jumbo.cl/congelados/churrascos-lomitos-y-otros",
+    "path": "/congelados/churrascos-lomitos-y-otros"
+  },
+  {
+    "name": "Congelados -> Cocktail",
+    "url": "https://www.jumbo.cl/congelados/cocktail",
+    "path": "/congelados/cocktail"
+  },
+  {
+    "name": "Congelados -> Vegetariano y Vegano",
+    "url": "https://www.jumbo.cl/congelados/vegetariano-y-vegano",
+    "path": "/congelados/vegetariano-y-vegano"
+  },
+  {
+    "name": "Congelados -> Comidas Preparadas",
+    "url": "https://www.jumbo.cl/congelados/comidas-preparadas",
+    "path": "/congelados/comidas-preparadas"
+  },
+  {
+    "name": "Congelados -> Hielos",
+    "url": "https://www.jumbo.cl/congelados/hielo",
+    "path": "/congelados/hielo"
+  },
+  {
+    "name": "Desayuno y Dulces -> Café y Cafeteras",
+    "url": "https://www.jumbo.cl/desayuno-y-dulces/cafe-y-cafeteras",
+    "path": "/desayuno-y-dulces/cafe-y-cafeteras"
+  },
+  {
+    "name": "Desayuno y Dulces -> Té, Mate y Hierbas",
+    "url": "https://www.jumbo.cl/desayuno-y-dulces/te-mate-y-hierbas",
+    "path": "/desayuno-y-dulces/te-mate-y-hierbas"
+  },
+  {
+    "name": "Desayuno y Dulces -> Chocolates y Dulces",
+    "url": "https://www.jumbo.cl/desayuno-y-dulces/chocolates-y-dulces",
+    "path": "/desayuno-y-dulces/chocolates-y-dulces"
+  },
+  {
+    "name": "Desayuno y Dulces -> Galletas y Colaciones",
+    "url": "https://www.jumbo.cl/desayuno-y-dulces/galletas-y-colaciones",
+    "path": "/desayuno-y-dulces/galletas-y-colaciones"
+  },
+  {
+    "name": "Desayuno y Dulces -> Azúcar y Endulzantes",
+    "url": "https://www.jumbo.cl/desayuno-y-dulces/azucar-y-endulzantes",
+    "path": "/desayuno-y-dulces/azucar-y-endulzantes"
+  },
+  {
+    "name": "Desayuno y Dulces -> Cereales, Avenas y Barras",
+    "url": "https://www.jumbo.cl/desayuno-y-dulces/cereales-avenas-y-barras",
+    "path": "/desayuno-y-dulces/cereales-avenas-y-barras"
+  },
+  {
+    "name": "Desayuno y Dulces -> Manjar, Miel y Mermeladas",
+    "url": "https://www.jumbo.cl/desayuno-y-dulces/manjar-miel-y-mermeladas",
+    "path": "/desayuno-y-dulces/manjar-miel-y-mermeladas"
+  },
+  {
+    "name": "Desayuno y Dulces -> Postres y Repostería",
+    "url": "https://www.jumbo.cl/desayuno-y-dulces/postres-y-dulces",
+    "path": "/desayuno-y-dulces/postres-y-dulces"
+  },
+  {
+    "name": "Desayuno y Dulces -> Saborizantes",
+    "url": "https://www.jumbo.cl/desayuno-y-dulces/saborizantes",
+    "path": "/desayuno-y-dulces/saborizantes"
+  },
+  {
+    "name": "Despensa -> Fideos, Pastas y Salsas",
+    "url": "https://www.jumbo.cl/despensa/pastas-y-salsas",
+    "path": "/despensa/pastas-y-salsas"
+  },
+  {
+    "name": "Despensa -> Arroz, Legumbres y Semillas",
+    "url": "https://www.jumbo.cl/despensa/arroz-y-legumbres",
+    "path": "/despensa/arroz-y-legumbres"
+  },
+  {
+    "name": "Despensa -> Aceites, Sal y Condimentos",
+    "url": "https://www.jumbo.cl/despensa/aceites-sal-y-condimentos",
+    "path": "/despensa/aceites-sal-y-condimentos"
+  },
+  {
+    "name": "Despensa -> Conservas",
+    "url": "https://www.jumbo.cl/despensa/conservas",
+    "path": "/despensa/conservas"
+  },
+  {
+    "name": "Despensa -> Snack y Cóctel",
+    "url": "https://www.jumbo.cl/despensa/coctel",
+    "path": "/despensa/coctel"
+  },
+  {
+    "name": "Despensa -> Aderezos y Salsas",
+    "url": "https://www.jumbo.cl/despensa/aderezos-y-salsas",
+    "path": "/despensa/aderezos-y-salsas"
+  },
+  {
+    "name": "Despensa -> Instantáneos y Sopas",
+    "url": "https://www.jumbo.cl/despensa/instantaneos-y-sopas",
+    "path": "/despensa/instantaneos-y-sopas"
+  },
+  {
+    "name": "Despensa -> Harinas y Polvos",
+    "url": "https://www.jumbo.cl/despensa/harina-y-complementos",
+    "path": "/despensa/harina-y-complementos"
+  },
+  {
+    "name": "Despensa -> Repostería",
+    "url": "https://www.jumbo.cl/despensa/reposteria",
+    "path": "/despensa/reposteria"
+  },
+  {
+    "name": "Despensa -> Comidas Étnicas",
+    "url": "https://www.jumbo.cl/despensa/comidas-etnicas",
+    "path": "/despensa/comidas-etnicas"
+  },
+  {
+    "name": "Despensa -> Cajas especiales",
+    "url": "https://www.jumbo.cl/despensa/cajas-especiales",
+    "path": "/despensa/cajas-especiales"
+  },
+  {
+    "name": "Frutas y Verduras -> Frutas",
+    "url": "https://www.jumbo.cl/frutas-y-verduras/frutas",
+    "path": "/frutas-y-verduras/frutas"
+  },
+  {
+    "name": "Frutas y Verduras -> Verduras",
+    "url": "https://www.jumbo.cl/frutas-y-verduras/verduras",
+    "path": "/frutas-y-verduras/verduras"
+  },
+  {
+    "name": "Frutas y Verduras -> Frutos Secos y Semillas",
+    "url": "https://www.jumbo.cl/frutas-y-verduras/frutos-secos-y-semillas",
+    "path": "/frutas-y-verduras/frutos-secos-y-semillas"
+  },
+  {
+    "name": "Frutas y Verduras -> Flores",
+    "url": "https://www.jumbo.cl/frutas-y-verduras/flores",
+    "path": "/frutas-y-verduras/flores"
+  },
+  {
+    "name": "Limpieza -> Papeles Hogar",
+    "url": "https://www.jumbo.cl/limpieza/papeles-hogar",
+    "path": "/limpieza/papeles-hogar"
+  },
+  {
+    "name": "Limpieza -> Limpieza de Ropa",
+    "url": "https://www.jumbo.cl/limpieza/limpieza-de-ropa",
+    "path": "/limpieza/limpieza-de-ropa"
+  },
+  {
+    "name": "Limpieza -> Baño y Cocina",
+    "url": "https://www.jumbo.cl/limpieza/bano-y-cocina",
+    "path": "/limpieza/bano-y-cocina"
+  },
+  {
+    "name": "Limpieza -> Accesorios de Limpieza",
+    "url": "https://www.jumbo.cl/limpieza/accesorios-de-limpieza",
+    "path": "/limpieza/accesorios-de-limpieza"
+  },
+  {
+    "name": "Limpieza -> Aerosoles y Desinfectantes",
+    "url": "https://www.jumbo.cl/limpieza/aerosoles-y-desinfectantes",
+    "path": "/limpieza/aerosoles-y-desinfectantes"
+  },
+  {
+    "name": "Limpieza -> Pisos y Muebles",
+    "url": "https://www.jumbo.cl/limpieza/pisos-y-muebles",
+    "path": "/limpieza/pisos-y-muebles"
+  },
+  {
+    "name": "Lácteos -> Leches",
+    "url": "https://www.jumbo.cl/lacteos/leches",
+    "path": "/lacteos/leches"
+  },
+  {
+    "name": "Lácteos -> Yoghurt",
+    "url": "https://www.jumbo.cl/lacteos/yoghurt",
+    "path": "/lacteos/yoghurt"
+  },
+  {
+    "name": "Lácteos -> Cremas",
+    "url": "https://www.jumbo.cl/despensa/reposteria/cremas",
+    "path": "/despensa/reposteria/cremas"
+  },
+  {
+    "name": "Lácteos -> Huevos",
+    "url": "https://www.jumbo.cl/lacteos/huevos",
+    "path": "/lacteos/huevos"
+  },
+  {
+    "name": "Lácteos -> Leches Cultivadas y Bebidas Lácteas",
+    "url": "https://www.jumbo.cl/lacteos/leches-cultivadas-y-bebidas-lacteas",
+    "path": "/lacteos/leches-cultivadas-y-bebidas-lacteas"
+  },
+  {
+    "name": "Lácteos -> Mantequillas y Margarinas",
+    "url": "https://www.jumbo.cl/lacteos/mantequillas-y-margarinas",
+    "path": "/lacteos/mantequillas-y-margarinas"
+  },
+  {
+    "name": "Lácteos -> Postres",
+    "url": "https://www.jumbo.cl/lacteos/postres",
+    "path": "/lacteos/postres"
+  },
+  {
+    "name": "Lácteos -> Probióticos y Defensas",
+    "url": "https://www.jumbo.cl/lacteos/probioticos-y-defensas",
+    "path": "/lacteos/probioticos-y-defensas"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cuidado Capilar",
+    "url": "https://www.jumbo.cl/belleza-y-cuidado-personal/cuidado-capilar",
+    "path": "/belleza-y-cuidado-personal/cuidado-capilar"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cuidado Bucal",
+    "url": "https://www.jumbo.cl/belleza-y-cuidado-personal/cuidado-bucal",
+    "path": "/belleza-y-cuidado-personal/cuidado-bucal"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cuidado Mujer",
+    "url": "https://www.jumbo.cl/belleza-y-cuidado-personal/cuidado-mujer",
+    "path": "/belleza-y-cuidado-personal/cuidado-mujer"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Higiene Personal",
+    "url": "https://www.jumbo.cl/belleza-y-cuidado-personal/higiene-personal",
+    "path": "/belleza-y-cuidado-personal/higiene-personal"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cuidado Hombre",
+    "url": "https://www.jumbo.cl/belleza-y-cuidado-personal/cuidado-hombre",
+    "path": "/belleza-y-cuidado-personal/cuidado-hombre"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cremas",
+    "url": "https://www.jumbo.cl/belleza-y-cuidado-personal/cremas",
+    "path": "/belleza-y-cuidado-personal/cremas"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Incontinencia y Pañales Adulto",
+    "url": "https://www.jumbo.cl/belleza-y-cuidado-personal/incontinencia-y-panales-adulto",
+    "path": "/belleza-y-cuidado-personal/incontinencia-y-panales-adulto"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Dermocosmética",
+    "url": "https://www.jumbo.cl/belleza-y-cuidado-personal/dermocosmetica",
+    "path": "/belleza-y-cuidado-personal/dermocosmetica"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Estuchería",
+    "url": "https://www.jumbo.cl/belleza-y-cuidado-personal/estucheria",
+    "path": "/belleza-y-cuidado-personal/estucheria"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Vinos y Espumantes",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/vinos",
+    "path": "/vinos-cervezas-y-licores/vinos"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Cervezas",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/cervezas",
+    "path": "/vinos-cervezas-y-licores/cervezas"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Destilados",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/destilados",
+    "path": "/vinos-cervezas-y-licores/destilados"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Licores y Cócteles",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/licores-y-cocteles",
+    "path": "/vinos-cervezas-y-licores/licores-y-cocteles"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Sin Alcohol",
+    "url": "https://www.jumbo.cl/vinos-cervezas-y-licores/sin-alcohol",
+    "path": "/vinos-cervezas-y-licores/sin-alcohol"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Hielo",
+    "url": "https://www.jumbo.cl/congelados/hielo",
+    "path": "/congelados/hielo"
+  },
+  {
+    "name": "Quesos y Fiambres -> Quesería",
+    "url": "https://www.jumbo.cl/quesos-y-fiambres/queseria",
+    "path": "/quesos-y-fiambres/queseria"
+  },
+  {
+    "name": "Quesos y Fiambres -> Fiambrería",
+    "url": "https://www.jumbo.cl/quesos-y-fiambres/fiambreria",
+    "path": "/quesos-y-fiambres/fiambreria"
+  },
+  {
+    "name": "Quesos y Fiambres -> Salchichas y Parrilleros",
+    "url": "https://www.jumbo.cl/quesos-y-fiambres/salchichas-y-parrilleros",
+    "path": "/quesos-y-fiambres/salchichas-y-parrilleros"
+  },
+  {
+    "name": "Quesos y Fiambres -> Fábrica Jumbo Artesanal",
+    "url": "https://www.jumbo.cl/quesos-y-fiambres/fabrica-jumbo-artesanal",
+    "path": "/quesos-y-fiambres/fabrica-jumbo-artesanal"
+  },
+  {
+    "name": "Quesos y Fiambres -> Encurtidos",
+    "url": "https://www.jumbo.cl/quesos-y-fiambres/encurtidos",
+    "path": "/quesos-y-fiambres/encurtidos"
+  },
+  {
+    "name": "Panadería y Pastelería -> Panadería granel",
+    "url": "https://www.jumbo.cl/panaderia-y-pasteleria/panaderia-granel",
+    "path": "/panaderia-y-pasteleria/panaderia-granel"
+  },
+  {
+    "name": "Panadería y Pastelería -> Panadería envasada",
+    "url": "https://www.jumbo.cl/panaderia-y-pasteleria/panaderia-envasada",
+    "path": "/panaderia-y-pasteleria/panaderia-envasada"
+  },
+  {
+    "name": "Panadería y Pastelería -> Pastelería",
+    "url": "https://www.jumbo.cl/panaderia-y-pasteleria/pasteleria",
+    "path": "/panaderia-y-pasteleria/pasteleria"
+  },
+  {
+    "name": "Panadería y Pastelería -> Masas y Tortillas",
+    "url": "https://www.jumbo.cl/panaderia-y-pasteleria/masas-y-tortillas",
+    "path": "/panaderia-y-pasteleria/masas-y-tortillas"
+  },
+  {
+    "name": "Panadería y Pastelería -> Repostería",
+    "url": "https://www.jumbo.cl/panaderia-y-pasteleria/reposteria",
+    "path": "/panaderia-y-pasteleria/reposteria"
+  },
+  {
+    "name": "Pescadería -> Camarones",
+    "url": "https://www.jumbo.cl/pescaderia/camarones",
+    "path": "/pescaderia/camarones"
+  },
+  {
+    "name": "Pescadería -> Pescados",
+    "url": "https://www.jumbo.cl/pescaderia/pescados",
+    "path": "/pescaderia/pescados"
+  },
+  {
+    "name": "Pescadería -> Ahumados y Carpaccios",
+    "url": "https://www.jumbo.cl/pescaderia/ahumados-y-carpaccios",
+    "path": "/pescaderia/ahumados-y-carpaccios"
+  },
+  {
+    "name": "Pescadería -> Mariscos",
+    "url": "https://www.jumbo.cl/pescaderia/mariscos",
+    "path": "/pescaderia/mariscos"
+  },
+  {
+    "name": "Pescadería -> Delicateses del Mar",
+    "url": "https://www.jumbo.cl/pescaderia/delicateses-del-mar",
+    "path": "/pescaderia/delicateses-del-mar"
+  },
+  {
+    "name": "Comidas Preparadas -> Entradas y Ensaladas",
+    "url": "https://www.jumbo.cl/comidas-preparadas/entradas-y-ensaladas",
+    "path": "/comidas-preparadas/entradas-y-ensaladas"
+  },
+  {
+    "name": "Comidas Preparadas -> Empanadas y Sándwiches",
+    "url": "https://www.jumbo.cl/comidas-preparadas/empanadas-y-sandwiches",
+    "path": "/comidas-preparadas/empanadas-y-sandwiches"
+  },
+  {
+    "name": "Comidas Preparadas -> Platos de Fondo",
+    "url": "https://www.jumbo.cl/comidas-preparadas/platos-de-fondo",
+    "path": "/comidas-preparadas/platos-de-fondo"
+  },
+  {
+    "name": "Comidas Preparadas -> Pastas y Lasañas",
+    "url": "https://www.jumbo.cl/comidas-preparadas/pastas-y-lasanas",
+    "path": "/comidas-preparadas/pastas-y-lasanas"
+  },
+  {
+    "name": "Comidas Preparadas -> Pizzas",
+    "url": "https://www.jumbo.cl/comidas-preparadas/pizzas",
+    "path": "/comidas-preparadas/pizzas"
+  },
+  {
+    "name": "Comidas Preparadas -> Postres y Frutas",
+    "url": "https://www.jumbo.cl/comidas-preparadas/postres-y-frutas",
+    "path": "/comidas-preparadas/postres-y-frutas"
+  },
+  {
+    "name": "Comidas Preparadas -> Aperitivos",
+    "url": "https://www.jumbo.cl/comidas-preparadas/aperitivos",
+    "path": "/comidas-preparadas/aperitivos"
+  },
+  {
+    "name": "Sabores del Mundo -> Desayuno",
+    "url": "https://www.jumbo.cl/busca?fq=H%3A3623",
+    "path": "/busca?fq=H%3A3623"
+  },
+  {
+    "name": "Sabores del Mundo -> Confites",
+    "url": "https://www.jumbo.cl/busca?fq=H%3A3763",
+    "path": "/busca?fq=H%3A3763"
+  },
+  {
+    "name": "Sabores del Mundo -> Cóctel",
+    "url": "https://www.jumbo.cl/busca?fq=H%3A3771",
+    "path": "/busca?fq=H%3A3771"
+  },
+  {
+    "name": "Sabores del Mundo -> Vinos, Cervezas y Licores ",
+    "url": "https://www.jumbo.cl/busca?fq=H%3A3704",
+    "path": "/busca?fq=H%3A3704"
+  },
+  {
+    "name": "Mundo Bio Natura -> Bebidas Vegetales",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/bebidas-vegetales",
+    "path": "/mundo-bio-natura/bebidas-vegetales"
+  },
+  {
+    "name": "Mundo Bio Natura -> Clean Label",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/clean-label",
+    "path": "/mundo-bio-natura/clean-label"
+  },
+  {
+    "name": "Mundo Bio Natura -> Vegano",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/vegano",
+    "path": "/mundo-bio-natura/vegano"
+  },
+  {
+    "name": "Mundo Bio Natura -> Orgánico",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/organico",
+    "path": "/mundo-bio-natura/organico"
+  },
+  {
+    "name": "Mundo Bio Natura -> Low Carb",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/low-carb",
+    "path": "/mundo-bio-natura/low-carb"
+  },
+  {
+    "name": "Mundo Bio Natura -> Libre de Gluten",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/libre-de-gluten",
+    "path": "/mundo-bio-natura/libre-de-gluten"
+  },
+  {
+    "name": "Mundo Bio Natura -> Libre de Azúcar Añadida",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/libre-de-azucar-anadida",
+    "path": "/mundo-bio-natura/libre-de-azucar-anadida"
+  },
+  {
+    "name": "Mundo Bio Natura -> Ecofriendly",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/ecofriendly",
+    "path": "/mundo-bio-natura/ecofriendly"
+  },
+  {
+    "name": "Mundo Bio Natura -> Suplementos",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/suplementos",
+    "path": "/mundo-bio-natura/suplementos"
+  },
+  {
+    "name": "Mundo Bio Natura -> Libre de Alérgenos",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/libre-de-alergenos",
+    "path": "/mundo-bio-natura/libre-de-alergenos"
+  },
+  {
+    "name": "Mundo Bio Natura -> Granel Frutos Secos",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/granel-frutos-secos",
+    "path": "/mundo-bio-natura/granel-frutos-secos"
+  },
+  {
+    "name": "Mundo Bio Natura -> Tostaduría",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/tostaduria",
+    "path": "/mundo-bio-natura/tostaduria"
+  },
+  {
+    "name": "Mundo Bio Natura -> Libros",
+    "url": "https://www.jumbo.cl/mundo-bio-natura/libros",
+    "path": "/mundo-bio-natura/libros"
+  },
+  {
+    "name": "Mascotas -> Perros",
+    "url": "https://www.jumbo.cl/mascotas/perros",
+    "path": "/mascotas/perros"
+  },
+  {
+    "name": "Mascotas -> Gatos",
+    "url": "https://www.jumbo.cl/mascotas/gatos",
+    "path": "/mascotas/gatos"
+  },
+  {
+    "name": "Mascotas -> Otras Mascotas",
+    "url": "https://www.jumbo.cl/mascotas/otras-mascotas",
+    "path": "/mascotas/otras-mascotas"
+  },
+  {
+    "name": "Hogar -> Navidad",
+    "url": "https://www.jumbo.cl/hogar/adornos-navidenos",
+    "path": "/hogar/adornos-navidenos"
+  },
+  {
+    "name": "Hogar -> Cocina",
+    "url": "https://www.jumbo.cl/hogar/cocina",
+    "path": "/hogar/cocina"
+  },
+  {
+    "name": "Hogar -> Decoración",
+    "url": "https://www.jumbo.cl/hogar/decoracion",
+    "path": "/hogar/decoracion"
+  },
+  {
+    "name": "Hogar -> Ropa de Cama",
+    "url": "https://www.jumbo.cl/hogar/ropa-de-cama",
+    "path": "/hogar/ropa-de-cama"
+  },
+  {
+    "name": "Hogar -> Celebraciones",
+    "url": "https://www.jumbo.cl/hogar/celebraciones",
+    "path": "/hogar/celebraciones"
+  },
+  {
+    "name": "Hogar -> Infantil",
+    "url": "https://www.jumbo.cl/hogar/infantil",
+    "path": "/hogar/infantil"
+  },
+  {
+    "name": "Hogar -> Baño",
+    "url": "https://www.jumbo.cl/hogar/bano",
+    "path": "/hogar/bano"
+  },
+  {
+    "name": "Hogar -> Menaje mesa",
+    "url": "https://www.jumbo.cl/hogar/menaje-mesa",
+    "path": "/hogar/menaje-mesa"
+  },
+  {
+    "name": "Hogar -> Organización",
+    "url": "https://www.jumbo.cl/hogar/organizacion",
+    "path": "/hogar/organizacion"
+  },
+  {
+    "name": "Hogar -> Parrillas y Accesorios",
+    "url": "https://www.jumbo.cl/hogar/parrillas-y-accesorios",
+    "path": "/hogar/parrillas-y-accesorios"
+  },
+  {
+    "name": "Hogar -> Tendido, planchado y lavado",
+    "url": "https://www.jumbo.cl/hogar/tendido-planchado-y-lavado",
+    "path": "/hogar/tendido-planchado-y-lavado"
+  },
+  {
+    "name": "Hogar -> Maletas",
+    "url": "https://www.jumbo.cl/hogar/maletas",
+    "path": "/hogar/maletas"
+  },
+  {
+    "name": "Electro y Tecno -> Cuidado Personal",
+    "url": "https://www.jumbo.cl/electro-y-tecnologia/cuidado-personal",
+    "path": "/electro-y-tecnologia/cuidado-personal"
+  },
+  {
+    "name": "Electro y Tecno -> Electrodomésticos",
+    "url": "https://www.jumbo.cl/electro-y-tecnologia/electrodomesticos",
+    "path": "/electro-y-tecnologia/electrodomesticos"
+  },
+  {
+    "name": "Electro y Tecno -> Tecnología",
+    "url": "https://www.jumbo.cl/electro-y-tecnologia/tecnologia",
+    "path": "/electro-y-tecnologia/tecnologia"
+  },
+  {
+    "name": "Electro y Tecno -> Calefacción",
+    "url": "https://www.jumbo.cl/electro-y-tecnologia/calefaccion",
+    "path": "/electro-y-tecnologia/calefaccion"
+  },
+  {
+    "name": "Deportes -> Camping",
+    "url": "https://www.jumbo.cl/deportes/camping",
+    "path": "/deportes/camping"
+  },
+  {
+    "name": "Deportes -> Verano e Inflables",
+    "url": "https://www.jumbo.cl/deportes/verano-e-inflables",
+    "path": "/deportes/verano-e-inflables"
+  },
+  {
+    "name": "Deportes -> Ciclismo",
+    "url": "https://www.jumbo.cl/deportes/ciclismo",
+    "path": "/deportes/ciclismo"
+  },
+  {
+    "name": "Deportes -> Fútbol",
+    "url": "https://www.jumbo.cl/deportes/futbol",
+    "path": "/deportes/futbol"
+  },
+  {
+    "name": "Deportes -> Gimnasia",
+    "url": "https://www.jumbo.cl/deportes/gimnasia",
+    "path": "/deportes/gimnasia"
+  },
+  {
+    "name": "Deportes -> Otros Deportes",
+    "url": "https://www.jumbo.cl/deportes/otros-deportes",
+    "path": "/deportes/otros-deportes"
+  },
+  {
+    "name": "Juguetería -> Muñecas, Peluches y Accesorios",
+    "url": "https://www.jumbo.cl/jugueteria/munecas-peluches-y-accesorios",
+    "path": "/jugueteria/munecas-peluches-y-accesorios"
+  },
+  {
+    "name": "Juguetería -> Autos y Autopistas",
+    "url": "https://www.jumbo.cl/jugueteria/autos-y-autopistas",
+    "path": "/jugueteria/autos-y-autopistas"
+  },
+  {
+    "name": "Juguetería -> Figuras de Acción y Lanzadores",
+    "url": "https://www.jumbo.cl/jugueteria/figuras-de-accion-y-lanzadores",
+    "path": "/jugueteria/figuras-de-accion-y-lanzadores"
+  },
+  {
+    "name": "Juguetería -> Juguetes Bebés y Preescolares",
+    "url": "https://www.jumbo.cl/jugueteria/juguetes-bebes-y-preescolares",
+    "path": "/jugueteria/juguetes-bebes-y-preescolares"
+  },
+  {
+    "name": "Juguetería -> Juegos de Mesa y Puzzles",
+    "url": "https://www.jumbo.cl/jugueteria/juegos-de-mesa-y-puzzles",
+    "path": "/jugueteria/juegos-de-mesa-y-puzzles"
+  },
+  {
+    "name": "Juguetería -> Bloques y Armables",
+    "url": "https://www.jumbo.cl/jugueteria/bloques-y-armables",
+    "path": "/jugueteria/bloques-y-armables"
+  },
+  {
+    "name": "Juguetería -> Manualidades y Didácticos",
+    "url": "https://www.jumbo.cl/jugueteria/manualidades-y-didacticos",
+    "path": "/jugueteria/manualidades-y-didacticos"
+  },
+  {
+    "name": "Juguetería -> Juguetes Importados",
+    "url": "https://www.jumbo.cl/jugueteria?b=Importado%20Jumbo&page=1",
+    "path": "/jugueteria?b=Importado%20Jumbo&page=1"
+  },
+  {
+    "name": "Juguetería -> Disfraces",
+    "url": "https://www.jumbo.cl/jugueteria/disfraces",
+    "path": "/jugueteria/disfraces"
+  },
+  {
+    "name": "Juguetería -> Piscinas y Juegos de Playa",
+    "url": "https://www.jumbo.cl/jugueteria/piscinas-y-playa",
+    "path": "/jugueteria/piscinas-y-playa"
+  },
+  {
+    "name": "Juguetería -> Marcas Destacadas",
+    "url": "https://www.jumbo.cl/jugueteria/marcas-destacadas",
+    "path": "/jugueteria/marcas-destacadas"
+  },
+  {
+    "name": "Escolares y Librería -> Artículos de Oficina",
+    "url": "https://www.jumbo.cl/libreria/articulos-de-oficina",
+    "path": "/libreria/articulos-de-oficina"
+  },
+  {
+    "name": "Escolares y Librería -> Cuadernos y Caligrafía",
+    "url": "https://www.jumbo.cl/libreria/cuadernos",
+    "path": "/libreria/cuadernos"
+  },
+  {
+    "name": "Escolares y Librería -> Escritura y Dibujo",
+    "url": "https://www.jumbo.cl/libreria/escritura-y-dibujo",
+    "path": "/libreria/escritura-y-dibujo"
+  },
+  {
+    "name": "Escolares y Librería -> Arte, Manualidades y Papelería",
+    "url": "https://www.jumbo.cl/libreria/arte-manualidades-y-papeleria",
+    "path": "/libreria/arte-manualidades-y-papeleria"
+  },
+  {
+    "name": "Escolares y Librería -> Mochilas, Loncheras y Estuches",
+    "url": "https://www.jumbo.cl/libreria/mochilas-loncheras-y-estuches",
+    "path": "/libreria/mochilas-loncheras-y-estuches"
+  },
+  {
+    "name": "Escolares y Librería -> Libros y novelas",
+    "url": "https://www.jumbo.cl/libreria/libros-y-novelas",
+    "path": "/libreria/libros-y-novelas"
+  },
+  {
+    "name": "Farmacia -> Accesorios Médicos",
+    "url": "https://www.jumbo.cl/farmacia/accesorios-medicos",
+    "path": "/farmacia/accesorios-medicos"
+  },
+  {
+    "name": "Farmacia -> Higiene Bucal Especialidad",
+    "url": "https://www.jumbo.cl/farmacia/higiene-bucal-especialidad",
+    "path": "/farmacia/higiene-bucal-especialidad"
+  },
+  {
+    "name": "Farmacia -> Preservativos y Lubricantes",
+    "url": "https://www.jumbo.cl/farmacia/preservativos-y-lubricantes",
+    "path": "/farmacia/preservativos-y-lubricantes"
+  },
+  {
+    "name": "Farmacia -> Primeros Auxilios",
+    "url": "https://www.jumbo.cl/farmacia/primeros-auxilios",
+    "path": "/farmacia/primeros-auxilios"
+  },
+  {
+    "name": "Farmacia -> Suplementos y Vitaminas",
+    "url": "https://www.jumbo.cl/farmacia/suplementos-y-vitaminas",
+    "path": "/farmacia/suplementos-y-vitaminas"
+  },
+  {
+    "name": "Farmacia -> Anteojos",
+    "url": "https://www.jumbo.cl/farmacia/anteojos",
+    "path": "/farmacia/anteojos"
+  },
+  {
+    "name": "Automóvil, Ferretería y Jardín -> Ferretería",
+    "url": "https://www.jumbo.cl/automovil-ferreteria-y-jardin/ferreteria",
+    "path": "/automovil-ferreteria-y-jardin/ferreteria"
+  },
+  {
+    "name": "Automóvil, Ferretería y Jardín -> Automóvil",
+    "url": "https://www.jumbo.cl/automovil-ferreteria-y-jardin/automovil",
+    "path": "/automovil-ferreteria-y-jardin/automovil"
+  },
+  {
+    "name": "Automóvil, Ferretería y Jardín -> Jardín",
+    "url": "https://www.jumbo.cl/automovil-ferreteria-y-jardin/jardin",
+    "path": "/automovil-ferreteria-y-jardin/jardin"
+  },
+  {
+    "name": "Automóvil, Ferretería y Jardín -> Limpieza de Piscinas",
+    "url": "https://www.jumbo.cl/automovil-ferreteria-y-jardin/limpieza-de-piscinas",
+    "path": "/automovil-ferreteria-y-jardin/limpieza-de-piscinas"
+  }
+]

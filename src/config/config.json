@@ -1,0 +1,122 @@
+{
+  "APP_NAME": "OFFERS_CHILE",
+  "MONGODB": "mongodb://localhost/storePromotions",
+  "DELAY_TIME_DEFAULT": 1000,
+  "DELAY_LIMIT": 10,
+  "DELAY_TIME": 10000,
+  "DELAY_CATEGORY_LIMIT": 4,
+  "DELAY_CATEGORY_TIME": 300000,
+  "PERCENTAGE_MIN": 70,
+  "DISCOUNT_MIN": 200000,
+  "MAX_PARALLEL_CATEGORY": 3,
+  "STORES": {
+    "abcdin": {
+      "name": "Abcdin",
+      "baseUrl": "https://www.abcdin.cl",
+      "allowedCategories": [],
+      "totalProductsPerPage": 36
+    },
+    "microplay": {
+      "name": "MicroPlay",
+      "baseUrl": "https://www.microplay.cl",
+      "productsUrl": "https://www.microplay.cl/productos/reader",
+      "allowedCategories": ["gamer", "geek", "computación", "computacion", "juguetes", "juegos de mesa", "ofertas"],
+      "totalProductsPerPage": 20
+    },
+    "hites": {
+      "name": "Hites",
+      "baseUrl": "https://www.hites.com",
+      "allowedCategories": ["tecnología", "tecnologia", "electro", "celulares", "hogar", "zapatos", "zapatillas", "deportes", "jugueteria", "mujer", "hombre", "outlet"],
+      "totalProductsPerPage": 48
+    },
+    "beststore": {
+      "name": "Best Store",
+      "baseUrl": "https://www.beststore.cl",
+      "allowedCategories": [],
+      "totalProductsPerPage": 12
+    },
+    "cintegral": {
+      "name": "CIntegral",
+      "baseUrl": "https://cintegral.cl",
+      "categoriesUrl": "https://cintegral.cl/module/tvcmsmegamenu/default",
+      "allowedCategories": [],
+      "totalProductsPerPage": 16
+    },
+    "ripley": {
+      "name": "Ripley",
+      "baseUrl": "https://simple.ripley.cl",
+      "allowedCategories": ["tecno", "electro", "deporte"]
+    },
+    "falabella": {
+      "name": "Falabella",
+      "baseUrl": "https://www.falabella.com/falabella-cl",
+      "allowedCategories": ["tecnología", "tecnologia", "celulares", "electrohogar", "muebles", "navidad"]
+    },
+    "jumbo": {
+      "name": "Jumbo",
+      "baseUrl": "https://www.jumbo.cl",
+      "categoriesUrl": "https://assets.jumbo.cl/json/cms/page-11732.json",
+      "productsUrl": "https://apijumboweb.smdigital.cl/catalog/api/v2/products",
+      "allowedCategories": [],
+      "totalProductsPerPage": 45
+    },
+    "santaisabel": {
+      "name": "Santa Isabel",
+      "baseUrl": "https://www.santaisabel.cl",
+      "categoriesUrl": "https://www.santaisabel.cl",
+      "productsUrl": "https://apis.santaisabel.cl/catalog/api/v2/pedrofontova/products",
+      "allowedCategories": [],
+      "totalProductsPerPage": 45
+    },
+    "lider": {
+      "name": "Lider",
+      "baseUrl": "https://www.lider.cl/catalogo",
+      "categoriesUrl": "https://apps.lider.cl/catalogo/bff/categories",
+      "productsUrl": "https://apps.lider.cl/catalogo/bff/category",
+      "allowedCategories": [],
+      "totalProductsPerPage": 100
+    },
+    "lider-supermercado": {
+      "name": "Lider-Supermercado",
+      "baseUrl": "https://www.lider.cl/supermercado/",
+      "categoriesUrl": "https://apps.lider.cl/supermercado/bff/categories",
+      "productsUrl": "https://apps.lider.cl/supermercado/bff/category",
+      "allowedCategories": [],
+      "totalProductsPerPage": 100
+    },
+    "labarra": {
+      "name": "La Barra",
+      "baseUrl": "https://labarra.cl",
+      "categoriesUrl": "https://gtw.sf.cloudccu.cl/dev/private/v1.0.0/categories_labarra/get_product_categories/",
+      "productsUrl": "https://gtw.sf.cloudccu.cl/dev/private/v1.0.0/product_labarra/getProductList/",
+      "allowedCategories": [],
+      "totalProductsPerPage": 1000
+    },
+    "easy": {
+      "name": "Easy",
+      "baseUrl": "https://www.easy.cl",
+      "categoriesUrl": "https://www.easy.cl/_v/private/graphql/v1?workspace=master&maxAge=long&appsEtag=remove&domain=store&locale=es-CL",
+      "allowedCategories": ["electrohogar", "herramientas", "dormitorio", "decoración", "materiales de construcción"],
+      "totalProductsPerPage": 40,
+      "sha256Hash": "bcada47094de2f66fac0c160f1910df7936315c8ff6f4430fca73fe600993b3f"
+    },
+    "paris": {
+      "name": "Paris",
+      "baseUrl": "https://www.paris.cl",
+      "allowedCategories": ["electro", "tecno"],
+      "totalProductsPerPage": 24
+    },
+    "lapolar": {
+      "name": "La Polar",
+      "baseUrl": "https://www.lapolar.cl",
+      "allowedCategories": ["navidad", "tecnología", "tecnologia", "blanca", "hogar", "outlet", "otras"],
+      "totalProductsPerPage": 36
+    },
+    "tricot": {
+      "name": "Tricot",
+      "baseUrl": "https://www.tricot.cl/",
+      "allowedCategories": [],
+      "totalProductsPerPage": 24
+    }
+  }
+}

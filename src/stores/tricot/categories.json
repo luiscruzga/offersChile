@@ -1,0 +1,187 @@
+[
+  {
+    "id": 299,
+    "name": "Mujer -> POLERAS",
+    "url": "https://www.tricot.cl//coleccion/mujer/poleras-mujer0"
+  },
+  {
+    "id": 298,
+    "name": "Mujer -> BLUSAS",
+    "url": "https://www.tricot.cl//coleccion/mujer/blusas-mujer"
+  },
+  {
+    "id": 130,
+    "name": "Mujer -> JEANS",
+    "url": "https://www.tricot.cl//coleccion/mujer/jeans-0"
+  },
+  {
+    "id": 207,
+    "name": "Mujer -> PANTALONES",
+    "url": "https://www.tricot.cl//coleccion/mujer/pantalones-mujer0"
+  },
+  {
+    "id": 301,
+    "name": "Mujer -> ENTERITOS",
+    "url": "https://www.tricot.cl//coleccion/mujer/enterito"
+  },
+  {
+    "id": 313,
+    "name": "Mujer -> VESTIDOS",
+    "url": "https://www.tricot.cl//coleccion/mujer/vestidos"
+  },
+  {
+    "id": 133,
+    "name": "Mujer -> FALDAS",
+    "url": "https://www.tricot.cl//coleccion/mujer/faldas"
+  },
+  {
+    "id": 633,
+    "name": "Mujer -> SHORT Y BERMUDAS",
+    "url": "https://www.tricot.cl//coleccion/mujer/short"
+  },
+  {
+    "id": 635,
+    "name": "Mujer -> TRAJES DE BAÑO",
+    "url": "https://www.tricot.cl//coleccion/mujer/trajes-de-bano"
+  },
+  {
+    "id": 297,
+    "name": "Mujer -> CHAQUETAS",
+    "url": "https://www.tricot.cl//coleccion/mujer/chaquetas-mujer-0"
+  },
+  {
+    "id": 178,
+    "name": "Mujer -> POLERONES",
+    "url": "https://www.tricot.cl//coleccion/mujer/polerones-mujer"
+  },
+  {
+    "id": 527,
+    "name": "Mujer -> TEJIDOS",
+    "url": "https://www.tricot.cl//coleccion/mujer/lanas"
+  },
+  {
+    "id": 569,
+    "name": "Mujer -> PIJAMAS",
+    "url": "https://www.tricot.cl//coleccion/mujer/mujer-pijamas"
+  },
+  {
+    "id": 530,
+    "name": "Mujer -> KIMONOS",
+    "url": "https://www.tricot.cl//coleccion/mujer/kimonos"
+  },
+  {
+    "id": 93,
+    "name": "Mujer -> ROPA INTERIOR",
+    "url": "https://www.tricot.cl//coleccion/mujer/ropa-interior-mujer-1"
+  },
+  {
+    "id": 123,
+    "name": "Mujer -> DEPORTE",
+    "url": "https://www.tricot.cl//coleccion/mujer/deporte-mujer-0"
+  },
+  {
+    "id": 428,
+    "name": "Mujer -> ACCESORIOS",
+    "url": "https://www.tricot.cl//coleccion/mujer/accesorios-mujer"
+  },
+  {
+    "id": 632,
+    "name": "Mujer -> Regalos Mujer",
+    "url": "https://www.tricot.cl//coleccion/mujer/regalos-mujer"
+  },
+  {
+    "id": 154,
+    "name": "Hombre -> POLERAS",
+    "url": "https://www.tricot.cl//coleccion/hombres/poleras-hombre-3"
+  },
+  {
+    "id": 294,
+    "name": "Hombre -> CAMISAS",
+    "url": "https://www.tricot.cl//coleccion/hombres/camiseria-hombre"
+  },
+  {
+    "id": 314,
+    "name": "Hombre -> JEANS",
+    "url": "https://www.tricot.cl//coleccion/hombres/jeans-hombre"
+  },
+  {
+    "id": 315,
+    "name": "Hombre -> PANTALONES",
+    "url": "https://www.tricot.cl//coleccion/hombres/pantalones-hombre-0"
+  },
+  {
+    "id": 568,
+    "name": "Hombre -> SHORTS Y BERMUDAS",
+    "url": "https://www.tricot.cl//coleccion/hombres/shorts-bermudas-hombre"
+  },
+  {
+    "id": 636,
+    "name": "Hombre -> TRAJES DE BAÑO",
+    "url": "https://www.tricot.cl//coleccion/hombres/trajes-de-bano-1"
+  },
+  {
+    "id": 151,
+    "name": "Hombre -> POLERONES",
+    "url": "https://www.tricot.cl//coleccion/hombres/polerones-hombre"
+  },
+  {
+    "id": 368,
+    "name": "Hombre -> CHAQUETAS",
+    "url": "https://www.tricot.cl//coleccion/hombres/chaquetas-hombre"
+  },
+  {
+    "id": 172,
+    "name": "Hombre -> DEPORTE",
+    "url": "https://www.tricot.cl//coleccion/hombres/deporte-hombre-1"
+  },
+  {
+    "id": 353,
+    "name": "Hombre -> ROPA INTERIOR",
+    "url": "https://www.tricot.cl//coleccion/hombres/ropa-interior-hombre-1"
+  },
+  {
+    "id": 456,
+    "name": "Hombre -> ACCESORIOS",
+    "url": "https://www.tricot.cl//coleccion/hombres/accesorios-hombre"
+  },
+  {
+    "id": 343,
+    "name": "Hombre -> PIJAMAS",
+    "url": "https://www.tricot.cl//coleccion/hombres/pijamas-hombre"
+  },
+  {
+    "id": 537,
+    "name": "Niños -> Niñas",
+    "url": "https://www.tricot.cl//coleccion/ninos-1/ninas-1"
+  },
+  {
+    "id": 538,
+    "name": "Niños -> Niños",
+    "url": "https://www.tricot.cl//coleccion/ninos-1/ninos-2"
+  },
+  {
+    "id": 431,
+    "name": "Niños -> BEBÉS ",
+    "url": "https://www.tricot.cl//coleccion/ninos-1/bebes"
+  },
+  {
+    "id": 590,
+    "name": "Niños -> Regalos Niños",
+    "url": "https://www.tricot.cl//coleccion/ninos-1/regalos-navidad-nina"
+  },
+  {
+    "id": 174,
+    "name": "CALZADO -> CALZADO MUJER",
+    "url": "https://www.tricot.cl//coleccion/calzado-3/calzado-mujer"
+  },
+  {
+    "id": 173,
+    "name": "CALZADO -> CALZADO HOMBRE",
+    "url": "https://www.tricot.cl//coleccion/calzado-3/calzado-hombre-0"
+  },
+  {
+    "id": 539,
+    "name": "CALZADO -> CALZADO INFANTIL",
+    "url": "https://www.tricot.cl//coleccion/calzado-3/calzado-1"
+  }
+]

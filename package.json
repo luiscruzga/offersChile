@@ -1,0 +1,24 @@
+{
+  "name": "offerschile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index.js --max-old-space-size=8000",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.1.3",
+    "foreach-extra": "^0.0.2",
+    "fs": "^0.0.1-security",
+    "jsdom": "^20.0.3",
+    "lodash": "^4.17.21",
+    "mongoose": "^6.7.4",
+    "triple-beam": "^1.3.0",
+    "uuid": "^9.0.0",
+    "winston": "^3.8.2"
+  }
+}

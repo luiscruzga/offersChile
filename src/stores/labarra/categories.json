@@ -1,0 +1,62 @@
+[
+  {
+    "id": 294,
+    "name": "Nuevo",
+    "url": "https://labarra.cl/categoria/nuevo"
+  },
+  {
+    "id": 291,
+    "name": "Ofertas",
+    "url": "https://labarra.cl/categoria/ofertas"
+  },
+  {
+    "id": 288,
+    "name": "Cervezas",
+    "url": "https://labarra.cl/categoria/cervezas"
+  },
+  {
+    "id": 293,
+    "name": "Vinos y Espumantes",
+    "url": "https://labarra.cl/categoria/vinos-y-espumantes"
+  },
+  {
+    "id": 292,
+    "name": "Piscos y Licores",
+    "url": "https://labarra.cl/categoria/piscos-y-licores"
+  },
+  {
+    "id": 287,
+    "name": "Bebidas, Jugos y Aguas",
+    "url": "https://labarra.cl/categoria/bebidas,-jugos-y-aguas"
+  },
+  {
+    "id": 289,
+    "name": "Deportivas",
+    "url": "https://labarra.cl/categoria/deportivas"
+  },
+  {
+    "id": 290,
+    "name": "Energéticas",
+    "url": "https://labarra.cl/categoria/energéticas"
+  },
+  {
+    "id": 297,
+    "name": "Packs",
+    "url": "https://labarra.cl/categoria/packs"
+  },
+  {
+    "id": 286,
+    "name": "Accesorios",
+    "url": "https://labarra.cl/categoria/accesorios"
+  },
+  {
+    "id": 296,
+    "name": "Giftcards",
+    "url": "https://labarra.cl/categoria/giftcards"
+  },
+  {
+    "id": 449,
+    "name": "Lanzamientos",
+    "url": "https://labarra.cl/categoria/lanzamientos"
+  }
+]

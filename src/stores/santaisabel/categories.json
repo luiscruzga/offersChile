@@ -1,0 +1,542 @@
+[
+  {
+    "name": "Exclusivo en Santa Isabel -> Libres de",
+    "url": "https://www.santaisabel.cl/oferta/libres-de?nombre_promo=menu-landing-libres-de-08112021",
+    "path": "/oferta/libres-de?nombre_promo=menu-landing-libres-de-08112021"
+  },
+  {
+    "name": "Exclusivo en Santa Isabel -> Cuisine & Co",
+    "url": "https://www.santaisabel.cl/oferta/cuisine-co?nombre_promo=menu-ofertas-cuisine-10122021",
+    "path": "/oferta/cuisine-co?nombre_promo=menu-ofertas-cuisine-10122021"
+  },
+  {
+    "name": "Carnicería -> Vacuno",
+    "url": "https://www.santaisabel.cl/carniceria/vacuno",
+    "path": "/carniceria/vacuno"
+  },
+  {
+    "name": "Carnicería -> Cerdo",
+    "url": "https://www.santaisabel.cl/carniceria/cerdo",
+    "path": "/carniceria/cerdo"
+  },
+  {
+    "name": "Carnicería -> Pavo",
+    "url": "https://www.santaisabel.cl/carniceria/pavo",
+    "path": "/carniceria/pavo"
+  },
+  {
+    "name": "Carnicería -> Pollo",
+    "url": "https://www.santaisabel.cl/carniceria/pollo",
+    "path": "/carniceria/pollo"
+  },
+  {
+    "name": "Botillería -> Bebidas",
+    "url": "https://www.santaisabel.cl/bebidas-aguas-y-jugos/bebidas-gaseosas",
+    "path": "/bebidas-aguas-y-jugos/bebidas-gaseosas"
+  },
+  {
+    "name": "Botillería -> Jugos",
+    "url": "https://www.santaisabel.cl/bebidas-aguas-y-jugos/jugos",
+    "path": "/bebidas-aguas-y-jugos/jugos"
+  },
+  {
+    "name": "Botillería -> Aguas Minerales",
+    "url": "https://www.santaisabel.cl/bebidas-aguas-y-jugos/aguas-minerales",
+    "path": "/bebidas-aguas-y-jugos/aguas-minerales"
+  },
+  {
+    "name": "Botillería -> Vinos y Espumantes",
+    "url": "https://www.santaisabel.cl/vinos-cervezas-y-licores/vinos",
+    "path": "/vinos-cervezas-y-licores/vinos"
+  },
+  {
+    "name": "Botillería -> Cervezas",
+    "url": "https://www.santaisabel.cl/vinos-cervezas-y-licores/cervezas",
+    "path": "/vinos-cervezas-y-licores/cervezas"
+  },
+  {
+    "name": "Botillería -> Licores y Cócteles",
+    "url": "https://www.santaisabel.cl/vinos-cervezas-y-licores/licores-y-cocteles",
+    "path": "/vinos-cervezas-y-licores/licores-y-cocteles"
+  },
+  {
+    "name": "Botillería -> Destilados",
+    "url": "https://www.santaisabel.cl/vinos-cervezas-y-licores/destilados",
+    "path": "/vinos-cervezas-y-licores/destilados"
+  },
+  {
+    "name": "Botillería -> Bebidas Energéticas",
+    "url": "https://www.santaisabel.cl/bebidas-aguas-y-jugos/bebidas-energeticas",
+    "path": "/bebidas-aguas-y-jugos/bebidas-energeticas"
+  },
+  {
+    "name": "Botillería -> Bebidas Isotónicas",
+    "url": "https://www.santaisabel.cl/bebidas-aguas-y-jugos/bebidas-isotonicas",
+    "path": "/bebidas-aguas-y-jugos/bebidas-isotonicas"
+  },
+  {
+    "name": "Botillería -> Hielo",
+    "url": "https://www.santaisabel.cl/congelados/hielo",
+    "path": "/congelados/hielo"
+  },
+  {
+    "name": "Quesos y Fiambres -> Quesería",
+    "url": "https://www.santaisabel.cl/quesos-y-fiambres/queseria",
+    "path": "/quesos-y-fiambres/queseria"
+  },
+  {
+    "name": "Quesos y Fiambres -> Fiambrería",
+    "url": "https://www.santaisabel.cl/quesos-y-fiambres/fiambreria",
+    "path": "/quesos-y-fiambres/fiambreria"
+  },
+  {
+    "name": "Quesos y Fiambres -> Salchichas y Parrilleros",
+    "url": "https://www.santaisabel.cl/quesos-y-fiambres/salchichas-y-parrilleros",
+    "path": "/quesos-y-fiambres/salchichas-y-parrilleros"
+  },
+  {
+    "name": "Panadería y Pastelería -> Panadería envasada",
+    "url": "https://www.santaisabel.cl/panaderia-y-pasteleria/panaderia-envasada",
+    "path": "/panaderia-y-pasteleria/panaderia-envasada"
+  },
+  {
+    "name": "Panadería y Pastelería -> Panadería granel",
+    "url": "https://www.santaisabel.cl/panaderia-y-pasteleria/panaderia-granel",
+    "path": "/panaderia-y-pasteleria/panaderia-granel"
+  },
+  {
+    "name": "Panadería y Pastelería -> Masas y Tortillas",
+    "url": "https://www.santaisabel.cl/panaderia-y-pasteleria/masas-y-tortillas",
+    "path": "/panaderia-y-pasteleria/masas-y-tortillas"
+  },
+  {
+    "name": "Panadería y Pastelería -> Pastelería",
+    "url": "https://www.santaisabel.cl/panaderia-y-pasteleria/pasteleria",
+    "path": "/panaderia-y-pasteleria/pasteleria"
+  },
+  {
+    "name": "Desayuno y Dulces -> Café y Cafeteras",
+    "url": "https://www.santaisabel.cl/desayuno-y-dulces/cafe-y-cafeteras",
+    "path": "/desayuno-y-dulces/cafe-y-cafeteras"
+  },
+  {
+    "name": "Desayuno y Dulces -> Té, Mate y Hierbas",
+    "url": "https://www.santaisabel.cl/desayuno-y-dulces/te-mate-y-hierbas",
+    "path": "/desayuno-y-dulces/te-mate-y-hierbas"
+  },
+  {
+    "name": "Desayuno y Dulces -> Chocolates y Dulces",
+    "url": "https://www.santaisabel.cl/desayuno-y-dulces/chocolates-y-dulces",
+    "path": "/desayuno-y-dulces/chocolates-y-dulces"
+  },
+  {
+    "name": "Desayuno y Dulces -> Galletas y Colaciones",
+    "url": "https://www.santaisabel.cl/desayuno-y-dulces/galletas-y-colaciones",
+    "path": "/desayuno-y-dulces/galletas-y-colaciones"
+  },
+  {
+    "name": "Desayuno y Dulces -> Azúcar y Endulzantes",
+    "url": "https://www.santaisabel.cl/desayuno-y-dulces/azucar-y-endulzantes",
+    "path": "/desayuno-y-dulces/azucar-y-endulzantes"
+  },
+  {
+    "name": "Desayuno y Dulces -> Cereales, Avenas y Barras",
+    "url": "https://www.santaisabel.cl/desayuno-y-dulces/cereales-avenas-y-barras",
+    "path": "/desayuno-y-dulces/cereales-avenas-y-barras"
+  },
+  {
+    "name": "Desayuno y Dulces -> Manjar, Miel y Mermeladas",
+    "url": "https://www.santaisabel.cl/desayuno-y-dulces/manjar-miel-y-mermeladas",
+    "path": "/desayuno-y-dulces/manjar-miel-y-mermeladas"
+  },
+  {
+    "name": "Desayuno y Dulces -> Saborizantes",
+    "url": "https://www.santaisabel.cl/desayuno-y-dulces/saborizantes",
+    "path": "/desayuno-y-dulces/saborizantes"
+  },
+  {
+    "name": "Congelados -> Verduras Congeladas",
+    "url": "https://www.santaisabel.cl/congelados/verduras-congeladas",
+    "path": "/congelados/verduras-congeladas"
+  },
+  {
+    "name": "Congelados -> Hamburguesas",
+    "url": "https://www.santaisabel.cl/congelados/hamburguesas",
+    "path": "/congelados/hamburguesas"
+  },
+  {
+    "name": "Congelados -> Frutas Congeladas",
+    "url": "https://www.santaisabel.cl/congelados/frutas-congeladas",
+    "path": "/congelados/frutas-congeladas"
+  },
+  {
+    "name": "Congelados -> Helados",
+    "url": "https://www.santaisabel.cl/congelados/helados-y-postres",
+    "path": "/congelados/helados-y-postres"
+  },
+  {
+    "name": "Congelados -> Hielo",
+    "url": "https://www.santaisabel.cl/congelados/hielo",
+    "path": "/congelados/hielo"
+  },
+  {
+    "name": "Congelados -> Churrascos, Lomitos y Otros",
+    "url": "https://www.santaisabel.cl/congelados/churrascos-lomitos-y-otros",
+    "path": "/congelados/churrascos-lomitos-y-otros"
+  },
+  {
+    "name": "Congelados -> Cocktail",
+    "url": "https://www.santaisabel.cl/congelados/cocktail",
+    "path": "/congelados/cocktail"
+  },
+  {
+    "name": "Congelados -> Comidas Preparadas",
+    "url": "https://www.santaisabel.cl/congelados/comidas-preparadas",
+    "path": "/congelados/comidas-preparadas"
+  },
+  {
+    "name": "Congelados -> Nuggets y Apanados",
+    "url": "https://www.santaisabel.cl/congelados/nuggets-y-apanados",
+    "path": "/congelados/nuggets-y-apanados"
+  },
+  {
+    "name": "Congelados -> Vegetariano y Vegano",
+    "url": "https://www.santaisabel.cl/congelados/vegetariano-y-vegano",
+    "path": "/congelados/vegetariano-y-vegano"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Vinos y Espumantes",
+    "url": "https://www.santaisabel.cl/vinos-cervezas-y-licores/vinos",
+    "path": "/vinos-cervezas-y-licores/vinos"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Cervezas",
+    "url": "https://www.santaisabel.cl/vinos-cervezas-y-licores/cervezas",
+    "path": "/vinos-cervezas-y-licores/cervezas"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Destilados",
+    "url": "https://www.santaisabel.cl/vinos-cervezas-y-licores/destilados",
+    "path": "/vinos-cervezas-y-licores/destilados"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Licores y Cócteles",
+    "url": "https://www.santaisabel.cl/vinos-cervezas-y-licores/licores-y-cocteles",
+    "path": "/vinos-cervezas-y-licores/licores-y-cocteles"
+  },
+  {
+    "name": "Vinos, Cervezas y Licores -> Hielo",
+    "url": "https://www.santaisabel.cl/congelados/hielo",
+    "path": "/congelados/hielo"
+  },
+  {
+    "name": "Bebé -> Pañales y Toallas Húmedas",
+    "url": "https://www.santaisabel.cl/mi-bebe/panales-y-toallas-humedas",
+    "path": "/mi-bebe/panales-y-toallas-humedas"
+  },
+  {
+    "name": "Bebé -> Colados, Picados y Otros",
+    "url": "https://www.santaisabel.cl/mi-bebe/colados-picados-y-otros",
+    "path": "/mi-bebe/colados-picados-y-otros"
+  },
+  {
+    "name": "Bebé -> Leche y Suplementos Infantiles",
+    "url": "https://www.santaisabel.cl/mi-bebe/leche-y-suplementos-infantiles",
+    "path": "/mi-bebe/leche-y-suplementos-infantiles"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cuidado Bucal",
+    "url": "https://www.santaisabel.cl/belleza-y-cuidado-personal/cuidado-bucal",
+    "path": "/belleza-y-cuidado-personal/cuidado-bucal"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cuidado Capilar",
+    "url": "https://www.santaisabel.cl/belleza-y-cuidado-personal/cuidado-capilar",
+    "path": "/belleza-y-cuidado-personal/cuidado-capilar"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cuidado Mujer",
+    "url": "https://www.santaisabel.cl/belleza-y-cuidado-personal/cuidado-mujer",
+    "path": "/belleza-y-cuidado-personal/cuidado-mujer"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cuidado Hombre",
+    "url": "https://www.santaisabel.cl/belleza-y-cuidado-personal/cuidado-hombre",
+    "path": "/belleza-y-cuidado-personal/cuidado-hombre"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Cremas",
+    "url": "https://www.santaisabel.cl/belleza-y-cuidado-personal/cremas",
+    "path": "/belleza-y-cuidado-personal/cremas"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Solares y autobronceantes",
+    "url": "https://www.santaisabel.cl/busca?fq=H%3A5334",
+    "path": "/busca?fq=H%3A5334"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Higiene Personal",
+    "url": "https://www.santaisabel.cl/belleza-y-cuidado-personal/higiene-personal",
+    "path": "/belleza-y-cuidado-personal/higiene-personal"
+  },
+  {
+    "name": "Belleza y Cuidado Personal -> Incontinencia y Pañales Adulto",
+    "url": "https://www.santaisabel.cl/belleza-y-cuidado-personal/incontinencia-y-panales-adulto",
+    "path": "/belleza-y-cuidado-personal/incontinencia-y-panales-adulto"
+  },
+  {
+    "name": "Despensa -> Fideos, Pastas y Salsas",
+    "url": "https://www.santaisabel.cl/despensa/pastas-y-salsas",
+    "path": "/despensa/pastas-y-salsas"
+  },
+  {
+    "name": "Despensa -> Arroz, Legumbres y Semillas",
+    "url": "https://www.santaisabel.cl/despensa/arroz-y-legumbres",
+    "path": "/despensa/arroz-y-legumbres"
+  },
+  {
+    "name": "Despensa -> Aceites, Sal y Condimentos",
+    "url": "https://www.santaisabel.cl/despensa/aceites-sal-y-condimentos",
+    "path": "/despensa/aceites-sal-y-condimentos"
+  },
+  {
+    "name": "Despensa -> Conservas",
+    "url": "https://www.santaisabel.cl/despensa/conservas",
+    "path": "/despensa/conservas"
+  },
+  {
+    "name": "Despensa -> Snack y Cóctel",
+    "url": "https://www.santaisabel.cl/despensa/coctel",
+    "path": "/despensa/coctel"
+  },
+  {
+    "name": "Despensa -> Cajas especiales",
+    "url": "https://www.santaisabel.cl/despensa/cajas-especiales",
+    "path": "/despensa/cajas-especiales"
+  },
+  {
+    "name": "Despensa -> Aderezos y Salsas",
+    "url": "https://www.santaisabel.cl/despensa/aderezos-y-salsas",
+    "path": "/despensa/aderezos-y-salsas"
+  },
+  {
+    "name": "Despensa -> Instantáneos y Sopas",
+    "url": "https://www.santaisabel.cl/despensa/instantaneos-y-sopas",
+    "path": "/despensa/instantaneos-y-sopas"
+  },
+  {
+    "name": "Despensa -> Harina y Complementos",
+    "url": "https://www.santaisabel.cl/despensa/harina-y-complementos",
+    "path": "/despensa/harina-y-complementos"
+  },
+  {
+    "name": "Despensa -> Repostería",
+    "url": "https://www.santaisabel.cl/despensa/reposteria",
+    "path": "/despensa/reposteria"
+  },
+  {
+    "name": "Despensa -> Comidas Étnicas",
+    "url": "https://www.santaisabel.cl/despensa/comidas-etnicas",
+    "path": "/despensa/comidas-etnicas"
+  },
+  {
+    "name": "Frutas y Verduras -> Frutas",
+    "url": "https://www.santaisabel.cl/frutas-y-verduras/frutas",
+    "path": "/frutas-y-verduras/frutas"
+  },
+  {
+    "name": "Frutas y Verduras -> Verduras",
+    "url": "https://www.santaisabel.cl/frutas-y-verduras/verduras",
+    "path": "/frutas-y-verduras/verduras"
+  },
+  {
+    "name": "Frutas y Verduras -> Frutos Secos y Semillas",
+    "url": "https://www.santaisabel.cl/frutas-y-verduras/frutos-secos-y-semillas",
+    "path": "/frutas-y-verduras/frutos-secos-y-semillas"
+  },
+  {
+    "name": "Limpieza -> Papeles Hogar",
+    "url": "https://www.santaisabel.cl/limpieza/papeles-hogar",
+    "path": "/limpieza/papeles-hogar"
+  },
+  {
+    "name": "Limpieza -> Limpieza de Ropa",
+    "url": "https://www.santaisabel.cl/limpieza/limpieza-de-ropa",
+    "path": "/limpieza/limpieza-de-ropa"
+  },
+  {
+    "name": "Limpieza -> Baño y Cocina",
+    "url": "https://www.santaisabel.cl/limpieza/bano-y-cocina",
+    "path": "/limpieza/bano-y-cocina"
+  },
+  {
+    "name": "Limpieza -> Accesorios de Limpieza",
+    "url": "https://www.santaisabel.cl/limpieza/accesorios-de-limpieza",
+    "path": "/limpieza/accesorios-de-limpieza"
+  },
+  {
+    "name": "Limpieza -> Aerosoles y Desinfectantes",
+    "url": "https://www.santaisabel.cl/limpieza/aerosoles-y-desinfectantes",
+    "path": "/limpieza/aerosoles-y-desinfectantes"
+  },
+  {
+    "name": "Limpieza -> Pisos y Muebles",
+    "url": "https://www.santaisabel.cl/limpieza/pisos-y-muebles",
+    "path": "/limpieza/pisos-y-muebles"
+  },
+  {
+    "name": "Lácteos -> Leches",
+    "url": "https://www.santaisabel.cl/lacteos/leches",
+    "path": "/lacteos/leches"
+  },
+  {
+    "name": "Lácteos -> Yoghurt",
+    "url": "https://www.santaisabel.cl/lacteos/yoghurt",
+    "path": "/lacteos/yoghurt"
+  },
+  {
+    "name": "Lácteos -> Cremas",
+    "url": "https://www.santaisabel.cl/despensa/reposteria/cremas",
+    "path": "/despensa/reposteria/cremas"
+  },
+  {
+    "name": "Lácteos -> Huevos",
+    "url": "https://www.santaisabel.cl/lacteos/huevos",
+    "path": "/lacteos/huevos"
+  },
+  {
+    "name": "Lácteos -> Leches Cultivadas y Bebidas Lácteas",
+    "url": "https://www.santaisabel.cl/lacteos/leches-cultivadas-y-bebidas-lacteas",
+    "path": "/lacteos/leches-cultivadas-y-bebidas-lacteas"
+  },
+  {
+    "name": "Lácteos -> Mantequillas y Margarinas",
+    "url": "https://www.santaisabel.cl/lacteos/mantequillas-y-margarinas",
+    "path": "/lacteos/mantequillas-y-margarinas"
+  },
+  {
+    "name": "Lácteos -> Postres",
+    "url": "https://www.santaisabel.cl/lacteos/postres",
+    "path": "/lacteos/postres"
+  },
+  {
+    "name": "Lácteos -> Probióticos y Defensas",
+    "url": "https://www.santaisabel.cl/lacteos/probioticos-y-defensas",
+    "path": "/lacteos/probioticos-y-defensas"
+  },
+  {
+    "name": "Mascotas -> Perros",
+    "url": "https://www.santaisabel.cl/mascotas/perros",
+    "path": "/mascotas/perros"
+  },
+  {
+    "name": "Mascotas -> Gatos",
+    "url": "https://www.santaisabel.cl/mascotas/gatos",
+    "path": "/mascotas/gatos"
+  },
+  {
+    "name": "Hogar -> Automotor, Ferretería y Jardín",
+    "url": "https://www.santaisabel.cl/hogar/automotor-ferreteria-y-jardin",
+    "path": "/hogar/automotor-ferreteria-y-jardin"
+  },
+  {
+    "name": "Hogar -> Cocina",
+    "url": "https://www.santaisabel.cl/hogar/cocina",
+    "path": "/hogar/cocina"
+  },
+  {
+    "name": "Hogar -> Menaje Mesa",
+    "url": "https://www.santaisabel.cl/hogar/menaje-mesa",
+    "path": "/hogar/menaje-mesa"
+  },
+  {
+    "name": "Hogar -> Decoración",
+    "url": "https://www.santaisabel.cl/hogar/decoracion",
+    "path": "/hogar/decoracion"
+  },
+  {
+    "name": "Hogar -> Celebraciones",
+    "url": "https://www.santaisabel.cl/hogar/celebraciones",
+    "path": "/hogar/celebraciones"
+  },
+  {
+    "name": "Hogar -> Electro y Tecno",
+    "url": "https://www.santaisabel.cl/hogar/electro-y-tecno",
+    "path": "/hogar/electro-y-tecno"
+  },
+  {
+    "name": "Hogar -> Parrillas y accesorios",
+    "url": "https://www.santaisabel.cl/hogar/parrillas-y-accesorios",
+    "path": "/hogar/parrillas-y-accesorios"
+  },
+  {
+    "name": "Hogar -> Ropa de Cama",
+    "url": "https://www.santaisabel.cl/hogar/ropa-de-cama",
+    "path": "/hogar/ropa-de-cama"
+  },
+  {
+    "name": "Hogar -> Baño, Tendido y Planchado",
+    "url": "https://www.santaisabel.cl/hogar/baño-tendido-y-planchado",
+    "path": "/hogar/baño-tendido-y-planchado"
+  },
+  {
+    "name": "Pescadería -> Pescados",
+    "url": "https://www.santaisabel.cl/pescaderia/pescados",
+    "path": "/pescaderia/pescados"
+  },
+  {
+    "name": "Pescadería -> Camarones",
+    "url": "https://www.santaisabel.cl/pescaderia/camarones",
+    "path": "/pescaderia/camarones"
+  },
+  {
+    "name": "Pescadería -> Ahumados y Carpaccios",
+    "url": "https://www.santaisabel.cl/pescaderia/ahumados-y-carpaccios",
+    "path": "/pescaderia/ahumados-y-carpaccios"
+  },
+  {
+    "name": "Pescadería -> Mariscos",
+    "url": "https://www.santaisabel.cl/pescaderia/mariscos",
+    "path": "/pescaderia/mariscos"
+  },
+  {
+    "name": "Comidas Preparadas -> Empanadas y Sándwiches",
+    "url": "https://www.santaisabel.cl/comidas-preparadas/empanadas-y-sandwiches",
+    "path": "/comidas-preparadas/empanadas-y-sandwiches"
+  },
+  {
+    "name": "Comidas Preparadas -> Pastas y Lasañas",
+    "url": "https://www.santaisabel.cl/comidas-preparadas/pastas-y-lasanas",
+    "path": "/comidas-preparadas/pastas-y-lasanas"
+  },
+  {
+    "name": "Comidas Preparadas -> Aperitivos",
+    "url": "https://www.santaisabel.cl/comidas-preparadas/aperitivos",
+    "path": "/comidas-preparadas/aperitivos"
+  },
+  {
+    "name": "Comidas Preparadas -> Postres y Frutas",
+    "url": "https://www.santaisabel.cl/comidas-preparadas/postres-y-frutas",
+    "path": "/comidas-preparadas/postres-y-frutas"
+  },
+  {
+    "name": "Comidas Preparadas -> Pizzas",
+    "url": "https://www.santaisabel.cl/comidas-preparadas/pizzas",
+    "path": "/comidas-preparadas/pizzas"
+  },
+  {
+    "name": "Comidas Preparadas -> Entradas y Ensaladas",
+    "url": "https://www.santaisabel.cl/comidas-preparadas/entradas-y-ensaladas",
+    "path": "/comidas-preparadas/entradas-y-ensaladas"
+  },
+  {
+    "name": "Comidas Preparadas -> Platos de Fondo",
+    "url": "https://www.santaisabel.cl/comidas-preparadas/platos-de-fondo",
+    "path": "/comidas-preparadas/platos-de-fondo"
+  },
+  {
+    "name": "Bebidas Vegetales -> Bebidas Vegetales",
+    "url": "https://www.santaisabel.cl/mundo-vegano/bebidas-vegetales",
+    "path": "/mundo-vegano/bebidas-vegetales"
+  }
+]

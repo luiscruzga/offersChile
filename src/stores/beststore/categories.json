@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Computación",
+    "url": "https://www.beststore.cl/4-computacion"
+  },
+  {
+    "name": "Gamer",
+    "url": "https://www.beststore.cl/1096-gamer"
+  },
+  {
+    "name": "Eléctronica",
+    "url": "https://www.beststore.cl/307-equipos-de-electronica"
+  },
+  {
+    "name": "Entretención",
+    "url": "https://www.beststore.cl/38-juguetes"
+  },
+  {
+    "name": "Movilidad",
+    "url": "https://www.beststore.cl/308-movilidad"
+  },
+  {
+    "name": "Redes",
+    "url": "https://www.beststore.cl/306-redes"
+  },
+  {
+    "name": "Oficina",
+    "url": "https://www.beststore.cl/309-oficina"
+  },
+  {
+    "name": "Seguridad",
+    "url": "https://www.beststore.cl/310-seguridad"
+  },
+  {
+    "name": "Teletrabajo",
+    "url": "https://www.beststore.cl/1113-teletrabajo"
+  }
+]

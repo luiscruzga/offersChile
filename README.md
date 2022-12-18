@@ -51,25 +51,27 @@ Once finished, you will be able to review the offers in the DB (by default it is
 ## Stores
 Stores from which promotions are currently obtained
 
-| Store             | Url                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Abcdin | [https://www.abcdin.cl](https://www.abcdin.cl) |
-| MicroPlay | [https://www.microplay.cl](https://www.microplay.cl) |
-| Hites | [https://www.hites.com](https://www.hites.com) |
-| Best Store | [https://www.beststore.cl](https://www.beststore.cl) |
-| CIntegral | [https://cintegral.cl](https://cintegral.cl) |
-| Ripley | [https://simple.ripley.cl](https://simple.ripley.cl) |
-| Falabella | [https://www.falabella.com/falabella-cl](https://www.falabella.com/falabella-cl) |
-| Jumbo | [https://www.jumbo.cl](https://www.jumbo.cl) |
-| Santa Isabel | [https://www.santaisabel.cl](https://www.santaisabel.cl) |
-| Lider | [https://www.lider.cl/catalogo](https://www.lider.cl/catalogo) |
-| Lider-Supermercado | [https://www.lider.cl/supermercado/](https://www.lider.cl/supermercado/) |
-| La Barra | [https://labarra.cl](https://labarra.cl) |
-| Easy | [https://www.easy.cl](https://www.easy.cl) |
-| Paris | [https://www.paris.cl](https://www.paris.cl) |
-| La Polar | [https://www.lapolar.cl](https://www.lapolar.cl) |
-| Tricot | [https://www.tricot.cl](https://www.tricot.cl/) |
+| Store             | Url                                                                |Time(minutes)
+| ----------------- | ------------------------------------------------------------------ |------------------- |
+| Abcdin | [https://www.abcdin.cl](https://www.abcdin.cl) | 17 |
+| MicroPlay | [https://www.microplay.cl](https://www.microplay.cl) | 16 |
+| Hites | [https://www.hites.com](https://www.hites.com) | 99 |
+| Best Store | [https://www.beststore.cl](https://www.beststore.cl) | 28 |
+| CIntegral | [https://cintegral.cl](https://cintegral.cl) | 23 |
+| Ripley | [https://simple.ripley.cl](https://simple.ripley.cl) | 88 |
+| Falabella | [https://www.falabella.com/falabella-cl](https://www.falabella.com/falabella-cl) | 11 |
+| Jumbo | [https://www.jumbo.cl](https://www.jumbo.cl) | 78 |
+| Santa Isabel | [https://www.santaisabel.cl](https://www.santaisabel.cl) | 52 |
+| Lider | [https://www.lider.cl/catalogo](https://www.lider.cl/catalogo) | 26 |
+| Lider-Supermercado | [https://www.lider.cl/supermercado/](https://www.lider.cl/supermercado/) | 25 |
+| La Barra | [https://labarra.cl](https://labarra.cl) | 1 |
+| Easy | [https://www.easy.cl](https://www.easy.cl) | 88 |
+| Paris | [https://www.paris.cl](https://www.paris.cl) | 112 |
+| La Polar | [https://www.lapolar.cl](https://www.lapolar.cl) | 27 |
+| Tricot | [https://www.tricot.cl](https://www.tricot.cl/) | 11 |
+| Decathlon | [https://www.decathlon.cl](https://www.decathlon.cl) | 8 |
 
+Note: these times can be further reduced by modifying the default delay times in the configuration file, but keep in mind that cpu consumption can skyrocket if not controlled correctly given the parallelism that occurs
 
 ## Products saves
 

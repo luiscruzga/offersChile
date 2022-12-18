@@ -35,6 +35,12 @@
       "allowedCategories": [],
       "totalProductsPerPage": 12
     },
+    "decathlon": {
+      "name": "Decathlon",
+      "baseUrl": "https://www.decathlon.cl",
+      "allowedCategories": [],
+      "totalProductsPerPage": 48
+    },
     "cintegral": {
       "name": "CIntegral",
       "baseUrl": "https://cintegral.cl",

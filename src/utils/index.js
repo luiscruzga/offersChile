@@ -26,7 +26,7 @@ const getDataUrl = async(url, runScripts=false, headers = DEFAULT_HEADERS) => {
       url,
       headers
     }).then(res => res.data);
-    fs.writeFileSync('adidas.html', body);
+
     if (!runScripts) dom = new JSDOM(body);
     else {
       const virtualConsole = new jsdom.VirtualConsole();

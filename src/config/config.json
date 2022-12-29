@@ -118,6 +118,13 @@
       "allowedCategories": ["gamer", "geek", "computación", "computacion", "juguetes", "juegos de mesa", "ofertas"],
       "totalProductsPerPage": 20
     },
+    "movistar": {
+      "name": "Movistar",
+      "baseUrl": "https://catalogo.movistar.cl",
+      "categoriesUrl": "https://catalogo.movistar.cl/fullprice/catalogo/smartphones-liberados.html",
+      "allowedCategories": [],
+      "totalProductsPerPage": 12
+    },
     "olimposports": {
       "name": "Olimpo Sports",
       "baseUrl": "https://olimposports.cl",

@@ -1,8 +1,9 @@
-const storeKey = 'paris';
+const storeKey = 'knasta';
 const { STORES, DELAY_LIMIT, DELAY_TIME, DELAY_TIME_DEFAULT } = require('../../config/config.json');
 const STORE_NAME = STORES[storeKey].name;
-const { getDataUrl, delay, replaceAll } = require('../../utils/');
+const { delay, axiosGet } = require('../../utils/');
 const { saveProducts, deleteProductsByVersion } = require('../../utils/bd');
+const productsCount = STORES[storeKey].totalProductsPerPage;
 let lastVersion = 1;
 
 /**
@@ -16,32 +17,23 @@ let lastVersion = 1;
  */
 const getProductsByPage = async (args) => {
   try {
-    const totalProductsPerPage = STORES[storeKey].totalProductsPerPage;
-    const url = args.url.includes('?') ? `${args.url}&start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}` : `${args.url}?start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}`;
-    const dom = await getDataUrl(url, true);
+    const data = await axiosGet(`${STORES[storeKey].productsUrl}?category=${args.category.id}&page=${args.page}`);
     const productsInfo = [];
-    const products = [...dom.window.document.querySelectorAll('.product-tile[data-product]')];
+    const products = data.pageProps.initialData.products;
 
-    products.forEach(el => {
-      const product = JSON.parse(el.dataset.product);
-      product.url = el.querySelector('a').href;
-
-      const images = [...el.querySelectorAll('img[itemprop="image"]')].map(img => img.dataset.src);
-      const cardPrice = product.dimension20 === '' ? 0 : parseInt(product.dimension20);
-      const offerPrice = product.dimension20 === '' ? 0 : parseInt(product.dimension20);
-      const internetPrice = parseInt(product.price);
-      let normalPrice = product.dimension19 === '' ? 0 : parseInt(product.dimension19);
-      normalPrice = normalPrice === 0 ? offerPrice : normalPrice;
-      const href = product.url;
+    products.forEach(product => {
+      const normalPrice = product.last_variation_price != null ? product.last_variation_price : product.current_price;
+      const offerPrice = product.last_variation_price != null ? product.current_price : 0;
+      const cardPrice = product.price_card || 0;
       productsInfo.push({
         store: STORE_NAME,
-        sku: product.id,
-        name: product.name,
-        description: product.name,
+        sku: product.product_id,
+        name: product.title,
+        description: product.title,
         brand: product.brand,
-        url: href.includes(STORES[storeKey].baseUrl) ? href : `${STORES[storeKey].baseUrl}${href}`,
-        images: images,
-        thumbnail: images[0],
+        url: product.url,
+        images: [product.image],
+        thumbnail: product.image,
         category: args.category.url,
         categoryName: args.category.name,
         discountPercentage: cardPrice !== 0
@@ -55,10 +47,10 @@ const getProductsByPage = async (args) => {
           ? (normalPrice - offerPrice)
           : 0,
         normalPrice: normalPrice,
-        offerPrice: internetPrice !== 0 ? internetPrice : offerPrice,
+        offerPrice: offerPrice,
         cardPrice: cardPrice,
-        isOutOfStock: product.dimension21 === 'True' ? false : true,
-        isUnavailable: product.dimension21 === 'True' ? false : true,
+        isOutOfStock: false,
+        isUnavailable: false,
         version: lastVersion
       });
     });
@@ -79,11 +71,10 @@ const getProductsByPage = async (args) => {
  * @param  {string} url - URL de la categoria de la cual se desea obtener el total de páginas
  * @return {number}
  */
-const getTotalPages = async (url) => {
+const getTotalPages = async (categoryId) => {
   try {
-    const dom = await getDataUrl(url, true);
-    const totalProducts = parseInt(replaceAll(dom.window.document.querySelector('.total-products > span').textContent, '\n', ''));
-    return Math.round(totalProducts / STORES[storeKey].totalProductsPerPage);
+    const data = await axiosGet(`${STORES[storeKey].productsUrl}?category=${categoryId}`);
+    return data.pageProps.initialData.total_pages;
   } catch (err) {
     return 1;
   }
@@ -107,12 +98,15 @@ const getAllProducts = async (categories) => {
     for(let categoryIndex = 0; categoryIndex < categories.length; categoryIndex++) {
       const category = categories[categoryIndex];
       contCategory++;
-      const totalPages = await getTotalPages(category.url);
+      const totalPages = await getTotalPages(category.id);
       contTotalPages += totalPages;
       let productsCategory = [];
+      let pagesWithErrors = 0;
       log.info(`Category [${STORE_NAME}][${category.name}][${totalPages}]`);
       for (let page = 1; page <= totalPages; page++) {
         contPages++;
+        if (pagesWithErrors >= 4) break;
+
         await delay(DELAY_TIME_DEFAULT);
         getProductsByPage({
           url: category.url,
@@ -120,19 +114,20 @@ const getAllProducts = async (categories) => {
           category,
         })
         .then((productsList) => {
+          if (productsList.products.length === 0) pagesWithErrors++;
           productsCategory.push(...productsList.products);
           log.info(`[${STORE_NAME}][${category.name}(${categoryIndex} - ${categories.length})][${page} - ${totalPages}]: ${productsList.products.length}`);
         });
-        if (contPages%DELAY_LIMIT === 0) await delay(DELAY_TIME);
+        if (contPages%DELAY_LIMIT === 0) await delay(DELAY_TIME);        
       }
 
-      await delay(3000);
+      await delay(2000);
       saveProducts(productsCategory);
       log.info(`Category [${STORE_NAME}][${category.name}] Total products: ${productsCategory.length}`);
       productsCategory = [];
     };
 
-    await delay(3000);
+    await delay(2000);
     deleteProductsByVersion(STORE_NAME, lastVersion);
     resolve(productsInfo);
   });

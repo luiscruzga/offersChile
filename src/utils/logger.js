@@ -37,7 +37,8 @@ const Logger = createLogger({
       level: 'info',
       maxSize: 5120000,
       maxFiles: 5,
-      filename: `${__dirname}/../logs/${APP_NAME}-info.log`
+      filename: `${__dirname}/../logs/${APP_NAME}-info.log`,
+      format: format.combine(levelFilter('info'))
     }),
     new transports.Console({
       level: 'info',
@@ -52,13 +53,15 @@ const Logger = createLogger({
       level: 'error',
       maxSize: 5120000,
       maxFiles: 5,
-      filename: `${__dirname}/../logs/${APP_NAME}-error.log`
+      filename: `${__dirname}/../logs/${APP_NAME}-error.log`,
+      format: format.combine(levelFilter('error'))
     }),
     new transports.File({
       level: 'end',
       maxSize: 5120000,
       maxFiles: 5,
       filename: `${__dirname}/../logs/${APP_NAME}-ends.log`,
+      format: format.combine(levelFilter('end'))
     }),
     new transports.Console({
       level: 'end',

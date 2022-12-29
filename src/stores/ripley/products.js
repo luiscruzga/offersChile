@@ -38,7 +38,7 @@ const getProductsByPage = async (args) => {
         brand: product.manufacturer,
         url: product.url,
         images: product.images,
-        thumbnail: product.thumbnail,
+        thumbnail: product.thumbnail.indexOf('https') !== 0 ? product.thumbnail : `https:${product.thumbnail}`,
         category: args.category.url,
         categoryName: args.category.name,
         discountPercentage: product.prices.discountPercentage,

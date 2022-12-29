@@ -35,8 +35,10 @@ const getProductsByPage = async (args) => {
         description: product.querySelector('.product-title').textContent,
         brand: '',
         url: product.querySelector('.product-title').href,
-        images: [product.querySelector('.ttproduct-img1').src],
-        thumbnail: product.querySelector('.ttproduct-img1').src,
+        images: [...product.querySelectorAll('.product-thumbnail > img')].map(el => el.dataset.src),
+        thumbnail: product.querySelector('.product-thumbnail > img').dataset.src
+          ? product.querySelector('.product-thumbnail > img').dataset.src
+          : product.querySelector('.product-thumbnail > img').src,
         category: args.category.url,
         categoryName: args.category.name,
         discountPercentage: offerPrice === 0 ? 0 : (100 - Math.round((offerPrice*100) / normalPrice)),

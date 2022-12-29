@@ -43,7 +43,7 @@ const getUrlCategories = (categories) => {
   const finalCategories = [];
   const allowedCategories = STORES[storeKey].allowedCategories;
   categories.forEach(category => {
-    if (!allowedCategories.find(el => category.item_name.toLowerCase().includes(el.toLowerCase()))) return false;
+    if (allowedCategories.length > 0 && !allowedCategories.find(el => category.item_name.toLowerCase().includes(el.toLowerCase()))) return false;
     
     finalCategories.push({
       name: category.item_name,
@@ -59,16 +59,21 @@ const getUrlCategories = (categories) => {
 */
 const getCategories = async () => {
   log.info(`Getting categories of [${STORES[storeKey].name}]`);
-  const dom = await getDataUrl(STORES[storeKey].baseUrl, true);
+  try {
+    const dom = await getDataUrl(STORES[storeKey].baseUrl, true);
   
-  const data = JSON.parse(dom.window.document.getElementById('__NEXT_DATA__').textContent);
-  const rootCategories = data.props.pageProps.serverData.headerData.taxonomy.entry.all_accesses.categories;
-  let categoriesInfo = getUrlCategories(rootCategories);
-  if (STORES[storeKey].allowedCategories.length > 0) {
-    categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+    const data = JSON.parse(dom.window.document.getElementById('__NEXT_DATA__').textContent);
+    const rootCategories = data.props.pageProps.serverData.headerData.taxonomy.entry.all_accesses.categories;
+    let categoriesInfo = getUrlCategories(rootCategories);
+    if (STORES[storeKey].allowedCategories.length > 0) {
+      categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+    }
+    saveFile(`${__dirname}/categories.json`, categoriesInfo);
+    return categoriesInfo;
+  } catch (err) {
+    const categories = require('./categories.json');
+    return categories;
   }
-  saveFile(`${__dirname}/categories.json`, categoriesInfo);
-  return categoriesInfo;
 }
 
 module.exports = {

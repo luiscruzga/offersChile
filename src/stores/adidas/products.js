@@ -1,7 +1,7 @@
-const storeKey = 'paris';
+const storeKey = 'adidas';
 const { STORES, DELAY_LIMIT, DELAY_TIME, DELAY_TIME_DEFAULT } = require('../../config/config.json');
 const STORE_NAME = STORES[storeKey].name;
-const { getDataUrl, delay, replaceAll } = require('../../utils/');
+const { getDataUrl, delay } = require('../../utils/');
 const { saveProducts, deleteProductsByVersion } = require('../../utils/bd');
 let lastVersion = 1;
 
@@ -16,49 +16,32 @@ let lastVersion = 1;
  */
 const getProductsByPage = async (args) => {
   try {
-    const totalProductsPerPage = STORES[storeKey].totalProductsPerPage;
-    const url = args.url.includes('?') ? `${args.url}&start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}` : `${args.url}?start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}`;
-    const dom = await getDataUrl(url, true);
+    const dom = await getDataUrl(`${args.url}?start=${STORES[storeKey].totalProductsPerPage * (args.page - 1)}`, true, {});
     const productsInfo = [];
-    const products = [...dom.window.document.querySelectorAll('.product-tile[data-product]')];
-
-    products.forEach(el => {
-      const product = JSON.parse(el.dataset.product);
-      product.url = el.querySelector('a').href;
-
-      const images = [...el.querySelectorAll('img[itemprop="image"]')].map(img => img.dataset.src);
-      const cardPrice = product.dimension20 === '' ? 0 : parseInt(product.dimension20);
-      const offerPrice = product.dimension20 === '' ? 0 : parseInt(product.dimension20);
-      const internetPrice = parseInt(product.price);
-      let normalPrice = product.dimension19 === '' ? 0 : parseInt(product.dimension19);
-      normalPrice = normalPrice === 0 ? offerPrice : normalPrice;
-      const href = product.url;
+    const products = dom.window.DATA_STORE.plp.itemList.items;
+                  
+    products.forEach(product => {
+      const normalPrice = product.price;
+      const offerPrice = product.price === product.salePrice ? 0 : product.salePrice;
+      const href = product.link;
       productsInfo.push({
         store: STORE_NAME,
-        sku: product.id,
-        name: product.name,
-        description: product.name,
-        brand: product.brand,
+        sku: product.productId,
+        name: product.displayName,
+        description: product.altText,
+        brand: STORE_NAME,
         url: href.includes(STORES[storeKey].baseUrl) ? href : `${STORES[storeKey].baseUrl}${href}`,
-        images: images,
-        thumbnail: images[0],
+        images: product.images.map(el => el.src),
+        thumbnail: product.image.src,
         category: args.category.url,
         categoryName: args.category.name,
-        discountPercentage: cardPrice !== 0
-          ? (100 - Math.round((cardPrice*100) / normalPrice))
-          : offerPrice !== 0
-          ? (100 - Math.round((offerPrice*100) / normalPrice))
-          : 0,
-        discount: cardPrice !== 0
-          ? (normalPrice - cardPrice)
-          : offerPrice !== 0
-          ? (normalPrice - offerPrice)
-          : 0,
+        discountPercentage: offerPrice === 0 ? 0 : (100 - Math.round((offerPrice*100) / normalPrice)),
+        discount: offerPrice === 0 ? 0 : (normalPrice - offerPrice),
         normalPrice: normalPrice,
-        offerPrice: internetPrice !== 0 ? internetPrice : offerPrice,
-        cardPrice: cardPrice,
-        isOutOfStock: product.dimension21 === 'True' ? false : true,
-        isUnavailable: product.dimension21 === 'True' ? false : true,
+        offerPrice: offerPrice,
+        cardPrice: 0,
+        isOutOfStock: false,
+        isUnavailable: false,
         version: lastVersion
       });
     });
@@ -81,9 +64,11 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (url) => {
   try {
-    const dom = await getDataUrl(url, true);
-    const totalProducts = parseInt(replaceAll(dom.window.document.querySelector('.total-products > span').textContent, '\n', ''));
-    return Math.round(totalProducts / STORES[storeKey].totalProductsPerPage);
+    const dom = await getDataUrl(url, true, {});
+    const totalProducts = dom.window.DATA_STORE.plp.itemList.count;
+    return totalProducts < STORES[storeKey].totalProductsPerPage
+      ? 1
+      : Math.round(totalProducts / STORES[storeKey].totalProductsPerPage);
   } catch (err) {
     return 1;
   }
@@ -132,7 +117,7 @@ const getAllProducts = async (categories) => {
       productsCategory = [];
     };
 
-    await delay(3000);
+    await delay(2000);
     deleteProductsByVersion(STORE_NAME, lastVersion);
     resolve(productsInfo);
   });

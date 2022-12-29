@@ -1,0 +1,130 @@
+[
+  {
+    "name": "MUJER -> PRODUCTO DESTACADO",
+    "url": "https://www.adidas.cl/mujer?grid=true"
+  },
+  {
+    "name": "MUJER -> CALZADO",
+    "url": "https://www.adidas.cl/calzado-mujer"
+  },
+  {
+    "name": "MUJER -> ROPA",
+    "url": "https://www.adidas.cl/ropa-mujer"
+  },
+  {
+    "name": "MUJER -> ACCESORIOS",
+    "url": "https://www.adidas.cl/accesorios-mujer"
+  },
+  {
+    "name": "MUJER -> DEPORTES",
+    "url": "https://www.adidas.cl/performance-mujer"
+  },
+  {
+    "name": "HOMBRE -> PRODUCTO DESTACADO",
+    "url": "https://www.adidas.cl/hombre?grid=true"
+  },
+  {
+    "name": "HOMBRE -> CALZADO",
+    "url": "https://www.adidas.cl/calzado-hombre"
+  },
+  {
+    "name": "HOMBRE -> ROPA",
+    "url": "https://www.adidas.cl/ropa-hombre"
+  },
+  {
+    "name": "HOMBRE -> ACCESORIOS",
+    "url": "https://www.adidas.cl/accesorios-hombre"
+  },
+  {
+    "name": "HOMBRE -> DEPORTES",
+    "url": "https://www.adidas.cl/performance-hombre"
+  },
+  {
+    "name": "NIÑOS -> PRODUCTO DESTACADO",
+    "url": "https://www.adidas.cl/ninos?grid=true"
+  },
+  {
+    "name": "NIÑOS -> CALZADO NIÑOS",
+    "url": "https://www.adidas.cl/calzado-nino"
+  },
+  {
+    "name": "NIÑOS -> CALZADO NIÑAS",
+    "url": "https://www.adidas.cl/calzado-nina"
+  },
+  {
+    "name": "NIÑOS -> ACCESORIOS",
+    "url": "https://www.adidas.cl/accesorios-ninos"
+  },
+  {
+    "name": "NIÑOS -> DEPORTES",
+    "url": "https://www.adidas.cl/performance-ninos"
+  },
+  {
+    "name": "NIÑOS -> TALLA CALZADO",
+    "url": "https://www.adidas.cl/calzado-ninos"
+  },
+  {
+    "name": "DEPORTES -> FÚTBOL",
+    "url": "https://www.adidas.cl/futbol"
+  },
+  {
+    "name": "DEPORTES -> RUNNING",
+    "url": "https://www.adidas.cl/running"
+  },
+  {
+    "name": "DEPORTES -> GYM & TRAINING",
+    "url": "https://www.adidas.cl/training"
+  },
+  {
+    "name": "DEPORTES -> OUTDOOR",
+    "url": "https://www.adidas.cl/outdoor"
+  },
+  {
+    "name": "DEPORTES -> SKATEBOARDING",
+    "url": "https://www.adidas.cl/skateboarding"
+  },
+  {
+    "name": "DEPORTES -> OTROS DEPORTES",
+    "url": "https://www.adidas.cl/performance"
+  },
+  {
+    "name": "MUNDO ADIDAS -> NUESTRO MUNDO",
+    "url": "https://www.adidas.cl/novedades"
+  },
+  {
+    "name": "MUNDO ADIDAS -> COLABORACIONES",
+    "url": "https://www.adidas.cl/colaboraciones"
+  },
+  {
+    "name": "MUNDO ADIDAS -> MODA SOSTENIBLE",
+    "url": "https://www.adidas.cl/sustentabilidad"
+  },
+  {
+    "name": "MUNDO ADIDAS -> ORIGINALS",
+    "url": "https://www.adidas.cl/originals"
+  },
+  {
+    "name": "MUNDO ADIDAS -> PERFORMANCE",
+    "url": "https://www.adidas.cl/performance"
+  },
+  {
+    "name": "MUNDO ADIDAS -> SPORTSWEAR",
+    "url": "https://www.adidas.cl/sportswear"
+  },
+  {
+    "name": "OFERTAS -> OFERTAS",
+    "url": "https://www.adidas.cl/ofertas"
+  },
+  {
+    "name": "OFERTAS -> HOMBRE",
+    "url": "https://www.adidas.cl/ofertas-hombre"
+  },
+  {
+    "name": "OFERTAS -> MUJER",
+    "url": "https://www.adidas.cl/ofertas-mujer"
+  },
+  {
+    "name": "OFERTAS -> NIÑOS",
+    "url": "https://www.adidas.cl/ofertas-ninos"
+  }
+]

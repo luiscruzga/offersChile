@@ -2,7 +2,12 @@ const fs = require('fs');
 const axios = require('axios');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
-const virtualConsole = new jsdom.VirtualConsole();
+
+const DEFAULT_HEADERS = {
+  'Accept': '*/*',
+  'Accept-Encoding': 'gzip,deflate,compress',
+  'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 OPR/92.0.0.0'
+};
 
 const escapeRegExp = (string) => {
   return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -12,24 +17,25 @@ const replaceAll = (str, term, replacement) => {
   return str.replace(new RegExp(escapeRegExp(term), 'g'), replacement).trim();
 };
 
-const getDataUrl = async(url, runScripts=false) => {
+const getDataUrl = async(url, runScripts=false, headers = DEFAULT_HEADERS) => {
   let dom;
   try {
     //const body = await axios.get(url).then(res => res.data);
     const body = await axios({
       method: 'GET',
-      url: url,
-      headers: {
-        'Accept': '*/*',
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 OPR/92.0.0.0'
-      }
+      url,
+      headers
     }).then(res => res.data);
-    //fs.writeFileSync('pruebaabcdin.html', body);
+    fs.writeFileSync('adidas.html', body);
     if (!runScripts) dom = new JSDOM(body);
-    else dom = new JSDOM(body, { runScripts: "dangerously", displayErrors: false, virtualConsole });
-
-    dom.window.onerror = function (msg) {}
-  } catch (e) {}
+    else {
+      const virtualConsole = new jsdom.VirtualConsole();
+      dom = new JSDOM(body, { runScripts: "dangerously", displayErrors: false, virtualConsole });
+    }
+    dom.window.onerror = (msg) => {console.log('');}
+  } catch (e) {
+    log.error(e.message);
+  }
 
   return dom;
 }
@@ -96,7 +102,9 @@ const diffMinutes = (dt2, dt1) => {
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 
-const transformPrice = (price) => parseInt((replaceAll(price.replace('$', ''), '.', '')).trim());
+const transformPrice = (price) => parseInt((replaceAll(replaceAll(price.replace('$', ''), '.', ''),'\n', '')).trim());
+
+const numberWithCommas = (number) => number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
 module.exports = {
   replaceAll,
@@ -108,4 +116,5 @@ module.exports = {
   axiosPost,
   axiosPostDom,
   transformPrice,
+  numberWithCommas,
 }

@@ -51,7 +51,9 @@ const getCategories = async () => {
       getUrlCategories(category, categoriesInfo, '', '');
     });
   }
-  categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+  if (STORES[storeKey].allowedCategories.length > 0) {
+    categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+  }
   saveFile(`${__dirname}/categories.json`, categoriesInfo);
   return categoriesInfo;
 }

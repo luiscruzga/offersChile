@@ -27,16 +27,17 @@ const getProductsByPage = async (args) => {
       const offerPrice = product.querySelector('.block__regular-strikethrough')
         ? transformPrice(product.querySelector('.block__price .price').textContent)
         : 0;
-
+      let image = product.querySelector('.thumbnail img').dataset.src;
+      image = image.indexOf('http') !== -1 ? image : `${STORES[storeKey].baseUrl}${image}`;
       productsInfo.push({
         store: STORE_NAME,
-        sku: product.dataset.idProduct,
+        sku: product.querySelector('.thumbnail--product').dataset.idProduct,
         name: product.querySelector('.name-product a').textContent,
         description: product.querySelector('.name-product a').textContent,
         brand: '',
         url: product.querySelector('.name-product a').href,
-        images: [product.querySelector('.thumbnail img').src],
-        thumbnail: product.querySelector('.thumbnail img').src,
+        images: [image],
+        thumbnail: image,
         category: args.category.url,
         categoryName: args.category.name,
         discountPercentage: offerPrice === 0 ? 0 : (100 - Math.round((offerPrice*100) / normalPrice)),

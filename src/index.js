@@ -1,12 +1,14 @@
+require('dotenv').config();
 global.mongoose = require('mongoose');
-const { MONGODB } = require('./config/config.json');
 const { Logger } = require('./utils/logger');
+const { PGConnect, PGDisconnect } = require('./utils/pg');
 global.log = Logger;
 const versions = require('./config/versions.json');
 const { saveFile } = require('./utils/');
+const { reportProducts } = require('./telegram/');
 
 const stores = require('./stores');
-const filterStore = '';
+const filterStore = process.env.FILTER_STORE || '';
 
 const main = async () => {
   const date = new Date();
@@ -14,13 +16,41 @@ const main = async () => {
   versions.version++;
   saveFile(__dirname + '/config/versions.json', versions);
 
+  // Disconnect PG DB
+  await PGDisconnect();
+
+  // Connect to PG BD
+  await PGConnect();
   for (let key in stores) {
     if ((filterStore !== '' && filterStore === key) || (filterStore === '')) stores[key].main();
   }
 }
 
-mongoose.connect(MONGODB,  { useNewUrlParser: true, useUnifiedTopology: true })
-.then(() => {
-  log.info(`Connection to the db established`);
+const telegramReport = async () => {
+  // Telegram report products
+  reportProducts();
+  setInterval(() => {
+    reportProducts();
+  }, 60000 * process.env.TELEBOT_TIME_INTERVAL);
+}
+
+if (process.env.MONGO_DB && process.env.MONGO_DB !== '') {
+  mongoose.set('strictQuery', false);
+  mongoose.connect(process.env.MONGO_DB,  { useNewUrlParser: true, useUnifiedTopology: true })
+  .then(() => {
+    log.info(`Connection to the db established`);
+    telegramReport();
+
+    main();
+    setInterval(() => {
+      main();
+    }, 60000 * process.env.INTERVAL_MAIN);
+  });
+} else {
+  telegramReport();
+
   main();
-});
+  setInterval(() => {
+    main();
+  }, 60000 * process.env.INTERVAL_MAIN);
+}

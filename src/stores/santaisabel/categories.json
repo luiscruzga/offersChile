@@ -535,6 +535,16 @@
     "path": "/comidas-preparadas/platos-de-fondo"
   },
   {
+    "name": "Juguetería -> Juguetes",
+    "url": "https://www.santaisabel.cl/jugueteria/juguetes",
+    "path": "/jugueteria/juguetes"
+  },
+  {
+    "name": "Juguetería -> Duendes Mágicos",
+    "url": "https://www.santaisabel.cl/jugueteria/duendes-magicos",
+    "path": "/jugueteria/duendes-magicos"
+  },
+  {
     "name": "Bebidas Vegetales -> Bebidas Vegetales",
     "url": "https://www.santaisabel.cl/mundo-vegano/bebidas-vegetales",
     "path": "/mundo-vegano/bebidas-vegetales"

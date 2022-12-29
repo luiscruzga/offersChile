@@ -5,6 +5,7 @@ Get the best offers and promotions from different online stores in Chile so you 
 
 The system is in charge of carrying out web scraping to the different online stores in search of the best offers and these are stored in a mongodb database for later use in other systems.
 
+In addition, it allows you to inform about offers through a telegram channel.
 # Previous Requirements
 
 It is required to have previously installed the following
@@ -12,6 +13,8 @@ It is required to have previously installed the following
 `nodejs >= 14.x`
 
 `mongodb >= 5.x`
+
+`postgresql`
 ## Installation
 
 Install this project with npm
@@ -54,22 +57,26 @@ Stores from which promotions are currently obtained
 | Store             | Url                                                                |Time(minutes)
 | ----------------- | ------------------------------------------------------------------ |------------------- |
 | Abcdin | [https://www.abcdin.cl](https://www.abcdin.cl) | 17 |
-| MicroPlay | [https://www.microplay.cl](https://www.microplay.cl) | 16 |
-| Hites | [https://www.hites.com](https://www.hites.com) | 99 |
-| Best Store | [https://www.beststore.cl](https://www.beststore.cl) | 28 |
+| Adidas | [https://www.adidas.cl](https://www.adidas.cl) | 20 |
+| Best Store | [https://www.beststore.cl](https://www.beststore.cl) | 27 |
 | CIntegral | [https://cintegral.cl](https://cintegral.cl) | 23 |
-| Ripley | [https://simple.ripley.cl](https://simple.ripley.cl) | 88 |
+| Dafiti | [https://www.dafiti.cl](https://www.dafiti.cl) | 161 |
+| Decathlon | [https://www.decathlon.cl](https://www.decathlon.cl) | 8 |
+| Easy | [https://www.easy.cl](https://www.easy.cl) | 73 |
 | Falabella | [https://www.falabella.com/falabella-cl](https://www.falabella.com/falabella-cl) | 11 |
-| Jumbo | [https://www.jumbo.cl](https://www.jumbo.cl) | 78 |
-| Santa Isabel | [https://www.santaisabel.cl](https://www.santaisabel.cl) | 52 |
+| Hites | [https://www.hites.com](https://www.hites.com) | 79 |
+| Jumbo | [https://www.jumbo.cl](https://www.jumbo.cl) | 64 |
+| Knasta | [https://knasta.cl](https://knasta.cl) | 60 |
+| La Barra | [https://labarra.cl](https://labarra.cl) | 1 |
+| La Polar | [https://www.lapolar.cl](https://www.lapolar.cl) | 25 |
 | Lider | [https://www.lider.cl/catalogo](https://www.lider.cl/catalogo) | 26 |
 | Lider-Supermercado | [https://www.lider.cl/supermercado/](https://www.lider.cl/supermercado/) | 25 |
-| La Barra | [https://labarra.cl](https://labarra.cl) | 1 |
-| Easy | [https://www.easy.cl](https://www.easy.cl) | 88 |
-| Paris | [https://www.paris.cl](https://www.paris.cl) | 112 |
-| La Polar | [https://www.lapolar.cl](https://www.lapolar.cl) | 27 |
-| Tricot | [https://www.tricot.cl](https://www.tricot.cl/) | 11 |
-| Decathlon | [https://www.decathlon.cl](https://www.decathlon.cl) | 8 |
+| MicroPlay | [https://www.microplay.cl](https://www.microplay.cl) | 16 |
+| Olimpo Sports | [https://olimposports.cl](https://olimposports.cl) | 1 |
+| Paris | [https://www.paris.cl](https://www.paris.cl) | 88 |
+| Ripley | [https://simple.ripley.cl](https://simple.ripley.cl) | 74 |
+| Santa Isabel | [https://www.santaisabel.cl](https://www.santaisabel.cl) | 46 |
+| Tricot | [https://www.tricot.cl](https://www.tricot.cl/) | 10 |
 
 Note: these times can be further reduced by modifying the default delay times in the configuration file, but keep in mind that cpu consumption can skyrocket if not controlled correctly given the parallelism that occurs
 

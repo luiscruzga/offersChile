@@ -1,7 +1,7 @@
 [
   {
-    "name": "Navidad",
-    "url": "https://www.falabella.com/falabella-cl/category/cat3640002/Navidad"
+    "name": "Herramientas y maquinarias",
+    "url": "https://www.falabella.com/falabella-cl/category/cat8620074/Herramientas-y-maquinas"
   },
   {
     "name": "Celulares y planes",
@@ -18,5 +18,81 @@
   {
     "name": "Muebles y organización",
     "url": "https://www.falabella.com/falabella-cl/category/cat1008/Muebles-y-Organizacion"
+  },
+  {
+    "name": "Dormitorio",
+    "url": "https://www.falabella.com/falabella-cl/category/cat1005/Dormitorio"
+  },
+  {
+    "name": "Cocina y baño",
+    "url": "https://www.falabella.com/falabella-cl/category/cat01/Cocina-y-Bano"
+  },
+  {
+    "name": "Decoración e iluminación",
+    "url": "https://www.falabella.com/falabella-cl/category/cat2026/Decoracion-e-iluminacion"
+  },
+  {
+    "name": "Jardín y terraza",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10011/Jardin-y-terraza"
+  },
+  {
+    "name": "Deportes y aire libre",
+    "url": "https://www.falabella.com/falabella-cl/page/tienda-de-deporte"
+  },
+  {
+    "name": "Mujer",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7330051/Mujer"
+  },
+  {
+    "name": "Niños y juguetería",
+    "url": "https://www.falabella.com/falabella-cl/category/cat13550007/Ninos-y-Jugueteria"
+  },
+  {
+    "name": "Hombre",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7450065/Hombre"
+  },
+  {
+    "name": "Bebés",
+    "url": "https://www.falabella.com/falabella-cl/category/cat2008/Mundo-Bebe"
+  },
+  {
+    "name": "Zapatos",
+    "url": "https://www.falabella.com/falabella-cl/collection/ver-todo-zapatos"
+  },
+  {
+    "name": "Belleza y salud",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7660002/Belleza--higiene-y-salud"
+  },
+  {
+    "name": "Mascotas",
+    "url": "https://www.falabella.com/falabella-cl/category/cat9360001/Mascotas"
+  },
+  {
+    "name": "Pisos, pinturas y terminaciones",
+    "url": ""
+  },
+  {
+    "name": "Construcción",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10005/Construccion-y-ferreteria"
+  },
+  {
+    "name": "Ferretería",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10005/Construccion-y-ferreteria"
+  },
+  {
+    "name": "Automotriz",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10006/Automotriz"
+  },
+  {
+    "name": "Supermercado",
+    "url": "https://www.falabella.com/falabella-cl/page/supermercado"
+  },
+  {
+    "name": "Música, libros y papelería",
+    "url": ""
+  },
+  {
+    "name": "Otras categorías",
+    "url": ""
   }
 ]

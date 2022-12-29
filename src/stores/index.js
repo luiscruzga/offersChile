@@ -1,6 +1,7 @@
 const STORES_MODULES = [];
 const { STORES } = require('../config/config.json');
 const { diffMinutes } = require("../utils/");
+const { loadUniqueProducts } = require("../utils/pg");
 const fs = require('fs');
 
 const directories = fs.readdirSync(__dirname, { withFileTypes: true })
@@ -19,8 +20,9 @@ directories.forEach((directory) => {
     
     const startDate = new Date();
     const categories = await getCategories();  
-    const products = await getAllProducts(categories);
-  
+    await getAllProducts(categories);
+    await loadUniqueProducts(STORES[storeKey].name);
+
     const endDate = new Date();
     const finalTime = diffMinutes(startDate, endDate);
     log.end('================================================================================');

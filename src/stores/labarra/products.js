@@ -27,7 +27,7 @@ const getProductsByPage = async (args) => {
       location: '748',
       page: args.page,
       pagination: STORES[storeKey].totalProductsPerPage
-    }, {'api-key': 'public1'});
+    }, {'api-key': 'public1', 'Accept': '*/*', 'Accept-Encoding': 'gzip,deflate,compress', 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36 OPR/92.0.0.0'});
     const productsInfo = [];
     const products = data.rows;
 

@@ -1,6 +1,6 @@
 const storeKey = 'santaisabel';
 const { STORES } = require('../../config/config.json');
-const { getDataUrl, saveFile } = require("../../utils");
+const { getDataUrl, saveFile, axiosGet } = require("../../utils");
 
 /**
  * Permite recorrer el listado de categorias y obtener como lista
@@ -29,15 +29,31 @@ const getUrlCategories = (categories) => {
 * Permite obtener un listado de categorias desde la misma store
 */
 const getCategories = async () => {
-  log.info(`Getting categories of [${STORES[storeKey].name}]`);
-  const dom = await getDataUrl(STORES[storeKey].categoriesUrl, true);
-  
-  let categoriesInfo = getUrlCategories(JSON.parse(dom.window.__renderData).menu.acf.items);
-  if (STORES[storeKey].allowedCategories.length > 0) {
-    categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+  try {
+    log.info(`Getting categories of [${STORES[storeKey].name}]`);
+    const dom = await getDataUrl(STORES[storeKey].categoriesUrl, true);
+    
+    let categoriesInfo = getUrlCategories(JSON.parse(dom.window.__renderData).menu.acf.items);
+    if (STORES[storeKey].allowedCategories.length > 0) {
+      categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+    }
+    saveFile(`${__dirname}/categories.json`, categoriesInfo);
+    return categoriesInfo;  
+  } catch (error) {
+    try {
+      const html = await axiosGet(STORES[storeKey].categoriesUrl);
+      let categoriesInfo = getUrlCategories(JSON.parse(html.split('window.__renderData = ').pop().split(';\n\t</script>')[0].slice(1,-1)));
+      if (STORES[storeKey].allowedCategories.length > 0) {
+        categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+      }
+      saveFile(`${__dirname}/categories.json`, categoriesInfo);
+      return categoriesInfo;  
+    } catch (error) {
+      console.log(`[${STORES[storeKey].name}]Category Error: `, error.message);
+      const categories = require('./categories.json');
+      return categories; 
+    }
   }
-  saveFile(`${__dirname}/categories.json`, categoriesInfo);
-  return categoriesInfo;
 }
 
 module.exports = {

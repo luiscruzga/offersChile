@@ -140,6 +140,11 @@
     "path": "/mi-bebe/rodados"
   },
   {
+    "name": "Congelados -> Helados y Postres",
+    "url": "https://www.jumbo.cl/congelados/helados-y-postres",
+    "path": "/congelados/helados-y-postres"
+  },
+  {
     "name": "Congelados -> Verduras Congeladas",
     "url": "https://www.jumbo.cl/congelados/verduras-congeladas",
     "path": "/congelados/verduras-congeladas"
@@ -158,11 +163,6 @@
     "name": "Congelados -> Nuggets y Apanados",
     "url": "https://www.jumbo.cl/congelados/nuggets-y-apanados",
     "path": "/congelados/nuggets-y-apanados"
-  },
-  {
-    "name": "Congelados -> Helados y Postres",
-    "url": "https://www.jumbo.cl/congelados/helados-y-postres",
-    "path": "/congelados/helados-y-postres"
   },
   {
     "name": "Congelados -> Churrascos, Lomitos y Otros",
@@ -826,8 +826,8 @@
   },
   {
     "name": "Juguetería -> Marcas Destacadas",
-    "url": "https://www.jumbo.cl/jugueteria/marcas-destacadas",
-    "path": "/jugueteria/marcas-destacadas"
+    "url": "https://www.jumbo.cl/jugueteria?b=Barbie%2CDisney%20Princesas%2CFisher-Price%2CFunko%2CHasbro%2CHasbro%20Gaming%2CHot%20Wheels%2CJuegos%20Hasbro%2CLOL%2CLego%2CNerf%2CPaw%20Patrol%2CPeppa%20Pig%2CPlay-Doh%2CPokemon&page=1",
+    "path": "/jugueteria?b=Barbie%2CDisney%20Princesas%2CFisher-Price%2CFunko%2CHasbro%2CHasbro%20Gaming%2CHot%20Wheels%2CJuegos%20Hasbro%2CLOL%2CLego%2CNerf%2CPaw%20Patrol%2CPeppa%20Pig%2CPlay-Doh%2CPokemon&page=1"
   },
   {
     "name": "Escolares y Librería -> Artículos de Oficina",

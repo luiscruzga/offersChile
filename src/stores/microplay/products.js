@@ -86,7 +86,7 @@ const getProductsByPage = async (args) => {
  * @param  {string} url - URL de la categoria de la cual se desea obtener el total de páginas
  * @return {number}
  */
-const getTotalPages = async (url) => {
+const getTotalPages = async (category) => {
   return 100;
 }
 /**
@@ -108,6 +108,7 @@ const getAllProducts = async (categories) => {
       const totalPages = await getTotalPages(category.url);
       let pagesWithErrors = 0;
       let totalProducts = 0;
+      let productsCategory = [];
       log.info(`Category [${STORE_NAME}][${category.name}][${totalPages}]`);
       for (let page = 1; page <= totalPages; page++) {
         contPages++;
@@ -122,14 +123,16 @@ const getAllProducts = async (categories) => {
           if (productsList.products.length === 0 ) pagesWithErrors++;
           if (productsList.products.length < 20) pagesWithErrors = 10;
           log.info(`[${STORE_NAME}][${category.name}(${categoryIndex} - ${categories.length})][${page} - ${totalPages}]: ${productsList.products.length}`);
-          saveProducts(productsList.products);
+          productsCategory.push(...productsList.products);
           totalProducts += productsList.products.length;
         });
         if (contPages%DELAY_LIMIT === 0) await delay(DELAY_TIME);
       }
 
       await delay(3000);
+      saveProducts(productsCategory);
       log.info(`Category [${STORE_NAME}][${category.name}] Total products: ${totalProducts}`);
+      productsCategory = [];
     };
 
     await delay(2000);
@@ -139,5 +142,7 @@ const getAllProducts = async (categories) => {
 }
 
 module.exports = {
+  getProductsByPage,
+  getTotalPages,
   getAllProducts,
 }

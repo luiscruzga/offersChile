@@ -99,7 +99,8 @@
       "categoriesUrl": "https://gtw.sf.cloudccu.cl/dev/private/v1.0.0/categories_labarra/get_product_categories/",
       "productsUrl": "https://gtw.sf.cloudccu.cl/dev/private/v1.0.0/product_labarra/getProductList/",
       "allowedCategories": [],
-      "totalProductsPerPage": 1000
+      "totalProductsPerPage": 1000,
+      "useOwnProducts": true
     },
     "lapolar": {
       "name": "La Polar",
@@ -128,7 +129,8 @@
       "baseUrl": "https://www.microplay.cl",
       "productsUrl": "https://www.microplay.cl/productos/reader",
       "allowedCategories": ["gamer", "geek", "computación", "computacion", "juguetes", "juegos de mesa", "ofertas"],
-      "totalProductsPerPage": 20
+      "totalProductsPerPage": 20,
+      "useOwnProducts": true
     },
     "movistar": {
       "name": "Movistar",

@@ -66,6 +66,10 @@ const getProductsByPage = async (args) => {
   }
 }
 
+const getTotalPages = async (category) => {
+  return 1;
+}
+
 /**
  * Permite orquestar la extracción de productos dada una lista de categorias, dichos productos son almacenados en la BD Mongo
  * @param  {[object]} categories - Lista de categorias
@@ -104,5 +108,7 @@ const getAllProducts = async (categories) => {
 }
 
 module.exports = {
+  getProductsByPage,
+  getTotalPages,
   getAllProducts,
 }

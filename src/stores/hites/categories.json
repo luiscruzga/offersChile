@@ -144,10 +144,6 @@
     "url": "https://www.hites.com/mujer/marcas-destacadas/"
   },
   {
-    "name": "Mujer -> Outlet Mujer",
-    "url": "https://www.hites.com/mujer/outlet-mujer/"
-  },
-  {
     "name": "Hombre -> Ropa Hombre Tops",
     "url": "https://www.hites.com/hombre/ropa-hombre-tops/"
   },
@@ -178,10 +174,6 @@
   {
     "name": "Hombre -> Marcas Destacadas",
     "url": "https://www.hites.com/hombre/marcas-destacadas/"
-  },
-  {
-    "name": "Hombre -> Outlet Hombre",
-    "url": "https://www.hites.com/hombre/outlet-hombre/"
   },
   {
     "name": "Zapatos -> Zapatos Mujer",
@@ -318,10 +310,6 @@
   {
     "name": "Outlet -> Outlet Hombre",
     "url": "https://www.hites.com/outlet/outlet-hombre/"
-  },
-  {
-    "name": "Outlet -> Outlet Infantil",
-    "url": "https://www.hites.com/outlet/outlet-infantil/"
   },
   {
     "name": "Outlet -> Outlet Deporte",

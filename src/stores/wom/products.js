@@ -1,10 +1,9 @@
-const storeKey = 'hites';
+const storeKey = 'wom';
 const { STORES, DELAY_LIMIT, DELAY_TIME, DELAY_TIME_DEFAULT } = require('../../config/config.json');
 const STORE_NAME = STORES[storeKey].name;
-const { getDataUrl, delay, replaceAll, transformPrice } = require('../../utils/');
+const { axiosGet, delay, transformPrice, replaceAll } = require('../../utils/');
 const { saveProducts, deleteProductsByVersion } = require('../../utils/bd');
 let lastVersion = 1;
-const totalPerPage = STORES[storeKey].totalProductsPerPage;
 
 /**
  * Permite obtener los productos dada una categoria y página
@@ -17,54 +16,47 @@ const totalPerPage = STORES[storeKey].totalProductsPerPage;
  */
 const getProductsByPage = async (args) => {
   try {
-    const startProducts = ((args.page-1) * totalPerPage);
-    const dom = await getDataUrl(`${args.url}?sz=${totalPerPage}&start=${startProducts}&srule=discount-off`, true);
+    const data = await axiosGet(STORES[storeKey].productsUrl.replace('**PAGE**', args.page).replace('**CATEGORY_ID**', args.category.id));
     const productsInfo = [];
-    const products = [...dom.window.document.querySelectorAll('.product-tile')];
-
+    const products = data.items;
+                  
     products.forEach(product => {
-      const cardPrice = product.querySelector('.price-item.hites-price') ? transformPrice(product.querySelector('.price-item.hites-price').textContent) : 0;
-      const offerPrice = product.querySelector('.price-item.sales .value') ? product.querySelector('.price-item.sales .value').getAttribute('content') : 0;
-      const normalPrice = product.querySelector('.price-item.list .value') ? product.querySelector('.price-item.list .value').getAttribute('content') : 0;
-      const href = product.querySelector('.product-name--bundle').href;
-      const hasStock = product.querySelector('.outofstock').closest('.d-none') ? true : false;
-
+      const normalPrice = product.prices_array.full_price !== null && product.prices_array.full_price !== transformPrice(product.Precio)
+        ? product.prices_array.full_price
+        : transformPrice(product.Precio);
+      const offerPrice = product.prices_array.full_price !== null && product.prices_array.full_price !== transformPrice(product.Precio)
+        ? transformPrice(product.Precio)
+        : 0;
+      const image = `${STORES[storeKey].baseUrl}/content/product/${product.sku}/images/defalut.png`;
+      
       productsInfo.push({
         store: STORE_NAME,
-        sku: product.dataset.pid,
-        name: product.querySelector('.product-name--bundle').textContent,
-        description: product.querySelector('.product-name--bundle').textContent,
-        brand: product.querySelector('.product-brand').textContent,
-        url: href.includes(STORES[storeKey].baseUrl) ? href : `${STORES[storeKey].baseUrl}${href}`,
-        images: [product.querySelector('.tile-image').src],
-        thumbnail: product.querySelector('.tile-image').src,
+        sku: product.sku,
+        name: product.name,
+        description: product.meta_description,
+        brand: product.marca,
+        url: `${STORES[storeKey].baseUrl}/equipos/${product.sku}/${replaceAll(product.name, ' ', '-')}`,
+        images: [image],
+        thumbnail: image,
         category: args.category.url,
         categoryName: args.category.name,
-        discountPercentage: cardPrice !== 0
-          ? (100 - Math.round((cardPrice*100) / normalPrice))
-          : offerPrice !== 0
-          ? (100 - Math.round((offerPrice*100) / normalPrice))
-          : 0,
-        discount: cardPrice !== 0
-          ? (normalPrice - cardPrice)
-          : offerPrice !== 0
-          ? (normalPrice - offerPrice)
-          : 0,
+        discountPercentage: offerPrice === 0 ? 0 : (100 - Math.round((offerPrice*100) / normalPrice)),
+        discount: offerPrice === 0 ? 0 : (normalPrice - offerPrice),
         normalPrice: normalPrice,
         offerPrice: offerPrice,
-        cardPrice: cardPrice,
-        isOutOfStock: !hasStock,
-        isUnavailable: !hasStock,
+        cardPrice: 0,
+        isOutOfStock: product.is_sellable === '1' && (!product.qty || (product.qty && product.qty > 0)) ? false : true,
+        isUnavailable: product.visibility === '1' ? false : true,
         version: lastVersion
       });
     });
-    
+      
     return {
       category: args.category.name,
       products: productsInfo
     };
   } catch (e){
-    console.error(e);
+    log.error(STORE_NAME, e);
     return {
       category: args.category.name,
       products: [],
@@ -76,11 +68,13 @@ const getProductsByPage = async (args) => {
  * @param  {string} url - URL de la categoria de la cual se desea obtener el total de páginas
  * @return {number}
  */
-const getTotalPages = async (url) => {
+const getTotalPages = async (category) => {
   try {
-    const dom = await getDataUrl(`${url}?sz=${totalPerPage}&start=0&srule=discount-off`, true);
-    const totalProducts = parseInt(replaceAll(dom.window.document.querySelector('.product-results-count').textContent.split('de ').pop().split(')')[0], ',',''));
-    return Math.round(totalProducts / totalPerPage);
+    const data = await axiosGet(STORES[storeKey].productsUrl.replace('**PAGE**', '1').replace('**CATEGORY_ID**', category.id));
+    const totalProducts = data.total_count;
+    return totalProducts < STORES[storeKey].totalProductsPerPage
+      ? 1
+      : Math.round(totalProducts / STORES[storeKey].totalProductsPerPage);
   } catch (err) {
     return 1;
   }
@@ -97,11 +91,13 @@ const getAllProducts = async (categories) => {
 
     const productsInfo = [];
     let contPages = 0;
+    let contCategory = 0;
     
     //categories.forEach(async (category, categoryIndex) => {
     for(let categoryIndex = 0; categoryIndex < categories.length; categoryIndex++) {
       const category = categories[categoryIndex];
-      const totalPages = await getTotalPages(category.url);
+      contCategory++;
+      const totalPages = await getTotalPages(category);
       let totalProducts = 0;
       log.info(`Category [${STORE_NAME}][${category.name}][${totalPages}]`);
       for (let page = 1; page <= totalPages; page++) {

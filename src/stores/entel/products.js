@@ -1,10 +1,9 @@
-const storeKey = 'hites';
+const storeKey = 'entel';
 const { STORES, DELAY_LIMIT, DELAY_TIME, DELAY_TIME_DEFAULT } = require('../../config/config.json');
 const STORE_NAME = STORES[storeKey].name;
-const { getDataUrl, delay, replaceAll, transformPrice } = require('../../utils/');
+const { getDataUrl, delay, transformPrice } = require('../../utils/');
 const { saveProducts, deleteProductsByVersion } = require('../../utils/bd');
 let lastVersion = 1;
-const totalPerPage = STORES[storeKey].totalProductsPerPage;
 
 /**
  * Permite obtener los productos dada una categoria y página
@@ -17,54 +16,49 @@ const totalPerPage = STORES[storeKey].totalProductsPerPage;
  */
 const getProductsByPage = async (args) => {
   try {
-    const startProducts = ((args.page-1) * totalPerPage);
-    const dom = await getDataUrl(`${args.url}?sz=${totalPerPage}&start=${startProducts}&srule=discount-off`, true);
+    const dom = await getDataUrl(`${args.url}?p=${args.page}`);
     const productsInfo = [];
-    const products = [...dom.window.document.querySelectorAll('.product-tile')];
-
+    const data = JSON.parse(dom.window.document.getElementById('rootProductInfo_JSON').textContent.split("</var>")[0]);
+    const products = data.main.find(el => el['@type'] === 'equipmentListCampaigns').records;
+                  
     products.forEach(product => {
-      const cardPrice = product.querySelector('.price-item.hites-price') ? transformPrice(product.querySelector('.price-item.hites-price').textContent) : 0;
-      const offerPrice = product.querySelector('.price-item.sales .value') ? product.querySelector('.price-item.sales .value').getAttribute('content') : 0;
-      const normalPrice = product.querySelector('.price-item.list .value') ? product.querySelector('.price-item.list .value').getAttribute('content') : 0;
-      const href = product.querySelector('.product-name--bundle').href;
-      const hasStock = product.querySelector('.outofstock').closest('.d-none') ? true : false;
-
+      const normalPrice = product.attributes.referencePriceFormatted !== null && product.attributes.referencePriceFormatted.length > 0
+        ? transformPrice(product.attributes.referencePriceFormatted[0])
+        : transformPrice(product.attributes.priceFormatted[0]);
+      const offerPrice = product.attributes.referencePriceFormatted !== null && product.attributes.referencePriceFormatted.length > 0
+        ? transformPrice(product.attributes.priceFormatted[0])
+        : 0;
+      let image = product.attributes.productImage[0];
+      image = image.indexOf('http') !== -1 ? image : `${STORES[storeKey].baseUrl}${image}`;
+      const href = product.attributes.seoUrl[0];
       productsInfo.push({
         store: STORE_NAME,
-        sku: product.dataset.pid,
-        name: product.querySelector('.product-name--bundle').textContent,
-        description: product.querySelector('.product-name--bundle').textContent,
-        brand: product.querySelector('.product-brand').textContent,
+        sku: product.attributes.sku[0],
+        name: product.attributes.displayName[0],
+        description: product.attributes.description[0],
+        brand: product.attributes.brand[0],
         url: href.includes(STORES[storeKey].baseUrl) ? href : `${STORES[storeKey].baseUrl}${href}`,
-        images: [product.querySelector('.tile-image').src],
-        thumbnail: product.querySelector('.tile-image').src,
+        images: [image],
+        thumbnail: image,
         category: args.category.url,
         categoryName: args.category.name,
-        discountPercentage: cardPrice !== 0
-          ? (100 - Math.round((cardPrice*100) / normalPrice))
-          : offerPrice !== 0
-          ? (100 - Math.round((offerPrice*100) / normalPrice))
-          : 0,
-        discount: cardPrice !== 0
-          ? (normalPrice - cardPrice)
-          : offerPrice !== 0
-          ? (normalPrice - offerPrice)
-          : 0,
+        discountPercentage: offerPrice === 0 ? 0 : (100 - Math.round((offerPrice*100) / normalPrice)),
+        discount: offerPrice === 0 ? 0 : (normalPrice - offerPrice),
         normalPrice: normalPrice,
         offerPrice: offerPrice,
-        cardPrice: cardPrice,
-        isOutOfStock: !hasStock,
-        isUnavailable: !hasStock,
+        cardPrice: 0,
+        isOutOfStock: product.attributes.inventoryStatus[0] === 'IN_STOCK' ? false : true,
+        isUnavailable: product.attributes.inventoryStatus[0] === 'IN_STOCK' ? false : true,
         version: lastVersion
       });
     });
-    
+      
     return {
       category: args.category.name,
       products: productsInfo
     };
   } catch (e){
-    console.error(e);
+    log.error(STORE_NAME, e);
     return {
       category: args.category.name,
       products: [],
@@ -78,9 +72,13 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (url) => {
   try {
-    const dom = await getDataUrl(`${url}?sz=${totalPerPage}&start=0&srule=discount-off`, true);
-    const totalProducts = parseInt(replaceAll(dom.window.document.querySelector('.product-results-count').textContent.split('de ').pop().split(')')[0], ',',''));
-    return Math.round(totalProducts / totalPerPage);
+    const dom = await getDataUrl(url);
+    const data = JSON.parse(dom.window.document.getElementById('rootProductInfo_JSON').textContent.split("</var>")[0]);
+    const totalProducts = data.main.find(el => el['@type'] === 'equipmentListCampaigns').totalNumRecs;
+    const totalPerPage = data.main.find(el => el['@type'] === 'equipmentListCampaigns').recsPerPage || STORES[storeKey].totalProductsPerPage;
+    return totalProducts < totalPerPage
+      ? 1
+      : Math.round(totalProducts / totalPerPage);
   } catch (err) {
     return 1;
   }
@@ -97,10 +95,12 @@ const getAllProducts = async (categories) => {
 
     const productsInfo = [];
     let contPages = 0;
+    let contCategory = 0;
     
     //categories.forEach(async (category, categoryIndex) => {
     for(let categoryIndex = 0; categoryIndex < categories.length; categoryIndex++) {
       const category = categories[categoryIndex];
+      contCategory++;
       const totalPages = await getTotalPages(category.url);
       let totalProducts = 0;
       log.info(`Category [${STORE_NAME}][${category.name}][${totalPages}]`);

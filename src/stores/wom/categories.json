@@ -1,0 +1,22 @@
+[
+  {
+    "id": 3,
+    "name": "Equipos -> Portabilidad",
+    "url": "https://store.wom.cl/equipos/portabilidad"
+  },
+  {
+    "id": 4,
+    "name": "Equipos -> Linea Nueva",
+    "url": "https://store.wom.cl/equipos/linea-nueva"
+  },
+  {
+    "id": 1,
+    "name": "Equipos -> Renovación",
+    "url": "https://store.wom.cl/equipos/renovacion"
+  },
+  {
+    "id": 2,
+    "name": "Equipos -> Prepago",
+    "url": "https://store.wom.cl/equipos/prepago"
+  }
+]

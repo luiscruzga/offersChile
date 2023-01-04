@@ -2,12 +2,12 @@
   {
     "name": "YOGA Y PILATES",
     "url": "https://olimposports.cl/categoria-producto/yoga-y-pilates/",
-    "totalProducts": 32
+    "totalProducts": 31
   },
   {
     "name": "PRODUCTOS NO DEPORTIVOS",
     "url": "https://olimposports.cl/categoria-producto/productos-no-deportivos/",
-    "totalProducts": 68
+    "totalProducts": 65
   },
   {
     "name": "PACK PROMOCIONALES",
@@ -17,22 +17,22 @@
   {
     "name": "DEPORTE EN EQUIPO",
     "url": "https://olimposports.cl/categoria-producto/deporte-en-equipo/",
-    "totalProducts": 31
+    "totalProducts": 32
   },
   {
     "name": "CICLISMO Y TREKKING",
     "url": "https://olimposports.cl/categoria-producto/ciclismo-y-trekking/",
-    "totalProducts": 47
+    "totalProducts": 49
   },
   {
     "name": "CALZAS Y ROPA",
     "url": "https://olimposports.cl/categoria-producto/olimpo-woman/",
-    "totalProducts": 12
+    "totalProducts": 11
   },
   {
     "name": "BARRAS Y PESAS",
     "url": "https://olimposports.cl/categoria-producto/barras-y-pesas/",
-    "totalProducts": 49
+    "totalProducts": 47
   },
   {
     "name": "BANCAS Y MÁQUINAS",
@@ -42,6 +42,6 @@
   {
     "name": "ACCESORIOS E IMPLEMENTOS",
     "url": "https://olimposports.cl/categoria-producto/accesorios-e-implementos/",
-    "totalProducts": 142
+    "totalProducts": 143
   }
 ]

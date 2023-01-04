@@ -864,24 +864,24 @@
     "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-computadores/"
   },
   {
-    "name": "Outlet -> Tecno Outlet -> iPads y Tablets Outlet",
+    "name": "Outlet -> Tecno Outlet -> Tablets Outlet",
     "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-ipads-y-tablets/"
   },
   {
-    "name": "Outlet -> Tecno Outlet -> Smartwatch Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-smartwatch/"
+    "name": "Outlet -> Tecno Outlet -> Impresoras Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-impresoras/"
   },
   {
     "name": "Outlet -> Tecno Outlet -> Consolas y Videojuegos",
     "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-consolas-y-videojuegos/"
   },
   {
-    "name": "Outlet -> Tecno Outlet -> Smart Home Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-smart-home/"
+    "name": "Outlet -> Tecno Outlet -> Smartwatch Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-smartwatch/"
   },
   {
-    "name": "Outlet -> Tecno Outlet -> Accesorios de Computación Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-accesorios-de-computacion/"
+    "name": "Outlet -> Tecno Outlet -> Smart Home Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-smart-home/"
   },
   {
     "name": "Outlet -> Dormitorio Outlet -> Ropa de Cama Outlet",
@@ -889,7 +889,7 @@
   },
   {
     "name": "Outlet -> Dormitorio Outlet -> Dormitorio Infantil Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-dormitorio/outlet-dormitorio-infantil/"
+    "url": "https://www.paris.cl/outlet/outlet-dormitorio/outlet-dormitorio-infantil-1/"
   },
   {
     "name": "Outlet -> Dormitorio Outlet -> Muebles de Dormitorio Outlet",
@@ -898,6 +898,14 @@
   {
     "name": "Outlet -> Muebles Outlet -> Living y Sala de Estar Outlet",
     "url": "https://www.paris.cl/outlet/outlet-muebles/outlet-living/"
+  },
+  {
+    "name": "Outlet -> Muebles Outlet -> Comedor Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-muebles/outlet-comedor/"
+  },
+  {
+    "name": "Outlet -> Muebles Outlet -> Muebles de Terraza Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-muebles/outlet-terrazas/"
   },
   {
     "name": "Outlet -> Muebles Outlet -> Muebles de Oficina Outlet",
@@ -916,24 +924,24 @@
     "url": "https://www.paris.cl/outlet/outlet-jardin-y-terraza/outlet-jardin/"
   },
   {
-    "name": "Outlet -> Deco Outlet -> Cortinas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-cortinas/"
+    "name": "Outlet -> Deco Outlet -> Mesa Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-mesa/"
   },
   {
     "name": "Outlet -> Deco Outlet -> Decoración Outlet",
     "url": "https://www.paris.cl/outlet/outlet-deco/outlet-decoracion/"
   },
   {
-    "name": "Outlet -> Deco Outlet -> Menaje Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-menaje/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Toallas y Accesorios de Baño Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-toallas-accesorios-bano/"
+    "name": "Outlet -> Deco Outlet -> Baño Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-bano/"
   },
   {
     "name": "Outlet -> Deco Outlet -> Iluminación Outlet",
     "url": "https://www.paris.cl/outlet/outlet-deco/outlet-iluminacion/"
+  },
+  {
+    "name": "Outlet -> Deco Outlet -> Cortinas Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-cortinas/"
   },
   {
     "name": "Outlet -> Mujer Outlet -> Poleras y Blusas Outlet",
@@ -1076,8 +1084,16 @@
     "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-bicicletas/"
   },
   {
-    "name": "Outlet -> Deportes Outlet -> Ropa Deportiva Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-ropa-deportiva/"
+    "name": "Outlet -> Deportes Outlet -> Ropa Deportiva Mujer Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-ropa-deportiva-mujer/"
+  },
+  {
+    "name": "Outlet -> Deportes Outlet -> Ropa Deportiva Hombre Outlet",
+    "url": "https://www.paris.cl/search?cgid=OutDepoRpDptvhm"
+  },
+  {
+    "name": "Outlet -> Deportes Outlet -> Parkas y Chaquetas Deportivas Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-parkas-y-chaquetas-deportivas/"
   },
   {
     "name": "Outlet -> Deportes Outlet -> Equipamiento Deportivo Outlet",

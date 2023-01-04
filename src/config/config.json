@@ -54,6 +54,18 @@
       "totalProductsPerPage": 40,
       "sha256Hash": "bcada47094de2f66fac0c160f1910df7936315c8ff6f4430fca73fe600993b3f"
     },
+    "elcontainer": {
+      "name": "El Container",
+      "baseUrl": "https://www.elcontainer.cl",
+      "allowedCategories": [],
+      "totalProductsPerPage": 40
+    },
+    "entel": {
+      "name": "Entel",
+      "baseUrl": "https://miportal.entel.cl",
+      "allowedCategories": ["Renueva tu equipo", "Porta o Contrata + Equipo", "Equipo Liberado", "Accesorios"],
+      "totalProductsPerPage": 24
+    },
     "falabella": {
       "name": "Falabella",
       "baseUrl": "https://www.falabella.com/falabella-cl",
@@ -156,6 +168,32 @@
       "baseUrl": "https://www.tricot.cl/",
       "allowedCategories": [],
       "totalProductsPerPage": 24
+    },
+    "wom": {
+      "name": "WOM",
+      "baseUrl": "https://store.wom.cl",
+      "categoriesUrl": "https://store.wom.cl/page-data/sq/d/861128663.json",
+      "productsUrl": "https://store-srv.wom.cl/rest/V1/content/getList?searchCriteria[filterGroups][0][filters][0][field]=attribute_set_id&searchCriteria[filterGroups][0][filters][0][value]=11&searchCriteria[filterGroups][1][filters][0][field]=type_id&searchCriteria[filterGroups][1][filters][0][value]=configurable&searchCriteria[pageSize]=50&searchCriteria[currentPage]=**PAGE**&searchCriteria[sortOrders][0][field]=&searchCriteria[filterGroups][10][filters][0][field]=status&searchCriteria[filterGroups][10][filters][0][value]=1&product_type=**CATEGORY_ID**",
+      "allowedCategories": ["Equipos -> Portabilidad", "Equipos -> Linea Nueva", "Equipos -> Renovación", "Equipos -> Prepago"],
+      "categoriesId": [
+        {
+          "name": "Equipos -> Renovación",
+          "id": 1
+        },
+        {
+          "name": "Equipos -> Prepago",
+          "id": 2
+        },
+        {
+          "name": "Equipos -> Portabilidad",
+          "id": 3
+        },
+        {
+          "name": "Equipos -> Linea Nueva",
+          "id": 4
+        }
+      ],
+      "totalProductsPerPage": 50
     }
   }
 }

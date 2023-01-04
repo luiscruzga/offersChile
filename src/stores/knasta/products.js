@@ -91,17 +91,13 @@ const getAllProducts = async (categories) => {
 
     const productsInfo = [];
     let contPages = 0;
-    let contTotalPages = 0;
-    let contCategory = 0;
     
     //categories.forEach(async (category, categoryIndex) => {
     for(let categoryIndex = 0; categoryIndex < categories.length; categoryIndex++) {
       const category = categories[categoryIndex];
-      contCategory++;
       const totalPages = await getTotalPages(category.id);
-      contTotalPages += totalPages;
-      let productsCategory = [];
       let pagesWithErrors = 0;
+      let totalProducts = 0;
       log.info(`Category [${STORE_NAME}][${category.name}][${totalPages}]`);
       for (let page = 1; page <= totalPages; page++) {
         contPages++;
@@ -115,16 +111,15 @@ const getAllProducts = async (categories) => {
         })
         .then((productsList) => {
           if (productsList.products.length === 0) pagesWithErrors++;
-          productsCategory.push(...productsList.products);
           log.info(`[${STORE_NAME}][${category.name}(${categoryIndex} - ${categories.length})][${page} - ${totalPages}]: ${productsList.products.length}`);
+          saveProducts(productsList.products);
+          totalProducts += productsList.products.length;
         });
         if (contPages%DELAY_LIMIT === 0) await delay(DELAY_TIME);        
       }
 
-      await delay(2000);
-      saveProducts(productsCategory);
-      log.info(`Category [${STORE_NAME}][${category.name}] Total products: ${productsCategory.length}`);
-      productsCategory = [];
+      await delay(3000);
+      log.info(`Category [${STORE_NAME}][${category.name}] Total products: ${totalProducts}`);
     };
 
     await delay(2000);

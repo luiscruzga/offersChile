@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Equipos -> Porta o Contrata + Equipo",
+    "url": "https://miportal.entel.cl/personas/catalogo/equipo-plan"
+  },
+  {
+    "name": "Equipos -> Renueva tu Equipo",
+    "url": "https://miportal.entel.cl/personas/catalogo/celulares"
+  },
+  {
+    "name": "Equipos -> Equipo Liberado",
+    "url": "https://miportal.entel.cl/personas/catalogo/celulares"
+  },
+  {
+    "name": "Accesorios -> Audio",
+    "url": "https://miportal.entel.cl/personas/catalogo/accesorios/audio"
+  },
+  {
+    "name": "Accesorios -> Smartwatch",
+    "url": "https://miportal.entel.cl/personas/catalogo/accesorios/smartwatch"
+  },
+  {
+    "name": "Accesorios -> Notebooks y Tablets",
+    "url": "https://miportal.entel.cl/personas/catalogo/accesorios/tablets"
+  },
+  {
+    "name": "Accesorios -> Smart Home",
+    "url": "https://miportal.entel.cl/personas/catalogo/accesorios/smarthome_office"
+  },
+  {
+    "name": "Accesorios -> Gaming y entretención",
+    "url": "https://miportal.entel.cl/personas/catalogo/accesorios/gaming"
+  },
+  {
+    "name": "Accesorios -> Mundo tecnología",
+    "url": "https://entel.cl/accesorios/mundo/"
+  }
+]

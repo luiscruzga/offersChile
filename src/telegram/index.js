@@ -77,7 +77,7 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
 
 
   bot.on('/getId', (msg) => {
-    console.log('/getId', msg.chat.id);
+    log.end(`[TELEGRAM][COMMAND][/getId]: ${msg.chat.id}`);
     return bot.sendMessage(msg.chat.id, `Chat ID: ${ msg.chat.id }`);
   });
 
@@ -100,7 +100,7 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
       const username = !msg.from.first_name && !msg.from.last_name
         ? msg.from.username
         : (msg.from.first_name || '' + ' ' + msg.from.last_name || '').trim();
-      log.end(`[TELEGRAM][COMMAND][/search][${userId}][${username}]`);
+      log.end(`[TELEGRAM][COMMAND][/search][${msg.message_id}][${userId}][${username}]`);
       await PGConnectTelegram();
       const products = await getProductsRandom(searchFilter, percentageFilter);
       for (let i = 0; i < products.length; i++) {
@@ -126,14 +126,14 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
         await bot.sendMessage(userId, 'No se encontraron productos con los criterios especificados!');
       }
       await PGDisconnectTelegram();
-      log.end(`[TELEGRAM][COMMAND][/search][${userId}][${username}]: Products reported: ${products.length}`);
+      log.end(`[TELEGRAM][COMMAND][/search][${msg.message_id}][${userId}][${username}]: Products reported: ${products.length}`);
     }
   }
   bot.on([/^\/search (.+)$/], async (msg, props) => {
     sendRandomProducts(msg, props);
   });
 
-  bot.on('/search', (msg, props) => {
+  bot.on('/random', (msg, props) => {
     sendRandomProducts(msg, props, true);
   });
 

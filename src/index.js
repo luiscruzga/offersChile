@@ -8,7 +8,10 @@ const { saveFile } = require('./utils/');
 const { reportProducts } = require('./telegram/');
 
 const stores = require('./stores');
-const filterStore = process.env.FILTER_STORE || '';
+let filterStore = process.env.FILTER_STORE || '';
+if (filterStore !== '') {
+  filterStore = filterStore.split(';')
+}
 
 const main = async () => {
   const date = new Date();
@@ -22,7 +25,7 @@ const main = async () => {
   // Connect to PG BD
   await PGConnect();
   for (let key in stores) {
-    if ((filterStore !== '' && filterStore.split(';').includes(key)) || (filterStore === '')) stores[key].main();
+    if ((filterStore !== '' && filterStore.includes(key)) || (filterStore === '')) stores[key].main();
   }
 }
 

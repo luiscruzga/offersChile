@@ -56,12 +56,12 @@
     "url": "https://www.adidas.cl/accesorios-ninos"
   },
   {
-    "name": "NIÑOS -> DEPORTES",
-    "url": "https://www.adidas.cl/performance-ninos"
-  },
-  {
     "name": "NIÑOS -> TALLA CALZADO",
     "url": "https://www.adidas.cl/calzado-ninos"
+  },
+  {
+    "name": "NIÑOS -> DEPORTES",
+    "url": "https://www.adidas.cl/performance-ninos"
   },
   {
     "name": "DEPORTES -> FÚTBOL",

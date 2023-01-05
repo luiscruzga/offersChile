@@ -101,10 +101,13 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
         ? msg.from.username
         : (msg.from.first_name || '' + ' ' + msg.from.last_name || '').trim();
       log.end(`[TELEGRAM][COMMAND][/search][${msg.message_id}][${userId}][${username}]`);
-      await PGConnectTelegram();
+
       const products = await getProductsRandom(searchFilter, percentageFilter);
+      if (!products) {
+        await bot.sendMessage(userId, 'Ooops, ha ocurrido un problema, favor reintenta de nuevo más tarde!');
+        return false;
+      }
       for (let i = 0; i < products.length; i++) {
-        await delay(2000);
         const product = products[i];
         const caption = getCaptionForTelegram(product);
         // SendPhoto to telegram channel
@@ -125,7 +128,6 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
       if (products.length === 0) {
         await bot.sendMessage(userId, 'No se encontraron productos con los criterios especificados!');
       }
-      await PGDisconnectTelegram();
       log.end(`[TELEGRAM][COMMAND][/search][${msg.message_id}][${userId}][${username}]: Products reported: ${products.length}`);
     }
   }

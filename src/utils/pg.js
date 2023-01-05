@@ -113,7 +113,17 @@ const getProductsToReport = async (store = null) => {
 
 const getProductsRandom = async (filter = null, discountpercentage = null, total = null) => {
   try {
-    const { rows } = await clientTelegram.query(`SELECT * FROM "ocf_get_random_products"($1, $2, $3)`, [filter, discountpercentage, total]);
+    const newClient = new Client({
+      host: process.env.PG_HOST,
+      port: process.env.PG_PORT,
+      database: process.env.PG_DB,
+      user: process.env.PG_USER,
+      password: process.env.PG_PASSWORD,
+    })
+    
+    await newClient.connect();
+    const { rows } = await newClient.query(`SELECT * FROM "ocf_get_random_products"($1, $2, $3)`, [filter, discountpercentage, total]);
+    newClient.end();
     return rows;
   } catch (error) {
     log.error('PG ERROR 6: ', error);

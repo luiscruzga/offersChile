@@ -50,8 +50,6 @@ const getAllProducts = async (storeKey, categories, getTotalPages, getProductsBy
       productsCategory = [];
     };
 
-    await delay(2000);
-    deleteProductsByVersion(STORE_NAME, lastVersion);
     resolve(productsInfo);
   });
 }

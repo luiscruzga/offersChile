@@ -84,9 +84,7 @@ const bulkInsert = async (data) => {
 
 const bulkDelete = async (store, version) => {
   try {
-    //const client = await connect();
     await client.query(`DELETE FROM "OCT_ALL_PRODUCTS" WHERE 1=1 AND store=$1 and version<$2`, [store, version]);
-    //client.end;
   } catch (error) {
     log.error('PG ERROR 2: ', error);
     evaluateError(error, bulkDelete(store, version));

@@ -149,7 +149,7 @@
     "paris": {
       "name": "Paris",
       "baseUrl": "https://www.paris.cl",
-      "allowedCategories": ["electro", "tecno", "regalos", "outlet"],
+      "allowedCategories": ["electro", "tecno", "outlet"],
       "totalProductsPerPage": 24
     },
     "ripley": {

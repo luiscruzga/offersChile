@@ -135,8 +135,6 @@ const getAllProducts = async (categories) => {
       productsCategory = [];
     };
 
-    await delay(2000);
-    deleteProductsByVersion(STORE_NAME, lastVersion);
     resolve(productsInfo);
   });
 }

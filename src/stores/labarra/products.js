@@ -101,8 +101,6 @@ const getAllProducts = async (categories) => {
       if (contCategory%DELAY_LIMIT === 0) await delay(DELAY_TIME);    
     };
 
-    await delay(2000);
-    deleteProductsByVersion(STORE_NAME, lastVersion);
     resolve(productsInfo);
   });
 }

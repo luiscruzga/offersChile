@@ -1,8 +1,14 @@
 let reportProducts;
 
 if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
-  const { PGConnectTelegram, PGDisconnectTelegram, getProductsToReport, saveReportedProduct } = require('../utils/pg');
-  const { numberWithCommas, delay } = require('../utils/');
+  const {
+    PGConnectTelegram,
+    PGDisconnectTelegram,
+    getProductsToReport,
+    getProductsRandom,
+    saveReportedProduct,
+  } = require('../utils/pg');
+  const { delay, getCaptionForTelegram, isNumeric } = require('../utils/');
   const telebot = require('telebot');
   const bot = new telebot({
     token: process.env.TELEBOT_API,
@@ -25,15 +31,7 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
     for (let i = 0; i < products.length; i++) {
       await delay(2000);
       const product = products[i];
-      const caption = `- % dcto: ${product.discountpercentage}%
-  - Tienda: ${product.store}
-  - Producto: ${product.name}
-  - Marca: ${product.brand}
-  - Descuento: $${numberWithCommas(product.discount)}
-  - Precio Normal: $${numberWithCommas(product.normalprice)}
-  - Precio Oferta: $${numberWithCommas(product.offerprice)}
-  - Precio Tarjeta: $${numberWithCommas(product.cardprice)}
-  - URL: ${product.url}`;
+      const caption = getCaptionForTelegram(product);
       // SendPhoto to telegram channel
       if (product.thumbnail !== '') {
         const thumbnail = product.thumbnail.indexOf('https') == 0 ? product.thumbnail : `https:${product.thumbnail}`;
@@ -81,6 +79,62 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
   bot.on('/getId', (msg) => {
     console.log('/getId', msg.chat.id);
     return bot.sendMessage(msg.chat.id, `Chat ID: ${ msg.chat.id }`);
+  });
+
+  const lastMessages = [];
+  const sendRandomProducts = async (msg, props, direct) => {
+    if (lastMessages.indexOf(msg.message_id) === -1 && !direct) lastMessages.push(msg.message_id);
+    else {
+      const userId = msg.chat.id;
+      const paramString = props.match && props.match.length > 0 ? props.match[1] : '';
+      const percentageFilter = isNumeric(paramString.split(' ')[0])
+        ? paramString.split(' ')[0]
+        : isNumeric(paramString.split(' ').pop())
+        ? paramString.split(' ').pop()
+        : null;
+      const searchFilter = percentageFilter === null && paramString !== ''
+        ? paramString
+        : percentageFilter !== null && paramString !== ''
+        ? paramString.replace(percentageFilter, '').trim()
+        : paramString;
+      const username = !msg.from.first_name && !msg.from.last_name
+        ? msg.from.username
+        : (msg.from.first_name || '' + ' ' + msg.from.last_name || '').trim();
+      log.end(`[TELEGRAM][COMMAND][/search][${userId}][${username}]`);
+      await PGConnectTelegram();
+      const products = await getProductsRandom(searchFilter, percentageFilter);
+      for (let i = 0; i < products.length; i++) {
+        await delay(2000);
+        const product = products[i];
+        const caption = getCaptionForTelegram(product);
+        // SendPhoto to telegram channel
+        if (product.thumbnail !== '') {
+          const thumbnail = product.thumbnail.indexOf('https') == 0 ? product.thumbnail : `https:${product.thumbnail}`;
+          await bot.sendPhoto(userId, thumbnail, { caption })
+          .catch(async (error) => {
+            if (error.description.includes('Too Many Requests')) await delay(20000);
+            if (error.description.includes('Bad Request')) {
+              await bot.sendMessage(userId, caption);    
+            }
+          });
+        } else {
+          await bot.sendMessage(userId, caption);
+        }
+      }
+      
+      if (products.length === 0) {
+        await bot.sendMessage(userId, 'No se encontraron productos con los criterios especificados!');
+      }
+      await PGDisconnectTelegram();
+      log.end(`[TELEGRAM][COMMAND][/search][${userId}][${username}]: Products reported: ${products.length}`);
+    }
+  }
+  bot.on([/^\/search (.+)$/], async (msg, props) => {
+    sendRandomProducts(msg, props);
+  });
+
+  bot.on('/search', (msg, props) => {
+    sendRandomProducts(msg, props, true);
   });
 
   bot.start();

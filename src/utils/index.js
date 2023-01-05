@@ -106,6 +106,20 @@ const transformPrice = (price) => parseInt((replaceAll(replaceAll(price.replace(
 
 const numberWithCommas = (number) => number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
 
+const isNumeric = (value) => /^-?\d+$/.test(value);
+
+const getCaptionForTelegram = (product) => {
+  return `- % dcto: ${product.discountpercentage}%
+- Tienda: ${product.store}
+- Producto: ${product.name}
+- Marca: ${product.brand}
+- Descuento: $${numberWithCommas(product.discount)}
+- Precio Normal: $${numberWithCommas(product.normalprice)}
+- Precio Oferta: $${numberWithCommas(product.offerprice)}
+- Precio Tarjeta: $${numberWithCommas(product.cardprice)}
+- URL: ${product.url}`;
+}
+
 module.exports = {
   replaceAll,
   getDataUrl,
@@ -117,4 +131,6 @@ module.exports = {
   axiosPostDom,
   transformPrice,
   numberWithCommas,
+  isNumeric,
+  getCaptionForTelegram,
 }

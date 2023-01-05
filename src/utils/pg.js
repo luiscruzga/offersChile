@@ -111,6 +111,15 @@ const getProductsToReport = async (store = null) => {
   }  
 }
 
+const getProductsRandom = async (filter = null, discountpercentage = null, total = null) => {
+  try {
+    const { rows } = await clientTelegram.query(`SELECT * FROM "ocf_get_random_products"($1, $2, $3)`, [filter, discountpercentage, total]);
+    return rows;
+  } catch (error) {
+    log.error('PG ERROR 6: ', error);
+  }  
+}
+
 const saveReportedProduct = async (product) => {
   try {
     const command = 'INSERT INTO "oct_products_reported" (store, name, brand, discountpercentage, discount, normalprice, offerprice, cardprice) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
@@ -131,4 +140,5 @@ module.exports = {
   loadUniqueProducts,
   getProductsToReport,
   saveReportedProduct,
+  getProductsRandom,
 }

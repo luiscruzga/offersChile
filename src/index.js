@@ -39,7 +39,7 @@ if (process.env.MONGO_DB && process.env.MONGO_DB !== '') {
   mongoose.connect(process.env.MONGO_DB,  { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     log.info(`Connection to the db established`);
-    telegramReport();
+    if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') telegramReport();
 
     main();
     setInterval(() => {
@@ -47,7 +47,7 @@ if (process.env.MONGO_DB && process.env.MONGO_DB !== '') {
     }, 60000 * process.env.INTERVAL_MAIN);
   });
 } else {
-  telegramReport();
+  if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') telegramReport();
 
   main();
   setInterval(() => {

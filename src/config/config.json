@@ -37,7 +37,7 @@
     "dafiti": {
       "name": "Dafiti",
       "baseUrl": "https://www.dafiti.cl",
-      "allowedCategories": [],
+      "allowedCategories": ["dafiti home", "sale"],
       "totalProductsPerPage": 48
     },
     "decathlon": {

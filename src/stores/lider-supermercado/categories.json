@@ -1,90 +1,110 @@
 [
   {
-    "name": "Campañas",
-    "url": "https://www.lider.cl/supermercado//category/Campañas"
+    "name": "Destacados Mundo Lider",
+    "url": "https://www.lider.cl/supermercado//category/Destacados_Mundo_Lider"
+  },
+  {
+    "name": "Habitaciones Imperfectas",
+    "url": "https://www.lider.cl/supermercado//category/Habitaciones_Imperfectas"
   },
   {
     "name": "Tiempo Libre",
     "url": "https://www.lider.cl/supermercado//category/Tiempo_Libre"
   },
   {
-    "name": "Conoce Nuestras Marcas",
-    "url": "https://www.lider.cl/supermercado//category/Conoce_Nuestras_Marcas"
+    "name": "Nuestras Marcas",
+    "url": "https://www.lider.cl/supermercado//category/Nuestras_Marcas"
   },
   {
-    "name": "Salud y Estilos de Vida",
-    "url": "https://www.lider.cl/supermercado//category/Salud_y_Estilos_de_Vida"
+    "name": "Mainstays",
+    "url": "https://www.lider.cl/supermercado//category/Mainstays"
   },
   {
-    "name": "Carnes y Pescados",
-    "url": "https://www.lider.cl/supermercado//category/Carnes_y_Pescados"
+    "name": "Tecno",
+    "url": "https://www.lider.cl/supermercado//category/Tecno"
   },
   {
-    "name": "Congelados",
-    "url": "https://www.lider.cl/supermercado//category/Congelados"
+    "name": "Celulares",
+    "url": "https://www.lider.cl/supermercado//category/Celulares"
   },
   {
-    "name": "Frutas y Verduras",
-    "url": "https://www.lider.cl/supermercado//category/Frutas_y_Verduras"
+    "name": "Computación",
+    "url": "https://www.lider.cl/supermercado//category/Computación"
   },
   {
-    "name": "Frescos y Lácteos",
-    "url": "https://www.lider.cl/supermercado//category/Frescos_y_Lácteos"
+    "name": "Electrohogar",
+    "url": "https://www.lider.cl/supermercado//category/Electrohogar"
   },
   {
-    "name": "Platos Preparados",
-    "url": "https://www.lider.cl/supermercado//category/Platos_Preparados"
+    "name": "Climatización",
+    "url": "https://www.lider.cl/supermercado//category/Climatización"
   },
   {
-    "name": "Panadería y Pasteleria",
-    "url": "https://www.lider.cl/supermercado//category/Panadería_y_Pasteleria"
+    "name": "Dormitorio",
+    "url": "https://www.lider.cl/supermercado//category/Dormitorio"
   },
   {
-    "name": "Desayuno y Dulces",
-    "url": "https://www.lider.cl/supermercado//category/Desayuno_y_Dulces"
+    "name": "Muebles-",
+    "url": "https://www.lider.cl/supermercado//category/Muebles-"
   },
   {
-    "name": "Colaciones",
-    "url": "https://www.lider.cl/supermercado//category/Colaciones"
+    "name": "Decohogar",
+    "url": "https://www.lider.cl/supermercado//category/Decohogar"
   },
   {
-    "name": "Despensa",
-    "url": "https://www.lider.cl/supermercado//category/Despensa"
+    "name": "Belleza y Cuidado Personal",
+    "url": "https://www.lider.cl/supermercado//category/Belleza_y_Cuidado_Personal"
   },
   {
-    "name": "Bebidas y Licores",
-    "url": "https://www.lider.cl/supermercado//category/Bebidas_y_Licores"
+    "name": "Deportes",
+    "url": "https://www.lider.cl/supermercado//category/Deportes"
+  },
+  {
+    "name": "Parrillas y Jardín",
+    "url": "https://www.lider.cl/supermercado//category/Parrillas_y_Jardín"
+  },
+  {
+    "name": "Aire libre",
+    "url": "https://www.lider.cl/supermercado//category/Aire_libre"
+  },
+  {
+    "name": "Juguetes y Entretención",
+    "url": "https://www.lider.cl/supermercado//category/Juguetes_y_Entretención"
+  },
+  {
+    "name": "Mundo Bebé",
+    "url": "https://www.lider.cl/supermercado//category/Mundo_Bebé"
+  },
+  {
+    "name": "Automóvil",
+    "url": "https://www.lider.cl/supermercado//category/Automóvil"
+  },
+  {
+    "name": "Ferretería",
+    "url": "https://www.lider.cl/supermercado//category/Ferretería"
   },
   {
     "name": "Mascotas",
     "url": "https://www.lider.cl/supermercado//category/Mascotas"
   },
   {
-    "name": "Mundo Bebé y Juguetería",
-    "url": "https://www.lider.cl/supermercado//category/Mundo_Bebé_y_Juguetería"
+    "name": "Librería y Cumpleaños",
+    "url": "https://www.lider.cl/supermercado//category/Librería_y_Cumpleaños"
   },
   {
-    "name": "Limpieza - Aseo",
-    "url": "https://www.lider.cl/supermercado//category/Limpieza_-_Aseo"
-  },
-  {
-    "name": "Perfumería - Salud",
-    "url": "https://www.lider.cl/supermercado//category/Perfumería_-_Salud"
-  },
-  {
-    "name": "Hogar",
-    "url": "https://www.lider.cl/supermercado//category/Hogar"
+    "name": "Manualidades y Costura",
+    "url": "https://www.lider.cl/supermercado//category/Manualidades_y_Costura"
   },
   {
     "name": "Vestuario",
     "url": "https://www.lider.cl/supermercado//category/Vestuario"
   },
   {
-    "name": "Librería y Cumpleaños",
-    "url": "https://www.lider.cl/supermercado//category/Librería_y_Cumpleaños"
+    "name": "A3D",
+    "url": "https://www.lider.cl/supermercado//category/A3D"
   },
   {
-    "name": "Entretenimiento",
-    "url": "https://www.lider.cl/supermercado//category/Entretenimiento"
+    "name": "Salud y Estilos de Vida",
+    "url": "https://www.lider.cl/supermercado//category/Salud_y_Estilos_de_Vida"
   }
 ]

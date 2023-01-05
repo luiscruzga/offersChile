@@ -104,7 +104,7 @@ const loadUniqueProducts = async (store) => {
 
 const getProductsToReport = async (store = null) => {
   try {
-    const { rows } = await clientTelegram.query(`SELECT * FROM "ocf_get_products_to_report"($1) WHERE isoutofstock = 'N'`, [store]);
+    const { rows } = await clientTelegram.query(`SELECT * FROM "ocf_get_products_to_report"($1, $2) WHERE isoutofstock = 'N'`, [store, process.env.PERCENTAGE_FILTER]);
     return rows;
   } catch (error) {
     log.error('PG ERROR 4: ', error);

@@ -22,7 +22,7 @@ const main = async () => {
   // Connect to PG BD
   await PGConnect();
   for (let key in stores) {
-    if ((filterStore !== '' && filterStore === key) || (filterStore === '')) stores[key].main();
+    if ((filterStore !== '' && filterStore.split(';').includes(key)) || (filterStore === '')) stores[key].main();
   }
 }
 

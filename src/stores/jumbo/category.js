@@ -12,10 +12,11 @@ const getUrlCategories = (categories) => {
     if (level1.items) {
       level1.items.forEach(level2 => {
         if (level2.active) {
+          const path = level2.url.indexOf('/') === 0 ? level2.url : `/${level2.url}`;
           finalCategories.push({
             name: `${level1.title} -> ${level2.title}`,
-            url: `${STORES[storeKey].baseUrl}${level2.url}`,
-            path: level2.url,
+            url: `${STORES[storeKey].baseUrl}${path}`,
+            path: path,
           });
         }
       });

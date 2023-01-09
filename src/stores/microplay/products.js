@@ -74,7 +74,7 @@ const getProductsByPage = async (args) => {
       products: productsInfo
     };
   } catch (e){
-    log.error(e.message);
+    log.error(`[${STORE_NAME}][${STORES[storeKey].productsUrl}]`, e);
     return {
       category: args.category.name,
       products: [],

@@ -155,7 +155,7 @@
     "ripley": {
       "name": "Ripley",
       "baseUrl": "https://simple.ripley.cl",
-      "allowedCategories": ["tecno", "electro", "mascotas", "supermercado", "accesorios", "deporte"]
+      "allowedCategories": ["tecno", "electro", "supermercado", "deporte"]
     },
     "santaisabel": {
       "name": "Santa Isabel",

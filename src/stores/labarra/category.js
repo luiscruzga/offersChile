@@ -28,7 +28,7 @@ const getUrlCategories = (categories) => {
 const getCategories = async () => {
   try{
     log.info(`Getting categories of [${STORES[storeKey].name}]`);
-    const categories = await axiosGet(STORES[storeKey].categoriesUrl, {'api-key': 'public1', 'apikey': 'j.w.t', 'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36 OPR/93.0.0.0', 'visitor-uuid': '36505b0be9004b96b19b7d5d705cc264'});
+    const categories = await axiosGet(STORES[storeKey].categoriesUrl, {'api-key': 'public1', 'apikey': 'j.w.t'});
     let categoriesInfo = getUrlCategories(categories.items);
     if (STORES[storeKey].allowedCategories.length > 0) {
       categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);

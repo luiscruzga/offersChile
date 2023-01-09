@@ -44,7 +44,7 @@ const getUrlCategories = (categories) => {
   const allowedCategories = STORES[storeKey].allowedCategories;
   categories.forEach(category => {
     if (allowedCategories.length > 0 && !allowedCategories.find(el => category.item_name.toLowerCase().includes(el.toLowerCase()))) return false;
-    
+    if (category.item_url === '') return false;
     finalCategories.push({
       name: category.item_name,
       url: category.item_url

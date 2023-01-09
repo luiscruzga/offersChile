@@ -63,6 +63,7 @@ const getProductsByPage = async (args) => {
       products: productsInfo
     };
   } catch (e){
+    log.error(`[${STORE_NAME}][${args.url}?isPLP=1&page=${args.page}]`, e);
     return {
       category: args.category.name,
       products: [],

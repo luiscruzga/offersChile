@@ -55,7 +55,7 @@ const getProductsByPage = async (args) => {
       products: productsInfo
     };
   } catch (e){
-    log.error(STORE_NAME, e);
+    log.error(`[${STORE_NAME}][${STORES[storeKey].productsUrl.replace('**PAGE**', args.page).replace('**CATEGORY_ID**', args.category.id)}]`, e);
     return {
       category: args.category.name,
       products: [],

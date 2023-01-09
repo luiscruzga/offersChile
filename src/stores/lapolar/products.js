@@ -68,7 +68,7 @@ const getProductsByPage = async (args) => {
       products: productsInfo
     };
   } catch (e){
-    log.error(STORE_NAME, e);
+    log.error(`[${STORE_NAME}][${args.url}?start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}&srule=best-matches]`, e);
     return {
       category: args.category.name,
       products: [],

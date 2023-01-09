@@ -50,6 +50,7 @@ const getProductsByPage = async (args) => {
       products: productsInfo
     };
   } catch (e){
+    log.error(`[${STORE_NAME}][${args.url}?start=${STORES[storeKey].totalProductsPerPage * (args.page - 1)}]`, e);
     return {
       category: args.category.name,
       products: [],

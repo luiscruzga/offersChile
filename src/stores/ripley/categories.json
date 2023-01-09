@@ -40,38 +40,6 @@
     "url": "https://simple.ripley.cl/tecno/marcas-destacadas"
   },
   {
-    "name": "Mascotas -> Perro",
-    "url": "https://simple.ripley.cl/mascotas/perro"
-  },
-  {
-    "name": "Mascotas -> Gato",
-    "url": "https://simple.ripley.cl/mascotas/gato"
-  },
-  {
-    "name": "Mascotas -> Otras mascotas",
-    "url": "https://simple.ripley.cl/mascotas/otras-mascotas"
-  },
-  {
-    "name": "Mascotas -> Alimento Premium",
-    "url": "https://simple.ripley.cl/mascotas/alimento-premium"
-  },
-  {
-    "name": "Mascotas -> Alimento Mascotas",
-    "url": "https://simple.ripley.cl/mascotas/alimento-mascotas"
-  },
-  {
-    "name": "Mascotas -> Higiene y Farmacia",
-    "url": "https://simple.ripley.cl/mascotas/higiene-y-farmacia"
-  },
-  {
-    "name": "Mascotas -> Servicios",
-    "url": "https://simple.ripley.cl/mascotas/servicios"
-  },
-  {
-    "name": "Mascotas -> Pet lovers",
-    "url": "https://simple.ripley.cl/mascotas/pet-lovers"
-  },
-  {
     "name": "Electro -> Refrigeración ",
     "url": "https://simple.ripley.cl/electro/refrigeracion"
   },
@@ -156,42 +124,6 @@
     "url": "https://simple.ripley.cl/deporte-y-aventura/tenis-y-padel"
   },
   {
-    "name": "Accesorios y complementos -> Carteras y bolsos",
-    "url": "https://simple.ripley.cl/accesorios-y-complementos/carteras-y-bolsos"
-  },
-  {
-    "name": "Accesorios y complementos -> Joyeria",
-    "url": "https://simple.ripley.cl/accesorios-y-complementos/joyeria"
-  },
-  {
-    "name": "Accesorios y complementos -> Relojes",
-    "url": "https://simple.ripley.cl/accesorios-y-complementos/relojes"
-  },
-  {
-    "name": "Accesorios y complementos -> Optica",
-    "url": "https://simple.ripley.cl/accesorios-y-complementos/optica"
-  },
-  {
-    "name": "Accesorios y complementos -> Gorros y sombreros",
-    "url": "https://simple.ripley.cl/accesorios-y-complementos/gorros-y-sombreros"
-  },
-  {
-    "name": "Accesorios y complementos -> Vestuario",
-    "url": "https://simple.ripley.cl/accesorios-y-complementos/vestuario"
-  },
-  {
-    "name": "Accesorios y complementos -> Complementos",
-    "url": "https://simple.ripley.cl/accesorios-y-complementos/complementos"
-  },
-  {
-    "name": "Accesorios y complementos -> Marcas Destacadas",
-    "url": "https://simple.ripley.cl/accesorios-y-complementos/marcas-destacadas"
-  },
-  {
-    "name": "Moda Hombre -> Accesorios",
-    "url": "https://simple.ripley.cl/moda-hombre/accesorios"
-  },
-  {
     "name": "Supermercado -> Despensa",
     "url": "https://simple.ripley.cl/supermercado/despensa"
   },
@@ -214,9 +146,5 @@
   {
     "name": "Supermercado -> Alimentos frescos",
     "url": "https://simple.ripley.cl/supermercado/alimentos-frescos"
-  },
-  {
-    "name": "Automotriz -> Accesorios para autos y motos",
-    "url": "https://simple.ripley.cl/automotriz/accesorios-para-autos-y-motos"
   }
 ]

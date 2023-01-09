@@ -6,7 +6,7 @@ const { getDataUrl, saveFile } = require("../../utils");
  * Permite recorrer el listado de categorias y obtener como lista
  * @param  {object} categories - Arreglo de categorias
  */
-const getUrlCategories = (dom) => {
+const getUrlCategories = async (dom) => {
   return [...dom.window.document.querySelectorAll('.nav__link, .nav__extras--ofertas')].map(el => {
     const href = el.firstChild.href;
     return {
@@ -22,12 +22,17 @@ const getUrlCategories = (dom) => {
 const getCategories = async () => {
   log.info(`Getting categories of [${STORES[storeKey].name}]`);
   const dom = await getDataUrl(STORES[storeKey].baseUrl);
-  
-  let categoriesInfo = getUrlCategories(dom);
-  if (STORES[storeKey].allowedCategories.length > 0) {
-    categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+  let categoriesInfo = [];
+
+  if (dom.window) {
+    categoriesInfo = await getUrlCategories(dom);
+    if (STORES[storeKey].allowedCategories.length > 0) {
+      categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+    }
+    saveFile(`${__dirname}/categories.json`, categoriesInfo);
+  } else {
+    categoriesInfo = require('./categories.json');
   }
-  saveFile(`${__dirname}/categories.json`, categoriesInfo);
   return categoriesInfo;
 }
 

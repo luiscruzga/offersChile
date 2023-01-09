@@ -22,7 +22,7 @@
   {
     "name": "CICLISMO Y TREKKING",
     "url": "https://olimposports.cl/categoria-producto/ciclismo-y-trekking/",
-    "totalProducts": 49
+    "totalProducts": 50
   },
   {
     "name": "CALZAS Y ROPA",
@@ -32,7 +32,7 @@
   {
     "name": "BARRAS Y PESAS",
     "url": "https://olimposports.cl/categoria-producto/barras-y-pesas/",
-    "totalProducts": 47
+    "totalProducts": 49
   },
   {
     "name": "BANCAS Y MÁQUINAS",
@@ -42,6 +42,6 @@
   {
     "name": "ACCESORIOS E IMPLEMENTOS",
     "url": "https://olimposports.cl/categoria-producto/accesorios-e-implementos/",
-    "totalProducts": 142
+    "totalProducts": 150
   }
 ]

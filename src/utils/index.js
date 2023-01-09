@@ -34,7 +34,7 @@ const getDataUrl = async(url, runScripts=false, headers = DEFAULT_HEADERS) => {
     }
     dom.window.onerror = (msg) => {console.log('');}
   } catch (e) {
-    log.error(e.message);
+    log.error(`[getDataUrl][${url}]: `, e.message);
   }
 
   return dom;
@@ -50,6 +50,7 @@ const axiosGet = async(url, headers = {}) => {
     .then(res => res.data);
     return data;
   } catch (err) {
+    log.error(`[axiosGet][${url}]: `, err.message);
     return Promise.reject(err);
   }
 }
@@ -64,6 +65,7 @@ const axiosPost = async(url, body, headers={}) => {
     }).then(res => res.data);
     return data;
   } catch (err) {
+    log.error(`[axiosPost][${url}]: `, err.message);
     return Promise.reject(err);
   }
 }
@@ -86,6 +88,7 @@ const axiosPostDom = async(url, body, headers={}) => {
     dom.window.onerror = function (msg) {}
     return dom;
   } catch (err) {
+    log.error(`[axiosPostDom][${url}]: `, err.message);
     return Promise.reject(err);
   }
 }
@@ -116,7 +119,7 @@ const getCaptionForTelegram = (product) => {
 - Descuento: $${numberWithCommas(product.discount)}
 - Precio Normal: $${numberWithCommas(product.normalprice)}
 - Precio Oferta: $${numberWithCommas(product.offerprice)}
-- Precio Tarjeta: $${numberWithCommas(product.cardprice)}
+${product.cardprice !== 0 ? `Precio Tarjeta: $${numberWithCommas(product.cardprice)}` : ''}  
 - URL: ${product.url}`;
 }
 

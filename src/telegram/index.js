@@ -42,8 +42,8 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
         })
         .catch(async (error) => {
           log.error(`[ERROR][TELEGRAM][${product.store}][${product.name}][${thumbnail}]`, error.description);
-          if (error.description.includes('Too Many Requests')) await delay(20000);
-          if (error.description.includes('Bad Request')) {
+          if (error.description && error.description.includes('Too Many Requests')) await delay(20000);
+          if (error.description && error.description.includes('Bad Request')) {
             await bot.sendMessage(process.env.TELEBOT_CHAT_ID, caption)
             .then(async (info) => {
               // Save product as reported
@@ -63,7 +63,7 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
         })
         .catch(async (error) => {
           log.error(`[ERROR][TELEGRAM][${product.store}][${product.name}][${thumbnail}]`, error.description);
-          if (error.description.includes('Too Many Requests')) await delay(20000);
+          if (error.description && error.description.includes('Too Many Requests')) await delay(20000);
         });
       }
     }
@@ -115,8 +115,8 @@ if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') {
           const thumbnail = product.thumbnail.indexOf('https') == 0 ? product.thumbnail : `https:${product.thumbnail}`;
           await bot.sendPhoto(userId, thumbnail, { caption })
           .catch(async (error) => {
-            if (error.description.includes('Too Many Requests')) await delay(20000);
-            if (error.description.includes('Bad Request')) {
+            if (error.description && error.description.includes('Too Many Requests')) await delay(20000);
+            if (error.description && error.description.includes('Bad Request')) {
               await bot.sendMessage(userId, caption);    
             }
           });

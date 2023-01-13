@@ -21,17 +21,18 @@ directories.forEach((directory) => {
     
     const startDate = new Date();
     const categories = await getCategories();
-    if (!STORES[storeKey].useOwnProducts) await getAllProducts(storeKey, categories, getTotalPages, getProductsByPage);
+    let totalProducts = 0;
+    if (!STORES[storeKey].useOwnProducts) totalProducts = await getAllProducts(storeKey, categories, getTotalPages, getProductsByPage);
     else {
       const products = require(`./${directory}/products`);
-      await products.getAllProducts(categories);
+      totalProducts = await products.getAllProducts(categories);
     }
     await loadUniqueProducts(STORES[storeKey].name);
 
     const endDate = new Date();
     const finalTime = diffMinutes(startDate, endDate);
     log.end('================================================================================');
-    log.end(`Proceso Finalizado Correctamente[${STORES[storeKey].name}], duración total ${finalTime} minutos`);
+    log.end(`Proceso Finalizado Correctamente[${STORES[storeKey].name}][${totalProducts}], duración total ${finalTime} minutos`);
     log.end('================================================================================');
   }
 });

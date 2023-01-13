@@ -705,7 +705,7 @@
   },
   {
     "name": "Outlet -> Deco Outlet -> Toallas de Playa Outlet",
-    "url": "https://www.paris.cl/decohogar/outlet-deco/outlet-toallas-de-playa/"
+    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-toallas-de-playa/"
   },
   {
     "name": "Outlet -> Belleza Outlet -> Perfumes Outlet",
@@ -884,10 +884,6 @@
     "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-juegos-exterior/"
   },
   {
-    "name": "Outlet -> Deportes Outlet -> Bicicletas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-bicicletas/"
-  },
-  {
     "name": "Outlet -> Deportes Outlet -> Ropa Deportiva Mujer Outlet",
     "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-ropa-deportiva-mujer/"
   },
@@ -900,11 +896,43 @@
     "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-parkas-y-chaquetas-deportivas/"
   },
   {
+    "name": "Outlet -> Deportes Outlet -> Bicicletas Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-bicicletas/"
+  },
+  {
+    "name": "Outlet -> Deportes Outlet -> Accesorios de Bicicletas Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-accesorios-de-bicicletas/"
+  },
+  {
     "name": "Outlet -> Deportes Outlet -> Equipamiento Deportivo Outlet",
     "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-equipamiento-deportivo/"
   },
   {
     "name": "Outlet -> Deportes Outlet -> Camping Outlet",
     "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-camping/"
+  },
+  {
+    "name": "Outlet -> Deportes Outlet -> Tiempo Libre Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-tiempo-libre/"
+  },
+  {
+    "name": "Outlet -> Deportes Outlet -> Piscinas Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-piscinas/"
+  },
+  {
+    "name": "Outlet -> Deportes Outlet -> Accesorios para Piscinas Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-accesorios-para-piscinas/"
+  },
+  {
+    "name": "Outlet -> Deportes Outlet -> Electromovilidad Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-electromovilidad/"
+  },
+  {
+    "name": "Outlet -> Deportes Outlet -> Disciplinas Deportivas Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-disciplinas-deportivas/"
+  },
+  {
+    "name": "Outlet -> Deportes Outlet -> Deportes Niños Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-deportes-ninos/"
   }
 ]

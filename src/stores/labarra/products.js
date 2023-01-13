@@ -81,28 +81,34 @@ const getAllProducts = async (categories) => {
     lastVersion = version;
     deleteProductsByVersion(STORE_NAME, lastVersion);
 
-    const productsInfo = [];
+    let totalProductsStore = 0;
     let contCategory = 0;
-    
+    let promises = [];
     //categories.forEach(async (category, categoryIndex) => {
     for(let categoryIndex = 0; categoryIndex < categories.length; categoryIndex++) {
       const category = categories[categoryIndex];
       contCategory++;
       const page = 1;
       await delay(DELAY_TIME_DEFAULT);
-      getProductsByPage({
-        url: category.url,
-        page,
-        category,
-      })
-      .then((productsList) => {
-        log.info(`[${STORE_NAME}][${category.name}(${categoryIndex} - ${categories.length})] Total products: ${productsList.products.length}`);
-        saveProducts(productsList.products);
-      });
+      promises.push(getProductsByPage({
+          url: category.url,
+          page,
+          category,
+        })
+        .then((productsList) => {
+          log.info(`[${STORE_NAME}][${category.name}(${categoryIndex} - ${categories.length})] Total products: ${productsList.products.length}`);
+          const productsNew = [...new Map(productsList.products.map(item => [item['name'], item])).values()];
+          saveProducts(productsNew);
+          totalProductsStore += productsNew.length;
+        })
+      );
       if (contCategory%DELAY_LIMIT === 0) await delay(DELAY_TIME);    
     };
 
-    resolve(productsInfo);
+    await Promise.all(promises)
+    .then (values => {
+      resolve(totalProductsStore);
+    });
   });
 }
 

@@ -1,6 +1,6 @@
 const { delay } = require('../utils/');
 const { saveProducts, deleteProductsByVersion } = require('../utils/bd');
-const { STORES, DELAY_LIMIT, DELAY_TIME, DELAY_TIME_DEFAULT } = require('../config/config.json');
+const { STORES, DELAY_LIMIT, DELAY_TIME, DELAY_TIME_DEFAULT, MAX_TOTAL_PAGES } = require('../config/config.json');
 let lastVersion = 1;
 
 /**
@@ -14,43 +14,50 @@ const getAllProducts = async (storeKey, categories, getTotalPages, getProductsBy
     lastVersion = version;
     deleteProductsByVersion(STORE_NAME, lastVersion);
 
-    const productsInfo = [];
+    let totalProductsStore = 0;
     let contPages = 0;
     
-    //categories.forEach(async (category, categoryIndex) => {
     for(let categoryIndex = 0; categoryIndex < categories.length; categoryIndex++) {
       const category = categories[categoryIndex];
-      const totalPages = await getTotalPages(category);
+      let totalPages = await getTotalPages(category);
       let pagesWithErrors = 0;
-      let totalProducts = 0;
       let productsCategory = [];
-      log.info(`[${STORE_NAME}]Category [${STORE_NAME}][${category.name}][${totalPages}]`);
+      let promises = [];
+      log.info(`[${STORE_NAME}] Category [${STORE_NAME}][${category.name}][${totalPages}]`);
+      totalPages = totalPages <= MAX_TOTAL_PAGES ? totalPages : MAX_TOTAL_PAGES;
       for (let page = 1; page <= totalPages; page++) {
         contPages++;
         if (pagesWithErrors >= 4) break;
 
-        await delay(DELAY_TIME_DEFAULT);
-        getProductsByPage({
-          url: category.url,
-          page,
-          category,
-        })
-        .then((productsList) => {
-          if (productsList.products.length === 0) pagesWithErrors++;
-          log.info(`[${STORE_NAME}][${category.name}(${categoryIndex} - ${categories.length})][${page} - ${totalPages}]: ${productsList.products.length}`);
-          productsCategory.push(...productsList.products);
-          totalProducts += productsList.products.length;
-        });
-        if (contPages%DELAY_LIMIT === 0) await delay(DELAY_TIME);        
+        if (STORES[storeKey].delayByCategory) await delay(DELAY_TIME_DEFAULT);
+        promises.push(getProductsByPage({
+            url: category.url,
+            page,
+            category,
+          })
+          .then((productsList) => {
+            if (productsList.products.length === 0) pagesWithErrors++;
+            log.info(`[${STORE_NAME}][${category.name}(${categoryIndex+1} - ${categories.length})][${page} - ${totalPages}]: ${productsList.products.length}`);
+            productsCategory.push(...productsList.products);
+          })
+        );
+        if (STORES[storeKey].delayByCategory && contPages%DELAY_LIMIT === 0) await delay(DELAY_TIME);        
       }
 
-      await delay(3000);
-      saveProducts(productsCategory);
-      log.info(`[${STORE_NAME}] Category [${STORE_NAME}][${category.name}] Total products: ${totalProducts}`);
-      productsCategory = [];
+      await Promise.all(promises)
+      .then(values => {
+        // Remove duplicated products
+        saveProducts(productsCategory);
+        totalProductsStore += productsCategory.length;
+        log.info(`[${STORE_NAME}] Category [${STORE_NAME}][${category.name}] Total products: ${productsCategory.length}`);
+        productsCategory = [];
+        promises = [];
+        return true;
+      });
+      if (STORES[storeKey].delayByCategory) await delay(DELAY_TIME);
     };
 
-    resolve(productsInfo);
+    resolve(totalProductsStore);
   });
 }
 

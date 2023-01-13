@@ -1,5 +1,73 @@
 [
   {
+    "name": "Automotriz -> Motos y otros vehículos",
+    "url": "https://simple.ripley.cl/automotriz/motos-y-otros-vehiculos"
+  },
+  {
+    "name": "Automotriz -> Neumáticos y llantas",
+    "url": "https://simple.ripley.cl/automotriz/neumaticos-y-llantas"
+  },
+  {
+    "name": "Automotriz -> Repuestos",
+    "url": "https://simple.ripley.cl/automotriz/repuestos"
+  },
+  {
+    "name": "Automotriz -> Limpieza",
+    "url": "https://simple.ripley.cl/automotriz/limpieza"
+  },
+  {
+    "name": "Automotriz -> Líquidos y Lubricantes",
+    "url": "https://simple.ripley.cl/automotriz/liquidos-y-lubricantes"
+  },
+  {
+    "name": "Automotriz -> Baterías",
+    "url": "https://simple.ripley.cl/automotriz/baterias"
+  },
+  {
+    "name": "Automotriz -> Portaequipaje",
+    "url": "https://simple.ripley.cl/automotriz/portaequipaje"
+  },
+  {
+    "name": "Automotriz -> Audio",
+    "url": "https://simple.ripley.cl/automotriz/audio"
+  },
+  {
+    "name": "Automotriz -> Accesorios para autos y motos",
+    "url": "https://simple.ripley.cl/automotriz/accesorios-para-autos-y-motos"
+  },
+  {
+    "name": "Escolares -> Mochilas",
+    "url": "https://simple.ripley.cl/escolares/mochilas"
+  },
+  {
+    "name": "Escolares -> Calzado Escolar",
+    "url": "https://simple.ripley.cl/escolares/calzado-escolar"
+  },
+  {
+    "name": "Escolares -> Vestuario Escolar",
+    "url": "https://simple.ripley.cl/escolares/vestuario-escolar"
+  },
+  {
+    "name": "Escolares -> Útiles Escolares",
+    "url": "https://simple.ripley.cl/escolares/utiles-escolares"
+  },
+  {
+    "name": "Escolares -> Escritorios y sillas",
+    "url": "https://simple.ripley.cl/escolares/escritorios-y-sillas"
+  },
+  {
+    "name": "Escolares -> Tecno",
+    "url": "https://simple.ripley.cl/escolares/tecno"
+  },
+  {
+    "name": "Escolares -> Deportes Escolares",
+    "url": "https://simple.ripley.cl/escolares/deportes-escolares"
+  },
+  {
+    "name": "Escolares -> Deco",
+    "url": "https://simple.ripley.cl/escolares/deco"
+  },
+  {
     "name": "Tecno -> Celulares",
     "url": "https://simple.ripley.cl/tecno/celulares"
   },
@@ -38,6 +106,34 @@
   {
     "name": "Tecno -> Marcas Destacadas",
     "url": "https://simple.ripley.cl/tecno/marcas-destacadas"
+  },
+  {
+    "name": "Mascotas -> Perro",
+    "url": "https://simple.ripley.cl/mascotas/perro"
+  },
+  {
+    "name": "Mascotas -> Gato",
+    "url": "https://simple.ripley.cl/mascotas/gato"
+  },
+  {
+    "name": "Mascotas -> Otras mascotas",
+    "url": "https://simple.ripley.cl/mascotas/otras-mascotas"
+  },
+  {
+    "name": "Mascotas -> Alimento Premium",
+    "url": "https://simple.ripley.cl/mascotas/alimento-premium"
+  },
+  {
+    "name": "Mascotas -> Alimento Mascotas",
+    "url": "https://simple.ripley.cl/mascotas/alimento-mascotas"
+  },
+  {
+    "name": "Mascotas -> Higiene y Farmacia",
+    "url": "https://simple.ripley.cl/mascotas/higiene-y-farmacia"
+  },
+  {
+    "name": "Mascotas -> Servicios",
+    "url": "https://simple.ripley.cl/mascotas/servicios"
   },
   {
     "name": "Electro -> Refrigeración ",
@@ -88,6 +184,98 @@
     "url": "https://simple.ripley.cl/electro/smart-home"
   },
   {
+    "name": "Muebles -> Living y sala de estar",
+    "url": "https://simple.ripley.cl/muebles/living-y-sala-de-estar"
+  },
+  {
+    "name": "Muebles -> Comedor y cocina",
+    "url": "https://simple.ripley.cl/muebles/comedor-y-cocina"
+  },
+  {
+    "name": "Muebles -> Home office y oficina",
+    "url": "https://simple.ripley.cl/muebles/home-office-y-oficina"
+  },
+  {
+    "name": "Muebles -> Terraza y jardin",
+    "url": "https://simple.ripley.cl/muebles/terraza-y-jardin"
+  },
+  {
+    "name": "Muebles -> Dormitorio y baño",
+    "url": "https://simple.ripley.cl/muebles/dormitorio-y-bano"
+  },
+  {
+    "name": "Muebles -> Tipos de muebles",
+    "url": "https://simple.ripley.cl/muebles/tipos-de-muebles"
+  },
+  {
+    "name": "Muebles -> Marcas destacadas",
+    "url": "https://simple.ripley.cl/muebles/marcas-destacadas"
+  },
+  {
+    "name": "Decoración -> Decoración Hogar",
+    "url": "https://simple.ripley.cl/decoracion/decoracion-hogar"
+  },
+  {
+    "name": "Decoración -> Cocina",
+    "url": "https://simple.ripley.cl/decoracion/cocina"
+  },
+  {
+    "name": "Decoración -> Mesa",
+    "url": "https://simple.ripley.cl/decoracion/mesa"
+  },
+  {
+    "name": "Decoración -> Cortinas",
+    "url": "https://simple.ripley.cl/decoracion/cortinas"
+  },
+  {
+    "name": "Decoración -> Alfombras",
+    "url": "https://simple.ripley.cl/decoracion/alfombras"
+  },
+  {
+    "name": "Decoración -> Lámparas",
+    "url": "https://simple.ripley.cl/decoracion/lamparas"
+  },
+  {
+    "name": "Decoración -> Baño",
+    "url": "https://simple.ripley.cl/decoracion/bano"
+  },
+  {
+    "name": "Decoración -> Navidad",
+    "url": "https://simple.ripley.cl/decoracion/navidad"
+  },
+  {
+    "name": "Decoración -> Marcas destacadas",
+    "url": "https://simple.ripley.cl/decoracion/marcas-destacadas"
+  },
+  {
+    "name": "Dormitorio -> Camas",
+    "url": "https://simple.ripley.cl/dormitorio/camas"
+  },
+  {
+    "name": "Dormitorio -> Colchones",
+    "url": "https://simple.ripley.cl/dormitorio/colchones"
+  },
+  {
+    "name": "Dormitorio -> Combos dormitorio",
+    "url": "https://simple.ripley.cl/dormitorio/combos-dormitorio"
+  },
+  {
+    "name": "Dormitorio -> Tipos de Cama",
+    "url": "https://simple.ripley.cl/dormitorio/tipos-de-cama"
+  },
+  {
+    "name": "Dormitorio -> Ropa de Cama",
+    "url": "https://simple.ripley.cl/dormitorio/ropa-de-cama"
+  },
+  {
+    "name": "Dormitorio -> Dormitorio para niñas y niños",
+    "url": "https://simple.ripley.cl/dormitorio/dormitorio-para-ninas-y-ninos"
+  },
+  {
+    "name": "Dormitorio -> Marcas destacadas",
+    "url": "https://simple.ripley.cl/dormitorio/marcas-destacadas"
+  },
+  {
     "name": "Deporte y aventura -> Bicicletas",
     "url": "https://simple.ripley.cl/deporte-y-aventura/bicicletas"
   },
@@ -124,6 +312,270 @@
     "url": "https://simple.ripley.cl/deporte-y-aventura/tenis-y-padel"
   },
   {
+    "name": "Juguetería y niños -> Imperdibles",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/imperdibles"
+  },
+  {
+    "name": "Juguetería y niños -> Juguetes",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/juguetes"
+  },
+  {
+    "name": "Juguetería y niños -> Juguetes infantiles exterior",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/juguetes-infantiles-exterior"
+  },
+  {
+    "name": "Juguetería y niños -> Juguetes por edad",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/juguetes-por-edad"
+  },
+  {
+    "name": "Juguetería y niños -> Videojuegos",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/videojuegos"
+  },
+  {
+    "name": "Juguetería y niños -> Coches y sillas",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/coches-y-sillas"
+  },
+  {
+    "name": "Juguetería y niños -> Mundo Bebe",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/mundo-bebe"
+  },
+  {
+    "name": "Juguetería y niños -> Estimulacion temprana",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/estimulacion-temprana"
+  },
+  {
+    "name": "Juguetería y niños -> Alimentacion y Lactancia",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/alimentacion-y-lactancia"
+  },
+  {
+    "name": "Juguetería y niños -> Dormitorio infantil",
+    "url": "https://simple.ripley.cl/jugueteria-y-ninos/dormitorio-infantil"
+  },
+  {
+    "name": "Zapatos y Zapatillas -> Zapatos mujer",
+    "url": "https://simple.ripley.cl/zapatos-y-zapatillas/zapatos-mujer"
+  },
+  {
+    "name": "Zapatos y Zapatillas -> Zapatos hombre",
+    "url": "https://simple.ripley.cl/zapatos-y-zapatillas/zapatos-hombre"
+  },
+  {
+    "name": "Zapatos y Zapatillas -> Zapatos infantiles",
+    "url": "https://simple.ripley.cl/zapatos-y-zapatillas/zapatos-infantiles"
+  },
+  {
+    "name": "Zapatos y Zapatillas -> Zapatillas",
+    "url": "https://simple.ripley.cl/zapatos-y-zapatillas/zapatillas"
+  },
+  {
+    "name": "Zapatos y Zapatillas -> Marcas destacadas",
+    "url": "https://simple.ripley.cl/zapatos-y-zapatillas/marcas-destacadas"
+  },
+  {
+    "name": "Zapatos y Zapatillas -> Marcas internacionales",
+    "url": "https://simple.ripley.cl/zapatos-y-zapatillas/marcas-internacionales"
+  },
+  {
+    "name": "Zapatos y Zapatillas -> Nuestras marcas",
+    "url": "https://simple.ripley.cl/zapatos-y-zapatillas/nuestras-marcas"
+  },
+  {
+    "name": "Accesorios y complementos -> Carteras y bolsos",
+    "url": "https://simple.ripley.cl/accesorios-y-complementos/carteras-y-bolsos"
+  },
+  {
+    "name": "Accesorios y complementos -> Joyeria",
+    "url": "https://simple.ripley.cl/accesorios-y-complementos/joyeria"
+  },
+  {
+    "name": "Accesorios y complementos -> Relojes",
+    "url": "https://simple.ripley.cl/accesorios-y-complementos/relojes"
+  },
+  {
+    "name": "Accesorios y complementos -> Optica",
+    "url": "https://simple.ripley.cl/accesorios-y-complementos/optica"
+  },
+  {
+    "name": "Accesorios y complementos -> Gorros y sombreros",
+    "url": "https://simple.ripley.cl/accesorios-y-complementos/gorros-y-sombreros"
+  },
+  {
+    "name": "Accesorios y complementos -> Vestuario",
+    "url": "https://simple.ripley.cl/accesorios-y-complementos/vestuario"
+  },
+  {
+    "name": "Accesorios y complementos -> Complementos",
+    "url": "https://simple.ripley.cl/accesorios-y-complementos/complementos"
+  },
+  {
+    "name": "Accesorios y complementos -> Marcas Destacadas",
+    "url": "https://simple.ripley.cl/accesorios-y-complementos/marcas-destacadas"
+  },
+  {
+    "name": "Belleza -> Perfumería",
+    "url": "https://simple.ripley.cl/belleza/perfumeria"
+  },
+  {
+    "name": "Belleza -> Maquillaje",
+    "url": "https://simple.ripley.cl/belleza/maquillaje"
+  },
+  {
+    "name": "Belleza -> Cuidado de la piel",
+    "url": "https://simple.ripley.cl/belleza/cuidado-de-la-piel"
+  },
+  {
+    "name": "Belleza -> Dermocosmética",
+    "url": "https://simple.ripley.cl/belleza/dermocosmetica"
+  },
+  {
+    "name": "Belleza -> Capilares",
+    "url": "https://simple.ripley.cl/belleza/capilares"
+  },
+  {
+    "name": "Belleza -> Cuidado Personal",
+    "url": "https://simple.ripley.cl/belleza/cuidado-personal"
+  },
+  {
+    "name": "Belleza -> Hombre",
+    "url": "https://simple.ripley.cl/belleza/hombre"
+  },
+  {
+    "name": "Belleza -> Novedades",
+    "url": "https://simple.ripley.cl/belleza/novedades"
+  },
+  {
+    "name": "Belleza -> Marcas destacadas",
+    "url": "https://simple.ripley.cl/belleza/marcas-destacadas"
+  },
+  {
+    "name": "Belleza -> Marcas belleza",
+    "url": "https://simple.ripley.cl/belleza/marcas-belleza"
+  },
+  {
+    "name": "Moda Mujer -> Tops y chaquetas",
+    "url": "https://simple.ripley.cl/moda-mujer/tops-y-chaquetas"
+  },
+  {
+    "name": "Moda Mujer -> Jeans y Pantalones",
+    "url": "https://simple.ripley.cl/moda-mujer/jeans-y-pantalones"
+  },
+  {
+    "name": "Moda Mujer -> Vestidos y Enteritos",
+    "url": "https://simple.ripley.cl/moda-mujer/vestidos-y-enteritos"
+  },
+  {
+    "name": "Moda Mujer -> Trajes de baño",
+    "url": "https://simple.ripley.cl/moda-mujer/trajes-de-bano"
+  },
+  {
+    "name": "Moda Mujer -> Ropa Interior y Pijamas",
+    "url": "https://simple.ripley.cl/moda-mujer/ropa-interior-y-pijamas"
+  },
+  {
+    "name": "Moda Mujer -> Marcas Destacadas",
+    "url": "https://simple.ripley.cl/moda-mujer/marcas-destacadas"
+  },
+  {
+    "name": "Moda Mujer -> Marcas Internacionales",
+    "url": "https://simple.ripley.cl/moda-mujer/marcas-internacionales"
+  },
+  {
+    "name": "Moda Mujer -> Marcas Juveniles",
+    "url": "https://simple.ripley.cl/moda-mujer/marcas-juveniles"
+  },
+  {
+    "name": "Moda Mujer -> Marcas Casuales",
+    "url": "https://simple.ripley.cl/moda-mujer/marcas-casuales"
+  },
+  {
+    "name": "Moda Mujer -> Destacados",
+    "url": "https://simple.ripley.cl/moda-mujer/destacados"
+  },
+  {
+    "name": "Moda Hombre -> Tops y chaquetas",
+    "url": "https://simple.ripley.cl/moda-hombre/tops-y-chaquetas"
+  },
+  {
+    "name": "Moda Hombre -> Jeans y pantalones",
+    "url": "https://simple.ripley.cl/moda-hombre/jeans-y-pantalones"
+  },
+  {
+    "name": "Moda Hombre -> Ropa Interior y Pijamas",
+    "url": "https://simple.ripley.cl/moda-hombre/ropa-interior-y-pijamas"
+  },
+  {
+    "name": "Moda Hombre -> Ropa Formal",
+    "url": "https://simple.ripley.cl/moda-hombre/ropa-formal"
+  },
+  {
+    "name": "Moda Hombre -> Marcas Destacadas",
+    "url": "https://simple.ripley.cl/moda-hombre/marcas-destacadas"
+  },
+  {
+    "name": "Moda Hombre -> Marcas Internacionales",
+    "url": "https://simple.ripley.cl/moda-hombre/marcas-internacionales"
+  },
+  {
+    "name": "Moda Hombre -> Marcas Juveniles",
+    "url": "https://simple.ripley.cl/moda-hombre/marcas-juveniles"
+  },
+  {
+    "name": "Moda Hombre -> Marcas Casuales",
+    "url": "https://simple.ripley.cl/moda-hombre/marcas-casuales"
+  },
+  {
+    "name": "Moda Hombre -> Marcas Nuevas",
+    "url": "https://simple.ripley.cl/moda-hombre/marcas-nuevas"
+  },
+  {
+    "name": "Moda Hombre -> Destacado",
+    "url": "https://simple.ripley.cl/moda-hombre/destacado"
+  },
+  {
+    "name": "Moda Hombre -> Accesorios",
+    "url": "https://simple.ripley.cl/moda-hombre/accesorios"
+  },
+  {
+    "name": "Moda infantil -> Ropa de bebé",
+    "url": "https://simple.ripley.cl/moda-infantil/ropa-de-bebe"
+  },
+  {
+    "name": "Moda infantil -> Babyshower",
+    "url": "https://simple.ripley.cl/moda-infantil/babyshower"
+  },
+  {
+    "name": "Moda infantil -> Ropa de niña",
+    "url": "https://simple.ripley.cl/moda-infantil/ropa-de-nina"
+  },
+  {
+    "name": "Moda infantil -> Ropa de niño",
+    "url": "https://simple.ripley.cl/moda-infantil/ropa-de-nino"
+  },
+  {
+    "name": "Moda infantil -> Marcas destacadas",
+    "url": "https://simple.ripley.cl/moda-infantil/marcas-destacadas"
+  },
+  {
+    "name": "Moda infantil -> Personajes favoritos",
+    "url": "https://simple.ripley.cl/moda-infantil/personajes-favoritos"
+  },
+  {
+    "name": "Moda infantil -> Calzados infantiles",
+    "url": "https://simple.ripley.cl/moda-infantil/calzados-infantiles"
+  },
+  {
+    "name": "Moda infantil -> Escolar",
+    "url": "https://simple.ripley.cl/moda-infantil/escolar"
+  },
+  {
+    "name": "Moda infantil -> Ropa interior",
+    "url": "https://simple.ripley.cl/moda-infantil/ropa-interior"
+  },
+  {
+    "name": "Moda infantil -> Lo nuevo",
+    "url": "https://simple.ripley.cl/moda-infantil/lo-nuevo"
+  },
+  {
     "name": "Supermercado -> Despensa",
     "url": "https://simple.ripley.cl/supermercado/despensa"
   },
@@ -146,5 +598,105 @@
   {
     "name": "Supermercado -> Alimentos frescos",
     "url": "https://simple.ripley.cl/supermercado/alimentos-frescos"
+  },
+  {
+    "name": "Ferreteria -> Herramientas y Máquinas",
+    "url": "https://simple.ripley.cl/ferreteria/herramientas-y-maquinas"
+  },
+  {
+    "name": "Ferreteria -> Electricidad e Iluminación",
+    "url": "https://simple.ripley.cl/ferreteria/electricidad-e-iluminacion"
+  },
+  {
+    "name": "Ferreteria -> Terraza y Jardín",
+    "url": "https://simple.ripley.cl/ferreteria/terraza-y-jardin"
+  },
+  {
+    "name": "Ferreteria -> Baño",
+    "url": "https://simple.ripley.cl/ferreteria/bano"
+  },
+  {
+    "name": "Ferreteria -> Cocina",
+    "url": "https://simple.ripley.cl/ferreteria/cocina"
+  },
+  {
+    "name": "Ferreteria -> Pintura",
+    "url": "https://simple.ripley.cl/ferreteria/pintura"
+  },
+  {
+    "name": "Ferreteria -> Puertas, ventanas y quincallería",
+    "url": "https://simple.ripley.cl/ferreteria/puertas-ventanas-y-quincalleria"
+  },
+  {
+    "name": "Ferreteria -> Construcción y Terminaciones",
+    "url": "https://simple.ripley.cl/ferreteria/construccion-y-terminaciones"
+  },
+  {
+    "name": "Ferreteria -> Seguridad Hogar",
+    "url": "https://simple.ripley.cl/ferreteria/seguridad-hogar"
+  },
+  {
+    "name": "Ferreteria -> Seguridad Personal",
+    "url": "https://simple.ripley.cl/ferreteria/seguridad-personal"
+  },
+  {
+    "name": "Salud y Bienestar -> Vitaminas y Suplementos",
+    "url": "https://simple.ripley.cl/salud-y-bienestar/vitaminas-y-suplementos"
+  },
+  {
+    "name": "Salud y Bienestar -> Bienestar y vida sexual",
+    "url": "https://simple.ripley.cl/salud-y-bienestar/bienestar-y-vida-sexual"
+  },
+  {
+    "name": "Salud y Bienestar -> Equipos y artículos médicos",
+    "url": "https://simple.ripley.cl/salud-y-bienestar/equipos-y-articulos-medicos"
+  },
+  {
+    "name": "Salud y Bienestar -> Salud y cuidado personal",
+    "url": "https://simple.ripley.cl/salud-y-bienestar/salud-y-cuidado-personal"
+  },
+  {
+    "name": "Salud y Bienestar -> Infantil y Maternidad",
+    "url": "https://simple.ripley.cl/salud-y-bienestar/infantil-y-maternidad"
+  },
+  {
+    "name": "Salud y Bienestar -> Oftalmología",
+    "url": "https://simple.ripley.cl/salud-y-bienestar/oftalmologia"
+  },
+  {
+    "name": "Salud y Bienestar -> Belleza",
+    "url": "https://simple.ripley.cl/salud-y-bienestar/belleza"
+  },
+  {
+    "name": "Salud y Bienestar -> Cuidado de la piel",
+    "url": "https://simple.ripley.cl/salud-y-bienestar/cuidado-de-la-piel"
+  },
+  {
+    "name": "Otras Categorias -> Instrumentos Musicales",
+    "url": "https://simple.ripley.cl/otras-categorias/instrumentos-musicales"
+  },
+  {
+    "name": "Otras Categorias -> Libros",
+    "url": "https://simple.ripley.cl/otras-categorias/libros"
+  },
+  {
+    "name": "Otras Categorias -> Artículos de oficina y papelería",
+    "url": "https://simple.ripley.cl/otras-categorias/articulos-de-oficina-y-papeleria"
+  },
+  {
+    "name": "Otras Categorias -> Maleteria",
+    "url": "https://simple.ripley.cl/otras-categorias/maleteria"
+  },
+  {
+    "name": "Otras Categorias -> Servicios y Gift Card",
+    "url": "https://simple.ripley.cl/otras-categorias/servicios-y-gift-card"
+  },
+  {
+    "name": "Otras Categorias -> Regalos a Distancia",
+    "url": "https://simple.ripley.cl/otras-categorias/regalos-a-distancia"
+  },
+  {
+    "name": "Mercado Ripley",
+    "url": "https://simple.ripley.cl/mercado-ripley"
   }
 ]

@@ -1,16 +1,30 @@
 require('dotenv').config();
 global.mongoose = require('mongoose');
+const fs = require('fs');
+const path = require('path');
 const { Logger } = require('./utils/logger');
 const { PGConnect, PGDisconnect } = require('./utils/pg');
 global.log = Logger;
 const versions = require('./config/versions.json');
-const { saveFile } = require('./utils/');
+const { saveFile, delay } = require('./utils/');
 const { reportProducts } = require('./telegram/');
-
-const stores = require('./stores');
+const { STORES } = require('./config/config.json');
+const storesMain = require('./stores');
 let filterStore = process.env.FILTER_STORE || '';
+let excludedStores = process.env.EXCLUDE_STORE || '';
 if (filterStore !== '') {
   filterStore = filterStore.split(';')
+}
+if (excludedStores !== '') {
+  excludedStores = excludedStores.split(';');
+}
+
+// Clear logs
+if (process.env.CLEAR_LOGS) {
+  const directory = path.join(__dirname, './logs/')
+  for (const file of fs.readdirSync(directory)) {
+    fs.unlinkSync(path.join(directory, file));
+  }
 }
 
 const main = async () => {
@@ -24,9 +38,35 @@ const main = async () => {
 
   // Connect to PG BD
   await PGConnect();
-  for (let key in stores) {
-    if ((filterStore !== '' && filterStore.includes(key)) || (filterStore === '')) stores[key].main();
-  }
+
+  // Run sync stores
+  const syncStores = Object.keys(STORES).filter(key => !STORES[key].runAsync);
+  for (let i=0; i<syncStores.length; i++) {
+    const store = syncStores[i];
+    if (
+      ((filterStore !== '' && filterStore.includes(store)) || (filterStore === ''))
+      && (excludedStores === '' || (excludedStores !== '' && !excludedStores.includes(store)))  
+    ) 
+    {
+      await storesMain[store].main();
+    }
+  };
+
+  let promises = [];
+  // Run async first
+  Object.keys(STORES).filter(key => STORES[key].runAsync).forEach(store => {
+    if (
+      ((filterStore !== '' && filterStore.includes(store)) || (filterStore === ''))
+      && (excludedStores === '' || (excludedStores !== '' && !excludedStores.includes(store)))  
+    ) {
+      promises.push(storesMain[store].main());
+    }
+  });
+  // Await async stores
+  await Promise.all(promises);
+  promises = [];
+  await delay(60000 * 10);
+  main();
 }
 
 const telegramReport = async () => {
@@ -43,17 +83,9 @@ if (process.env.MONGO_DB && process.env.MONGO_DB !== '') {
   .then(() => {
     log.info(`Connection to the db established`);
     if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') telegramReport();
-
     main();
-    setInterval(() => {
-      main();
-    }, 60000 * process.env.INTERVAL_MAIN);
   });
 } else {
   if (process.env.TELEBOT_API && process.env.TELEBOT_API !== '') telegramReport();
-
   main();
-  setInterval(() => {
-    main();
-  }, 60000 * process.env.INTERVAL_MAIN);
 }

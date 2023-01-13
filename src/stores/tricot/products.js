@@ -15,27 +15,28 @@ let lastVersion = 1;
  */
 const getProductsByPage = async (args) => {
   try {
-    const dom = await getDataUrl(`${args.url}?page=${args.page}&cat=${args.category.id}`);
+    const dom = await getDataUrl(`${args.url}?start=${(args.page-1)*STORES[storeKey].totalProductsPerPage}&sz=${STORES[storeKey].totalProductsPerPage}`);
     const productsInfo = [];
-    const products = [...dom.window.document.querySelectorAll('.producto_single')];
+    const products = [...dom.window.document.querySelectorAll('.product-tile-wrapper')];
                   
     products.forEach(product => {
-      const normalPrice = product.querySelector('.tachado_dentro')
-        ? transformPrice(product.querySelector('.tachado_dentro').textContent)
-        : transformPrice(product.querySelector('.precio_actual').textContent);
-      const offerPrice = product.querySelector('.precio_actual')
-      ? transformPrice(product.querySelector('.precio_actual').textContent)
+      const normalPrice = product.querySelector('.price .tri-tile-price-red .value')
+        ? parseInt(product.querySelector('.strike-through').getAttribute('content'))
+        : transformPrice(product.querySelector('.price .tri-tile-price-red .value').textContent.trim());
+      const offerPrice = product.querySelector('.price .tri-tile-price-red .value')
+      ? transformPrice(product.querySelector('.price .tri-tile-price-red .value').textContent.trim())
       : 0;
-      
+      const href = product.querySelector('.tri-product-tile-name').href;
+      const infoProduct = JSON.parse(product.querySelector('.tri-product-tile-name').dataset.cbt);
       productsInfo.push({
         store: STORE_NAME,
-        sku: product.dataset.codpro,
-        name: product.querySelector('.detalle_ropa p').textContent,
-        description: product.querySelector('.detalle_ropa p').textContent,
-        brand: STORE_NAME,
-        url: product.querySelector('.main_link').href,
-        images: [product.querySelector('.main_link img').src],
-        thumbnail: product.querySelector('.main_link img').src,
+        sku: infoProduct.ecommerce.click.products[0].id,
+        name: infoProduct.ecommerce.click.products[0].name,
+        description: infoProduct.ecommerce.click.products[0].name,
+        brand: infoProduct.ecommerce.click.products[0].brand,
+        url: href.includes(STORES[storeKey].baseUrl) ? href : `${STORES[storeKey].baseUrl}${href}`,
+        images: [product.querySelector('.tile-image').src],
+        thumbnail: product.querySelector('.tile-image').src,
         category: args.category.url,
         categoryName: args.category.name,
         discountPercentage: offerPrice === 0 ? 0 : (100 - Math.round((offerPrice*100) / normalPrice)),
@@ -68,11 +69,12 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (category) => {
   try {
+
     const dom = await getDataUrl(category.url);
-    const pagination = [...dom.window.document.querySelectorAll('.paginator [data-page]')];
-    return pagination.length > 0
-      ? parseInt(pagination[pagination.length -2].dataset.page)
-      : 1;
+    const totalProducts = parseInt(dom.window.document.querySelector('.products-quantity').textContent);
+    return totalProducts <= STORES[storeKey].totalProductsPerPage
+      ? 1
+      : Math.round(totalProducts / STORES[storeKey].totalProductsPerPage);
   } catch (err) {
     return 1;
   }

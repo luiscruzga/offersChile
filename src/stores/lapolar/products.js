@@ -14,8 +14,8 @@ let lastVersion = 1;
  * @param {string} args.category.name - name de la categoria
  */
 const getProductsByPage = async (args) => {
+  const totalProductsPerPage = STORES[storeKey].totalProductsPerPage;
   try {
-    const totalProductsPerPage = STORES[storeKey].totalProductsPerPage;
     const url = `${args.url}?start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}&srule=best-matches`;
     
     const dom = await getDataUrl(url);

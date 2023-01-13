@@ -14,8 +14,9 @@ let lastVersion = 1;
  * @param {string} args.category.name - name de la categoria
  */
 const getProductsByPage = async (args) => {
+  const url = args.url.includes('?') ? `${args.url}&page=${args.page}` : `${args.url}?isPLP=1&page=${args.page}`;
   try {
-    const dom = await getDataUrl(`${args.url}?isPLP=1&page=${args.page}`, true);
+    const dom = await getDataUrl(url, true);
     const productsInfo = [];
     const products = JSON.parse(dom.window.document.getElementById('__NEXT_DATA__').textContent).props.pageProps.results;
 
@@ -63,7 +64,7 @@ const getProductsByPage = async (args) => {
       products: productsInfo
     };
   } catch (e){
-    log.error(`[${STORE_NAME}][${args.url}?isPLP=1&page=${args.page}]`, e);
+    log.error(`[${STORE_NAME}][${url}]`, e);
     return {
       category: args.category.name,
       products: [],

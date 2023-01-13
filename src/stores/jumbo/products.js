@@ -15,9 +15,14 @@ let lastVersion = 1;
  * @param {string} args.category.name - name de la categoria
  */
 const getProductsByPage = async (args) => {
+  const filter = args.url.includes('/busca?')
+    ? `busca?fq=${args.url.split('fq=').pop()}&page=${args.page}&sc=11`
+    : `${args.url.split(STORES[storeKey].baseUrl).pop()}?page=${args.page}&sc=11`
+  const url = STORES[storeKey].productsUrl.replace('**FILTER**', filter);
   try {
-    const data = await axiosGet(`${args.url}?page=${args.page}&sc=11`, {
-      'x-api-key': 'IuimuMneIKJd3tapno2Ag1c1WcAES97j'
+    
+    const data = await axiosGet(url, {
+      'apiKey': 'WlVnnB7c1BblmgUPOfg'
     });
     const productsInfo = [];
     const products = data.products;
@@ -54,7 +59,7 @@ const getProductsByPage = async (args) => {
       products: productsInfo
     };
   } catch (e){
-    log.error(`[${STORE_NAME}][${args.url}?page=${args.page}&sc=11]`, e);
+    log.error(`[${STORE_NAME}][${url}]`, e);
     return {
       category: args.category.name,
       products: [],
@@ -68,8 +73,12 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (category) => {
   try {
-    const data = await axiosGet(`${category.url}?page=1&sc=11`, {
-      'x-api-key': 'IuimuMneIKJd3tapno2Ag1c1WcAES97j'
+    const filter = category.url.includes('/busca?')
+      ? `/${category.path}&page=1&sc=11`
+      : `${category.path}?page=1&sc=11`
+    const url = STORES[storeKey].productsUrl.replace('**FILTER**', filter);
+    const data = await axiosGet(url, {
+      'apiKey': 'WlVnnB7c1BblmgUPOfg'
     });
     return Math.round((data.recordsFiltered || 0) / STORES[storeKey].totalProductsPerPage);
   } catch (err) {

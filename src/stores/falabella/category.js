@@ -41,14 +41,22 @@ const { getDataUrl, saveFile } = require("../../utils/");
 }*/
 const getUrlCategories = (categories) => {
   const finalCategories = [];
-  const allowedCategories = STORES[storeKey].allowedCategories;
   categories.forEach(category => {
-    if (allowedCategories.length > 0 && !allowedCategories.find(el => category.item_name.toLowerCase().includes(el.toLowerCase()))) return false;
-    if (category.item_url === '') return false;
-    finalCategories.push({
-      name: category.item_name,
-      url: category.item_url
-    });
+    if (category.second_level_categories && category.second_level_categories.length > 0) {
+      category.second_level_categories.forEach(subCategory => {
+        if (subCategory.item_url === '') return false;
+        finalCategories.push({
+          name: `${category.item_name} -> ${subCategory.item_name}`,
+          url: subCategory.item_url
+        });
+      });
+    } else {
+      if (category.item_url === '') return false;
+      finalCategories.push({
+        name: category.item_name,
+        url: category.item_url
+      });
+    }
   });
 
   return finalCategories;
@@ -67,6 +75,9 @@ const getCategories = async () => {
     let categoriesInfo = getUrlCategories(rootCategories);
     if (STORES[storeKey].allowedCategories.length > 0) {
       categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+    }
+    if (STORES[storeKey].excludedCategories && STORES[storeKey].excludedCategories.length > 0) {
+      categoriesInfo = categoriesInfo.filter(category => !STORES[storeKey].excludedCategories.find(el => category.name.toLowerCase().includes(el.toLowerCase())));
     }
     saveFile(`${__dirname}/categories.json`, categoriesInfo);
     return categoriesInfo;

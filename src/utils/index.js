@@ -34,7 +34,7 @@ const getDataUrl = async(url, runScripts=false, headers = DEFAULT_HEADERS) => {
     }
     dom.window.onerror = (msg) => {console.log('');}
   } catch (e) {
-    log.error(`[getDataUrl][${url}]: `, e.message);
+    return Promise.reject(e.message);
   }
 
   return dom;
@@ -51,7 +51,7 @@ const axiosGet = async(url, headers = {}) => {
     return data;
   } catch (err) {
     log.error(`[axiosGet][${url}]: `, err.message);
-    return Promise.reject(err);
+    return Promise.reject(err.message);
   }
 }
 
@@ -66,7 +66,7 @@ const axiosPost = async(url, body, headers={}) => {
     return data;
   } catch (err) {
     log.error(`[axiosPost][${url}]: `, err.message);
-    return Promise.reject(err);
+    return Promise.reject(err.message);
   }
 }
 
@@ -89,7 +89,7 @@ const axiosPostDom = async(url, body, headers={}) => {
     return dom;
   } catch (err) {
     log.error(`[axiosPostDom][${url}]: `, err.message);
-    return Promise.reject(err);
+    return Promise.reject(err.message);
   }
 }
 
@@ -112,6 +112,7 @@ const numberWithCommas = (number) => number.toString().replace(/\B(?=(\d{3})+(?!
 const isNumeric = (value) => /^-?\d+$/.test(value);
 
 const getCaptionForTelegram = (product) => {
+  const date = new Date();
   return `- % dcto: ${product.discountpercentage}%
 - Tienda: ${product.store}
 - Producto: ${product.name}
@@ -119,7 +120,8 @@ const getCaptionForTelegram = (product) => {
 - Descuento: $${numberWithCommas(product.discount)}
 - Precio Normal: $${numberWithCommas(product.normalprice)}
 - Precio Oferta: $${numberWithCommas(product.offerprice)}
-${product.cardprice !== 0 ? `Precio Tarjeta: $${numberWithCommas(product.cardprice)}` : ''}  
+${product.cardprice !== 0 ? `- Precio Tarjeta: $${numberWithCommas(product.cardprice)}` : ''}
+- Fecha: ${[date.getDate().toString().padStart(2,0), (date.getMonth()+1).toString().padStart(2,0), date.getFullYear()].join('-') + ' ' + [date.getHours().toString().padStart(2,0), date.getMinutes().toString().padStart(2,0)].join(':')}  
 - URL: ${product.url}`;
 }
 

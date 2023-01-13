@@ -99,7 +99,7 @@ const getAllProducts = async (categories) => {
     lastVersion = version;
     deleteProductsByVersion(STORE_NAME, lastVersion);
 
-    const productsInfo = [];
+    let totalProductsStore = 0;
     let contPages = 0;
     
     //categories.forEach(async (category, categoryIndex) => {
@@ -107,35 +107,42 @@ const getAllProducts = async (categories) => {
       const category = categories[categoryIndex];
       const totalPages = await getTotalPages(category.url);
       let pagesWithErrors = 0;
-      let totalProducts = 0;
       let productsCategory = [];
+      let promises = [];
       log.info(`Category [${STORE_NAME}][${category.name}][${totalPages}]`);
       for (let page = 1; page <= totalPages; page++) {
         contPages++;
         if (pagesWithErrors >= 3) break;
         await delay(DELAY_TIME_DEFAULT);
-        getProductsByPage({
-          url: category.url,
-          page,
-          category,
-        })
-        .then((productsList) => {
-          if (productsList.products.length === 0 ) pagesWithErrors++;
-          if (productsList.products.length < 20) pagesWithErrors = 10;
-          log.info(`[${STORE_NAME}][${category.name}(${categoryIndex} - ${categories.length})][${page} - ${totalPages}]: ${productsList.products.length}`);
-          productsCategory.push(...productsList.products);
-          totalProducts += productsList.products.length;
-        });
+        promises.push(getProductsByPage({
+            url: category.url,
+            page,
+            category,
+          })
+          .then((productsList) => {
+            if (productsList.products.length === 0 ) pagesWithErrors++;
+            if (productsList.products.length < 20) pagesWithErrors = 10;
+            log.info(`[${STORE_NAME}][${category.name}(${categoryIndex} - ${categories.length})][${page} - ${totalPages}]: ${productsList.products.length}`);
+            productsCategory.push(...productsList.products);
+          })
+        );
         if (contPages%DELAY_LIMIT === 0) await delay(DELAY_TIME);
       }
 
-      await delay(3000);
-      saveProducts(productsCategory);
-      log.info(`Category [${STORE_NAME}][${category.name}] Total products: ${totalProducts}`);
-      productsCategory = [];
+      await Promise.all(promises)
+      .then(values => {
+        // Remove duplicated products
+        let productsNew = [...new Map(productsCategory.map(item => [item['name'], item])).values()];
+        saveProducts(productsNew);
+        totalProductsStore += productsNew.length;
+        log.info(`[${STORE_NAME}] Category [${STORE_NAME}][${category.name}] Total products: ${productsNew.length}`);
+        productsCategory = [];
+        promises = [];
+        productsNew = [];
+      });
     };
 
-    resolve(productsInfo);
+    resolve(totalProductsStore);
   });
 }
 

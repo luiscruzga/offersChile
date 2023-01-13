@@ -56,30 +56,30 @@ Stores from which promotions are currently obtained
 
 | Store             | Url                                                                |Time(minutes)
 | ----------------- | ------------------------------------------------------------------ |------------------- |
-| Abcdin | [https://www.abcdin.cl](https://www.abcdin.cl) | 17 |
-| Adidas | [https://www.adidas.cl](https://www.adidas.cl) | 20 |
-| Best Store | [https://www.beststore.cl](https://www.beststore.cl) | 27 |
-| CIntegral | [https://cintegral.cl](https://cintegral.cl) | 23 |
-| Dafiti | [https://www.dafiti.cl](https://www.dafiti.cl) | 161 |
-| Decathlon | [https://www.decathlon.cl](https://www.decathlon.cl) | 8 |
-| Easy | [https://www.easy.cl](https://www.easy.cl) | 73 |
-| El Container | [https://www.elcontainer.cl](https://www.elcontainer.cl) | 3 |
+| Abcdin | [https://www.abcdin.cl](https://www.abcdin.cl) | 1 |
+| Adidas | [https://www.adidas.cl](https://www.adidas.cl) | 7 |
+| Best Store | [https://www.beststore.cl](https://www.beststore.cl) | 2 |
+| CIntegral | [https://cintegral.cl](https://cintegral.cl) | 2 |
+| Dafiti | [https://www.dafiti.cl](https://www.dafiti.cl) | 1 |
+| Decathlon | [https://www.decathlon.cl](https://www.decathlon.cl) | 1 |
+| Easy | [https://www.easy.cl](https://www.easy.cl) | 11 |
+| El Container | [https://www.elcontainer.cl](https://www.elcontainer.cl) | 1 |
 | Entel | [https://miportal.entel.cl](https://miportal.entel.cl) | 1 |
-| Falabella | [https://www.falabella.com/falabella-cl](https://www.falabella.com/falabella-cl) | 11 |
-| Hites | [https://www.hites.com](https://www.hites.com) | 79 |
-| Jumbo | [https://www.jumbo.cl](https://www.jumbo.cl) | 64 |
-| Knasta | [https://knasta.cl](https://knasta.cl) | 60 |
+| Falabella | [https://www.falabella.com/falabella-cl](https://www.falabella.com/falabella-cl) | 74 |
+| Hites | [https://www.hites.com](https://www.hites.com) | 27 |
+| Jumbo | [https://www.jumbo.cl](https://www.jumbo.cl) | 9 |
+| Knasta | [https://knasta.cl](https://knasta.cl) | 2 |
 | La Barra | [https://labarra.cl](https://labarra.cl) | 1 |
-| La Polar | [https://www.lapolar.cl](https://www.lapolar.cl) | 25 |
-| Lider | [https://www.lider.cl/catalogo](https://www.lider.cl/catalogo) | 26 |
-| Lider-Supermercado | [https://www.lider.cl/supermercado/](https://www.lider.cl/supermercado/) | 25 |
+| La Polar | [https://www.lapolar.cl](https://www.lapolar.cl) | 10 |
+| Lider | [https://www.lider.cl/catalogo](https://www.lider.cl/catalogo) | 10 |
+| Lider-Supermercado | [https://www.lider.cl/supermercado/](https://www.lider.cl/supermercado/) | 10 |
 | MicroPlay | [https://www.microplay.cl](https://www.microplay.cl) | 16 |
-| Movistar | [https://catalogo.movistar.cl](https://catalogo.movistar.cl) | 6 |
+| Movistar | [https://catalogo.movistar.cl](https://catalogo.movistar.cl) | 2 |
 | Olimpo Sports | [https://olimposports.cl](https://olimposports.cl) | 1 |
 | Paris | [https://www.paris.cl](https://www.paris.cl) | 88 |
-| Ripley | [https://simple.ripley.cl](https://simple.ripley.cl) | 74 |
-| Santa Isabel | [https://www.santaisabel.cl](https://www.santaisabel.cl) | 46 |
-| Tricot | [https://www.tricot.cl](https://www.tricot.cl/) | 10 |
+| Ripley | [https://simple.ripley.cl](https://simple.ripley.cl) | 3 |
+| Santa Isabel | [https://www.santaisabel.cl](https://www.santaisabel.cl) | 7 |
+| Tricot | [https://www.tricot.cl](https://www.tricot.cl/) | 2 |
 | WOM | [https://store.wom.cl](https://store.wom.cl) | 1 |
 
 Note: these times can be further reduced by modifying the default delay times in the configuration file, but keep in mind that cpu consumption can skyrocket if not controlled correctly given the parallelism that occurs

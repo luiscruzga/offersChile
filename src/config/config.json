@@ -1,13 +1,9 @@
 {
   "APP_NAME": "OFFERS_CHILE",
+  "MAX_TOTAL_PAGES": 30,
   "DELAY_TIME_DEFAULT": 1000,
-  "DELAY_LIMIT": 10,
-  "DELAY_TIME": 10000,
-  "DELAY_CATEGORY_LIMIT": 4,
-  "DELAY_CATEGORY_TIME": 300000,
-  "PERCENTAGE_MIN": 70,
-  "DISCOUNT_MIN": 200000,
-  "MAX_PARALLEL_CATEGORY": 3,
+  "DELAY_LIMIT": 30,
+  "DELAY_TIME": 5000,
   "STORES": {
     "abcdin": {
       "name": "Abcdin",
@@ -66,11 +62,6 @@
       "allowedCategories": ["Renueva tu equipo", "Porta o Contrata + Equipo", "Equipo Liberado", "Accesorios"],
       "totalProductsPerPage": 24
     },
-    "falabella": {
-      "name": "Falabella",
-      "baseUrl": "https://www.falabella.com/falabella-cl",
-      "allowedCategories": []
-    },
     "hites": {
       "name": "Hites",
       "baseUrl": "https://www.hites.com",
@@ -81,7 +72,7 @@
       "name": "Jumbo",
       "baseUrl": "https://www.jumbo.cl",
       "categoriesUrl": "https://assets.jumbo.cl/json/cms/page-11732.json",
-      "productsUrl": "https://apijumboweb.smdigital.cl/catalog/api/v2/products",
+      "productsUrl": "https://sm-web-api.ecomm.cencosud.com/catalog/api/v2/products/**FILTER**",
       "allowedCategories": [],
       "totalProductsPerPage": 45
     },
@@ -105,7 +96,7 @@
     "lapolar": {
       "name": "La Polar",
       "baseUrl": "https://www.lapolar.cl",
-      "allowedCategories": ["navidad", "tecnología", "tecnologia", "blanca", "hogar", "outlet", "otras"],
+      "allowedCategories": [],
       "totalProductsPerPage": 36
     },
     "lider": {
@@ -128,7 +119,7 @@
       "name": "MicroPlay",
       "baseUrl": "https://www.microplay.cl",
       "productsUrl": "https://www.microplay.cl/productos/reader",
-      "allowedCategories": ["gamer", "geek", "computación", "computacion", "juguetes", "juegos de mesa", "ofertas"],
+      "allowedCategories": [],
       "totalProductsPerPage": 20,
       "useOwnProducts": true
     },
@@ -146,22 +137,11 @@
       "allowedCategories": [],
       "totalProductsPerPage": 20
     },
-    "paris": {
-      "name": "Paris",
-      "baseUrl": "https://www.paris.cl",
-      "allowedCategories": ["electro", "tecno", "outlet"],
-      "totalProductsPerPage": 24
-    },
-    "ripley": {
-      "name": "Ripley",
-      "baseUrl": "https://simple.ripley.cl",
-      "allowedCategories": ["tecno", "electro", "supermercado", "deporte"]
-    },
     "santaisabel": {
       "name": "Santa Isabel",
       "baseUrl": "https://www.santaisabel.cl",
       "categoriesUrl": "https://www.santaisabel.cl",
-      "productsUrl": "https://apis.santaisabel.cl/catalog/api/v2/pedrofontova/products",
+      "productsUrl": "https://apis.santaisabel.cl/catalog/api/v2/pedrofontova/products**FILTER**",
       "allowedCategories": [],
       "totalProductsPerPage": 45
     },
@@ -169,7 +149,7 @@
       "name": "Tricot",
       "baseUrl": "https://www.tricot.cl/",
       "allowedCategories": [],
-      "totalProductsPerPage": 24
+      "totalProductsPerPage": 20
     },
     "wom": {
       "name": "WOM",
@@ -195,7 +175,28 @@
           "id": 4
         }
       ],
-      "totalProductsPerPage": 50
+      "totalProductsPerPage": 18
+    },
+    "ripley": {
+      "name": "Ripley",
+      "baseUrl": "https://simple.ripley.cl",
+      "allowedCategories": [],
+      "delayByCategory": true
+    },
+    "paris": {
+      "name": "Paris",
+      "baseUrl": "https://www.paris.cl",
+      "allowedCategories": ["electro", "tecno", "outlet"],
+      "totalProductsPerPage": 24,
+      "runAsync": true
+    },
+    "falabella": {
+      "name": "Falabella",
+      "baseUrl": "https://www.falabella.com/falabella-cl",
+      "allowedCategories": [],
+      "excludedCategories": ["automotriz", "dormitorio", "bebés", "otras categorías", "organización", "Arriendo", "Tejido"],
+      "delayByCategory": true,
+      "runAsync": true
     }
   }
 }

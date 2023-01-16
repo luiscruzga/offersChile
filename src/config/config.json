@@ -1,7 +1,7 @@
 {
   "APP_NAME": "OFFERS_CHILE",
   "MAX_TOTAL_PAGES": 30,
-  "DELAY_TIME_DEFAULT": 1000,
+  "DELAY_TIME_DEFAULT": 500,
   "DELAY_LIMIT": 30,
   "DELAY_TIME": 5000,
   "STORES": {
@@ -181,7 +181,7 @@
       "name": "Ripley",
       "baseUrl": "https://simple.ripley.cl",
       "allowedCategories": [],
-      "delayByCategory": true
+      "runAsync": true
     },
     "paris": {
       "name": "Paris",

@@ -100,6 +100,15 @@ const loadUniqueProducts = async (store) => {
   }  
 }
 
+const addHistoryProducts = async (store) => {
+  try {
+    await client.query(`CALL "ocp_add_history_products"($1)`, [store]);
+  } catch (error) {
+    log.error('PG ERROR 7: ', error);
+    evaluateError(error, loadUniqueProducts(store));
+  }  
+}
+
 const getProductsToReport = async (store = null) => {
   try {
     const { rows } = await clientTelegram.query(`SELECT * FROM "ocf_get_products_to_report"($1, $2) WHERE isoutofstock = 'N'`, [store, process.env.PERCENTAGE_FILTER]);
@@ -149,4 +158,5 @@ module.exports = {
   getProductsToReport,
   saveReportedProduct,
   getProductsRandom,
+  addHistoryProducts,
 }

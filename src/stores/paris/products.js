@@ -17,7 +17,7 @@ const getProductsByPage = async (args) => {
   try {
     const totalProductsPerPage = STORES[storeKey].totalProductsPerPage;
     const url = args.url.includes('?') ? `${args.url}&start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}` : `${args.url}?start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}`;
-    const dom = await getDataUrl(url, true);
+    const dom = await getDataUrl(url);
     const productsInfo = [];
     const products = [...dom.window.document.querySelectorAll('.product-tile[data-product]')];
 
@@ -82,7 +82,7 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (category) => {
   try {
-    const dom = await getDataUrl(category.url, true);
+    const dom = await getDataUrl(category.url);
     const totalProducts = parseInt(replaceAll(dom.window.document.querySelector('.total-products > span').textContent, '\n', ''));
     return Math.round(totalProducts / STORES[storeKey].totalProductsPerPage);
   } catch (err) {

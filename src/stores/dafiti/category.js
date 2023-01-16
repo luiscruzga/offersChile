@@ -41,7 +41,7 @@ const getUrlCategories = (dom) => {
 */
 const getCategories = async () => {
   log.info(`Getting categories of [${STORES[storeKey].name}]`);
-  const dom = await getDataUrl(STORES[storeKey].baseUrl, true);
+  const dom = await getDataUrl(STORES[storeKey].baseUrl);
 
   let categoriesInfo = getUrlCategories(dom);
   if (STORES[storeKey].allowedCategories.length > 0) {

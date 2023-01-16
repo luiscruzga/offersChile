@@ -804,10 +804,6 @@
     "url": "https://www.paris.cl/outlet/outlet-hombre/outlet-accesorios-moda/"
   },
   {
-    "name": "Outlet -> Niños Outlet -> Triciclos Outlet",
-    "url": "https://www.paris.cl/outlet/ninos/triciclos-outlet/"
-  },
-  {
     "name": "Outlet -> Niños Outlet -> Coches Outlet",
     "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-coches/"
   },
@@ -840,6 +836,10 @@
     "url": "https://www.paris.cl/outlet/ninos/mochilas-y-accesorios-moda-outlet/"
   },
   {
+    "name": "Outlet -> Niños Outlet -> Dormitorio Infantil Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-dormitorio-infantil/"
+  },
+  {
     "name": "Outlet -> Zapatos y Zapatillas Outlet -> Zapatillas Mujer Outlet",
     "url": "https://www.paris.cl/outlet/outlet-zapatos-y-zapatillas/outlet-zapatillas-mujer/"
   },
@@ -862,26 +862,6 @@
   {
     "name": "Outlet -> Zapatos y Zapatillas Outlet -> Sandalias Outlet",
     "url": "https://www.paris.cl/outlet/outlet-zapatos-y-zapatillas/outlet-sandalias/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Muñecas y Peluches Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-munecas-peluches/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Autos y Radiocontrolados Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-autos-radiocontrolados/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Juguetes de Acción Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-juguetes-accion/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Didácticos y Recreativos Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-didacticos-recreativos/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Juegos de Exterior Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-juegos-exterior/"
   },
   {
     "name": "Outlet -> Deportes Outlet -> Ropa Deportiva Mujer Outlet",
@@ -934,5 +914,29 @@
   {
     "name": "Outlet -> Deportes Outlet -> Deportes Niños Outlet",
     "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-deportes-ninos/"
+  },
+  {
+    "name": "Outlet -> Juguetes Outlet -> Juguetes Bebé Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-juguetes-bebe/"
+  },
+  {
+    "name": "Outlet -> Juguetes Outlet -> Muñecas y Peluches Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-munecas-peluches/"
+  },
+  {
+    "name": "Outlet -> Juguetes Outlet -> Autos y Radiocontrolados Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-autos-radiocontrolados/"
+  },
+  {
+    "name": "Outlet -> Juguetes Outlet -> Juguetes de Acción Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-juguetes-accion/"
+  },
+  {
+    "name": "Outlet -> Juguetes Outlet -> Didácticos y Recreativos Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-didacticos-recreativos/"
+  },
+  {
+    "name": "Outlet -> Juguetes Outlet -> Juegos de Exterior Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-juegos-exterior/"
   }
 ]

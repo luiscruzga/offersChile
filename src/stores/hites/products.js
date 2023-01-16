@@ -15,16 +15,22 @@ const totalPerPage = STORES[storeKey].totalProductsPerPage;
  * @param {string} args.category.name - name de la categoria
  */
 const getProductsByPage = async (args) => {
+  const startProducts = ((args.page-1) * totalPerPage);
   try {
-    const startProducts = ((args.page-1) * totalPerPage);
-    const dom = await getDataUrl(`${args.url}?sz=${totalPerPage}&start=${startProducts}&srule=discount-off`, true);
+    const dom = await getDataUrl(`${args.url}?sz=${totalPerPage}&start=${startProducts}&srule=discount-off`);
     const productsInfo = [];
     const products = [...dom.window.document.querySelectorAll('.product-tile')];
 
     products.forEach(product => {
-      const cardPrice = product.querySelector('.price-item.hites-price') ? transformPrice(product.querySelector('.price-item.hites-price').textContent) : 0;
-      const offerPrice = product.querySelector('.price-item.sales .value') ? product.querySelector('.price-item.sales .value').getAttribute('content') : 0;
-      const normalPrice = product.querySelector('.price-item.list .value') ? product.querySelector('.price-item.list .value').getAttribute('content') : 0;
+      const cardPrice = product.querySelector('.price-item.hites-price') ? transformPrice(product.querySelector('.price-item.hites-price').textContent) : 0;      
+      const normalPrice = product.querySelector('.price-item.list .value')
+        ? product.querySelector('.price-item.list .value').getAttribute('content')
+        : product.querySelector('.price-item.sales .value')
+        ? product.querySelector('.price-item.sales .value').getAttribute('content')
+        : 0;
+      const offerPrice = product.querySelector('.price-item.sales .value')
+        ? product.querySelector('.price-item.sales .value').getAttribute('content')
+        : 0;
       const href = product.querySelector('.product-name--bundle').href;
       const hasStock = product.querySelector('.outofstock').closest('.d-none') ? true : false;
 
@@ -77,7 +83,7 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (category) => {
   try {
-    const dom = await getDataUrl(`${category.url}?sz=${totalPerPage}&start=0&srule=discount-off`, true);
+    const dom = await getDataUrl(`${category.url}?sz=${totalPerPage}&start=0&srule=discount-off`);
     const totalProducts = parseInt(replaceAll(dom.window.document.querySelector('.product-results-count').textContent.split('de ').pop().split(')')[0], ',',''));
     return Math.round(totalProducts / totalPerPage);
   } catch (err) {

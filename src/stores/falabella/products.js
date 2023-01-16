@@ -16,7 +16,7 @@ let lastVersion = 1;
 const getProductsByPage = async (args) => {
   const url = args.url.includes('?') ? `${args.url}&page=${args.page}` : `${args.url}?isPLP=1&page=${args.page}`;
   try {
-    const dom = await getDataUrl(url, true);
+    const dom = await getDataUrl(url);
     const productsInfo = [];
     const products = JSON.parse(dom.window.document.getElementById('__NEXT_DATA__').textContent).props.pageProps.results;
 
@@ -78,7 +78,7 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (category) => {
   try {
-    const dom = await getDataUrl(category.url, true);
+    const dom = await getDataUrl(category.url);
     const pagination = JSON.parse(dom.window.document.getElementById('__NEXT_DATA__').textContent).props.pageProps.pagination;
     return Math.round(pagination.count / pagination.perPage);
   } catch (err) {

@@ -23,7 +23,7 @@ const getAllProducts = async (storeKey, categories, getTotalPages, getProductsBy
       let pagesWithErrors = 0;
       let productsCategory = [];
       let promises = [];
-      log.info(`[${STORE_NAME}] Category [${STORE_NAME}][${category.name}][${totalPages}]`);
+      log.info(`[${STORE_NAME}] Category [${STORE_NAME}][${category.name}(${categoryIndex+1} - ${categories.length})][${totalPages}]`);
       totalPages = totalPages <= MAX_TOTAL_PAGES ? totalPages : MAX_TOTAL_PAGES;
       for (let page = 1; page <= totalPages; page++) {
         contPages++;
@@ -37,7 +37,7 @@ const getAllProducts = async (storeKey, categories, getTotalPages, getProductsBy
           })
           .then((productsList) => {
             if (productsList.products.length === 0) pagesWithErrors++;
-            log.info(`[${STORE_NAME}][${category.name}(${categoryIndex+1} - ${categories.length})][${page} - ${totalPages}]: ${productsList.products.length}`);
+            log.info(`[Products][${STORE_NAME}][${category.name}(${categoryIndex+1} - ${categories.length})][${page} - ${totalPages}]: ${productsList.products.length}`);
             productsCategory.push(...productsList.products);
           })
         );
@@ -49,7 +49,7 @@ const getAllProducts = async (storeKey, categories, getTotalPages, getProductsBy
         // Remove duplicated products
         saveProducts(productsCategory);
         totalProductsStore += productsCategory.length;
-        log.info(`[${STORE_NAME}] Category [${STORE_NAME}][${category.name}] Total products: ${productsCategory.length}`);
+        log.info(`[${STORE_NAME}] Category [${STORE_NAME}][${category.name}(${categoryIndex+1} - ${categories.length})] Total products: ${productsCategory.length}`);
         productsCategory = [];
         promises = [];
         return true;

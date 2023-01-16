@@ -16,10 +16,11 @@ const all = format((info) => {
   info.message = `${message} ${rest}`;
   return info;
 });
-const levelFilter = (level) =>
+const levelFilter = (level, type = 'file') =>
   format((info, opts) => {
-     if (info.level != level) { return false; }
-      return info;
+    if (info.level != level) return false;
+    if (process.env.LEVEL_LOG < 3 && info.message.indexOf('[Products]') === 0 && type !== 'file') return false;
+    return info;
   })();
 
 const Logger = createLogger({
@@ -43,7 +44,7 @@ const Logger = createLogger({
     new transports.Console({
       level: 'info',
       format: format.combine(
-        levelFilter('info'),
+        levelFilter('info', 'console'),
         format.colorize({
           all: true
         })
@@ -66,7 +67,7 @@ const Logger = createLogger({
     new transports.Console({
       level: 'end',
       format: format.combine(
-        levelFilter('end'),
+        levelFilter('end', 'console'),
         format.colorize({
           all: true
         })

@@ -7,7 +7,7 @@
   {
     "name": "PRODUCTOS NO DEPORTIVOS",
     "url": "https://olimposports.cl/categoria-producto/productos-no-deportivos/",
-    "totalProducts": 65
+    "totalProducts": 64
   },
   {
     "name": "PACK PROMOCIONALES",
@@ -22,7 +22,7 @@
   {
     "name": "CICLISMO Y TREKKING",
     "url": "https://olimposports.cl/categoria-producto/ciclismo-y-trekking/",
-    "totalProducts": 51
+    "totalProducts": 52
   },
   {
     "name": "CALZAS Y ROPA",
@@ -37,11 +37,11 @@
   {
     "name": "BANCAS Y MÁQUINAS",
     "url": "https://olimposports.cl/categoria-producto/bancas-y-maquinas/",
-    "totalProducts": 12
+    "totalProducts": 13
   },
   {
     "name": "ACCESORIOS E IMPLEMENTOS",
     "url": "https://olimposports.cl/categoria-producto/accesorios-e-implementos/",
-    "totalProducts": 153
+    "totalProducts": 155
   }
 ]

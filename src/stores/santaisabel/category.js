@@ -42,7 +42,7 @@ const getCategories = async () => {
   } catch (error) {
     try {
       const html = await axiosGet(STORES[storeKey].categoriesUrl);
-      let categoriesInfo = getUrlCategories(JSON.parse(html.split('window.__renderData = ').pop().split(';\n\t</script>')[0].slice(1,-1)));
+      let categoriesInfo = getUrlCategories(JSON.parse(html.split('dom.window.__renderData = ').pop().split(';\n\t</script>')[0].slice(1,-1)));
       if (STORES[storeKey].allowedCategories.length > 0) {
         categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
       }

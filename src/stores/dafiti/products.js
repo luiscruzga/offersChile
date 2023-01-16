@@ -16,7 +16,7 @@ let lastVersion = 1;
 const getProductsByPage = async (args) => {
   try {
     const url = args.url.includes('?') ? `${args.url}&page=${args.page}` : `${args.url}?page=${args.page}`;
-    const dom = await getDataUrl(url, true);
+    const dom = await getDataUrl(url);
     const productsInfo = [];
     const products = [...dom.window.document.querySelectorAll('#productsCatalog .card-content')]
                   
@@ -70,7 +70,7 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (category) => {
   try {
-    const dom = await getDataUrl(category.url, true);
+    const dom = await getDataUrl(category.url);
     const totalProducts = parseInt(dom.window.document.querySelector('.search-query-results-count').textContent);
     return totalProducts < STORES[storeKey].totalProductsPerPage
       ? 1

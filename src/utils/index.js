@@ -2,6 +2,7 @@ const fs = require('fs');
 const axios = require('axios');
 const jsdom = require("jsdom");
 const { JSDOM } = jsdom;
+const { parseHTML, DOMParser } = require('linkedom');
 
 const DEFAULT_HEADERS = {
   'Accept': '*/*',
@@ -18,26 +19,26 @@ const replaceAll = (str, term, replacement) => {
 };
 
 const getDataUrl = async(url, runScripts=false, headers = DEFAULT_HEADERS) => {
-  let dom;
   try {
-    //const body = await axios.get(url).then(res => res.data);
+    let dom;
     const body = await axios({
       method: 'GET',
       url,
       headers
     }).then(res => res.data);
 
-    if (!runScripts) dom = new JSDOM(body);
+    if (!runScripts) dom = parseHTML(body);
     else {
       const virtualConsole = new jsdom.VirtualConsole();
       dom = new JSDOM(body, { runScripts: "dangerously", displayErrors: false, virtualConsole });
     }
-    dom.window.onerror = (msg) => {console.log('');}
+    let message;
+    dom.window.onerror = (msg) => message = msg;
+    
+    return dom; 
   } catch (e) {
     return Promise.reject(e.message);
   }
-
-  return dom;
 }
 
 const axiosGet = async(url, headers = {}) => {
@@ -85,7 +86,7 @@ const axiosPostDom = async(url, body, headers={}) => {
     }).then(res => res.data);
     //fs.writeFileSync('pruebaabcdin.html', data);
     dom = new JSDOM(data);
-    dom.window.onerror = function (msg) {}
+    dom.dom.window.onerror = function (msg) {}
     return dom;
   } catch (err) {
     log.error(`[axiosPostDom][${url}]: `, err.message);
@@ -113,12 +114,13 @@ const isNumeric = (value) => /^-?\d+$/.test(value);
 
 const getCaptionForTelegram = (product) => {
   const date = new Date();
-  return `- % dcto: ${product.discountpercentage}%
+  return `${product.type === 'normalprice' ? 'CAMBIO DE PRECIO NORMAL ⬇' : ''}
+- % dcto: ${product.discountpercentage}%
 - Tienda: ${product.store}
 - Producto: ${product.name}
 - Marca: ${product.brand}
 - Descuento: $${numberWithCommas(product.discount)}
-- Precio Normal: $${numberWithCommas(product.normalprice)}
+- Precio Normal: ${product.type === 'difference' ? '$'+numberWithCommas(product.normalprice) : product.actualprice}
 - Precio Oferta: $${numberWithCommas(product.offerprice)}
 ${product.cardprice !== 0 ? `- Precio Tarjeta: $${numberWithCommas(product.cardprice)}` : ''}
 - Fecha: ${[date.getDate().toString().padStart(2,0), (date.getMonth()+1).toString().padStart(2,0), date.getFullYear()].join('-') + ' ' + [date.getHours().toString().padStart(2,0), date.getMinutes().toString().padStart(2,0)].join(':')}  

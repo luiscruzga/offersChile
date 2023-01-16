@@ -24,7 +24,7 @@ const getCategories = async () => {
   const dom = await getDataUrl(STORES[storeKey].baseUrl);
   let categoriesInfo = [];
 
-  if (dom.window) {
+  if (window) {
     categoriesInfo = await getUrlCategories(dom);
     if (STORES[storeKey].allowedCategories.length > 0) {
       categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);

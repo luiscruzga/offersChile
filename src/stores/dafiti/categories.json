@@ -8,99 +8,15 @@
     "url": "https://www.dafiti.cl/all-products/?shipment_type=supplier&discount_range=50-100"
   },
   {
-    "name": "SALE 🔥 -> MUJER -> Desigual",
-    "url": "https://www.dafiti.cl/desigual/?discount_range=40-90&gender=Femenino"
+    "name": "SALE 🔥 -> MUJER",
+    "url": "https://www.dafiti.cl"
   },
   {
-    "name": "SALE 🔥 -> MUJER -> Adidas",
-    "url": "https://www.dafiti.cl/adidas/?discount_range=40-90&gender=Femenino"
+    "name": "SALE 🔥 -> HOMBRE",
+    "url": "https://www.dafiti.cl"
   },
   {
-    "name": "SALE 🔥 -> MUJER -> The Green Hills",
-    "url": "https://www.dafiti.cl/the-green-hills/?discount_range=40-90"
-  },
-  {
-    "name": "SALE 🔥 -> MUJER -> The Hills",
-    "url": "https://www.dafiti.cl/the-hills/?discount_range=40-90"
-  },
-  {
-    "name": "SALE 🔥 -> MUJER -> Topshop",
-    "url": "https://www.dafiti.cl/topshop/?discount_range=40-90"
-  },
-  {
-    "name": "SALE 🔥 -> MUJER -> Fiveblu",
-    "url": "https://www.dafiti.cl/fiveblu/?discount_range=40-90"
-  },
-  {
-    "name": "SALE 🔥 -> MUJER -> Missguided",
-    "url": "https://www.dafiti.clmissguided/?discount_range=50-90"
-  },
-  {
-    "name": "SALE 🔥 -> MUJER -> Tommy Hilfiger",
-    "url": "https://www.dafiti.cl/tommy-hilfiger--tommy-jeans/?gender=Femenino&discount_range=40-80"
-  },
-  {
-    "name": "SALE 🔥 -> MUJER -> Local Heroes",
-    "url": "https://www.dafiti.cl/local-heroes/?gender=Femenino&discount_range=40-80"
-  },
-  {
-    "name": "SALE 🔥 -> HOMBRE -> Tommy Hilfiger",
-    "url": "https://www.dafiti.cl/tommy-hilfiger--tommy-jeans/?discount_range=40-90&gender=Masculino"
-  },
-  {
-    "name": "SALE 🔥 -> HOMBRE -> Topman",
-    "url": "https://www.dafiti.cl/topman/?discount_range=40-90/"
-  },
-  {
-    "name": "SALE 🔥 -> HOMBRE -> Converse",
-    "url": "https://www.dafiti.cl/converse/?discount_range=40-90&gender=Masculino"
-  },
-  {
-    "name": "SALE 🔥 -> HOMBRE -> Lacoste",
-    "url": "https://www.dafiti.cl/lacoste/?discount_range=40-90&gender=Masculino"
-  },
-  {
-    "name": "SALE 🔥 -> HOMBRE -> Panama Jack",
-    "url": "https://www.dafiti.cl/panama-jack/?discount_range=30-90&gender=Masculino"
-  },
-  {
-    "name": "SALE 🔥 -> HOMBRE -> Under Armour",
-    "url": "https://www.dafiti.cl/under-armour/?discount_range=30-90&gender=Masculino"
-  },
-  {
-    "name": "SALE 🔥 -> HOMBRE -> Adidas",
-    "url": "https://www.dafiti.cl/adidas/?discount_range=40-90&gender=Masculino"
-  },
-  {
-    "name": "SALE 🔥 -> HOMBRE -> Puma",
-    "url": "https://www.dafiti.cl/puma/?discount_range=30-90&gender=Masculino"
-  },
-  {
-    "name": "SALE 🔥 -> NIÑOS -> Adidas",
-    "url": "https://www.dafiti.cl/adidas/?discount_range=40-90&gender=Ni%C3%B1as--Ni%C3%B1os"
-  },
-  {
-    "name": "SALE 🔥 -> NIÑOS -> Bamers",
-    "url": "https://www.dafiti.cl/bamers/?discount_range=40-90&gender=Ni%C3%B1as--Ni%C3%B1os"
-  },
-  {
-    "name": "SALE 🔥 -> NIÑOS -> Panama Jack",
-    "url": "https://www.dafiti.cl/panama-jack/?discount_range=30-90&gender=Ni%C3%B1as--Ni%C3%B1os"
-  },
-  {
-    "name": "SALE 🔥 -> NIÑOS -> Colloky",
-    "url": "https://www.dafiti.cl/colloky/?discount_range=40-90"
-  },
-  {
-    "name": "SALE 🔥 -> NIÑOS -> Desigual",
-    "url": "https://www.dafiti.cldesigual/?discount_range=40-90&gender=Ni%C3%B1as--Ni%C3%B1os"
-  },
-  {
-    "name": "SALE 🔥 -> NIÑOS -> Under Armour",
-    "url": "https://www.dafiti.cl/under-armour/?discount_range=30-90&gender=Ni%C3%B1as--Ni%C3%B1os"
-  },
-  {
-    "name": "SALE 🔥 -> NIÑOS -> Puma",
-    "url": "https://www.dafiti.cl/puma/?discount_range=30-90&gender=Ni%C3%B1as--Ni%C3%B1os"
+    "name": "SALE 🔥 -> NIÑOS",
+    "url": "https://www.dafiti.cl"
   }
 ]

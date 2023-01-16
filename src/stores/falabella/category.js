@@ -68,7 +68,7 @@ const getUrlCategories = (categories) => {
 const getCategories = async () => {
   log.info(`Getting categories of [${STORES[storeKey].name}]`);
   try {
-    const dom = await getDataUrl(STORES[storeKey].baseUrl, true);
+    const dom = await getDataUrl(STORES[storeKey].baseUrl);
   
     const data = JSON.parse(dom.window.document.getElementById('__NEXT_DATA__').textContent);
     const rootCategories = data.props.pageProps.serverData.headerData.taxonomy.entry.all_accesses.categories;

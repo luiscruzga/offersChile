@@ -28,7 +28,7 @@ directories.forEach((directory) => {
       totalProducts = await products.getAllProducts(categories);
     }
     await loadUniqueProducts(STORES[storeKey].name);
-    await addHistoryProducts(STORES[storeKey].name);
+    addHistoryProducts(STORES[storeKey].name);
 
     const endDate = new Date();
     const finalTime = diffMinutes(startDate, endDate);

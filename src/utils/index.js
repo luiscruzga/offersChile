@@ -1,8 +1,6 @@
 const fs = require('fs');
 const axios = require('axios');
-const jsdom = require("jsdom");
-const { JSDOM } = jsdom;
-const { parseHTML, DOMParser } = require('linkedom');
+const { parseHTML } = require('linkedom');
 
 const DEFAULT_HEADERS = {
   'Accept': '*/*',
@@ -27,14 +25,22 @@ const getDataUrl = async(url, runScripts=false, headers = DEFAULT_HEADERS) => {
       headers
     }).then(res => res.data);
 
-    if (!runScripts) dom = parseHTML(body);
-    else {
-      const virtualConsole = new jsdom.VirtualConsole();
-      dom = new JSDOM(body, { runScripts: "dangerously", displayErrors: false, virtualConsole });
-    }
-    let message;
-    dom.window.onerror = (msg) => message = msg;
-    
+    dom = parseHTML(body);
+
+    // Execute scripts for simulate virtual console
+    let { document, window }= dom;
+    let errors = 0;
+    [...dom.window.document.getElementsByTagName('script')]
+    .filter(el => el.text !== '')
+    .forEach(script => {
+      try {
+        const F = new Function(script.text);
+        F();
+      } catch(e) {
+        errors++;
+      }
+    });
+    dom.window = window;
     return dom; 
   } catch (e) {
     return Promise.reject(e.message);

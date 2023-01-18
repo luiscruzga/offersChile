@@ -24,7 +24,11 @@ const getAllProducts = async (storeKey, categories, getTotalPages, getProductsBy
       let productsCategory = [];
       let promises = [];
       log.info(`[${STORE_NAME}] Category [${STORE_NAME}][${category.name}(${categoryIndex+1} - ${categories.length})][${totalPages}]`);
-      totalPages = totalPages <= MAX_TOTAL_PAGES ? totalPages : MAX_TOTAL_PAGES;
+      totalPages = !STORES[storeKey].limitPages
+        ? totalPages
+        : totalPages <= MAX_TOTAL_PAGES
+        ? totalPages
+        : MAX_TOTAL_PAGES;
       for (let page = 1; page <= totalPages; page++) {
         contPages++;
         if (pagesWithErrors >= 4) break;
@@ -41,7 +45,7 @@ const getAllProducts = async (storeKey, categories, getTotalPages, getProductsBy
             productsCategory.push(...productsList.products);
           })
         );
-        if (STORES[storeKey].delayByCategory && contPages%DELAY_LIMIT === 0) await delay(DELAY_TIME);        
+        if (contPages%DELAY_LIMIT === 0) await delay(DELAY_TIME);        
       }
 
       await Promise.all(promises)

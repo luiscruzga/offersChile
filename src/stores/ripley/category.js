@@ -40,13 +40,14 @@ const { getDataUrl, saveFile } = require("../../utils/");
  */
 const getCategories = async () => {
   log.info(`Getting categories of [${STORES[storeKey].name}]`);
-  const dom = await getDataUrl(STORES[storeKey].baseUrl, true);
+  const dom = await getDataUrl(STORES[storeKey].baseUrl);
   
   let categoriesInfo = [];
-  if(typeof dom.window.__PRELOADED_STATE__ !== 'undefined'
-    && typeof dom.window.__PRELOADED_STATE__.categories !== 'undefined'
+  const info = JSON.parse([...dom.window.document.getElementsByTagName('script')].find(el => el.text.includes('window.__PRELOADED_STATE__')).text.replace('window.__PRELOADED_STATE__ =', '').trim().slice(0,-1));
+  if(typeof info !== 'undefined'
+    && typeof info.categories !== 'undefined'
   ){
-    const categories = dom.window.__PRELOADED_STATE__.categories.normal;
+    const categories = info.categories.normal;
     categories.forEach(category => {
       getUrlCategories(category, categoriesInfo, '', '');
     });

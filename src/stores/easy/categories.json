@@ -1,7 +1,11 @@
 [
   {
-    "name": "Electrohogar y climatización -> Calefacción",
-    "url": "https://www.easy.cl/electrohogar-y-climatizacion/calefaccion"
+    "name": "Electrohogar y climatización -> Ventilación",
+    "url": "https://www.easy.cl/electrohogar-y-climatizacion/ventilacion"
+  },
+  {
+    "name": "Electrohogar y climatización -> Refrigeración",
+    "url": "https://www.easy.cl/electrohogar-y-climatizacion/refrigeracion"
   },
   {
     "name": "Electrohogar y climatización -> Cocina",
@@ -12,10 +16,6 @@
     "url": "https://www.easy.cl/electrohogar-y-climatizacion/aspirado-y-limpieza"
   },
   {
-    "name": "Electrohogar y climatización -> Refrigeración",
-    "url": "https://www.easy.cl/electrohogar-y-climatizacion/refrigeracion"
-  },
-  {
     "name": "Electrohogar y climatización -> Electrodomésticos",
     "url": "https://www.easy.cl/electrohogar-y-climatizacion/electrodomesticos"
   },
@@ -24,12 +24,16 @@
     "url": "https://www.easy.cl/electrohogar-y-climatizacion/calefont-y-termos"
   },
   {
-    "name": "Electrohogar y climatización -> Ventilación",
-    "url": "https://www.easy.cl/electrohogar-y-climatizacion/ventilacion"
-  },
-  {
     "name": "Electrohogar y climatización -> Lavado y planchado",
     "url": "https://www.easy.cl/electrohogar-y-climatizacion/lavado-y-planchado"
+  },
+  {
+    "name": "Electrohogar y climatización -> Smart Home",
+    "url": "https://www.easy.cl/electrohogar-y-climatizacion/smart-home"
+  },
+  {
+    "name": "Electrohogar y climatización -> Calefacción",
+    "url": "https://www.easy.cl/electrohogar-y-climatizacion/calefaccion"
   },
   {
     "name": "Electrohogar y climatización -> Tecnología",

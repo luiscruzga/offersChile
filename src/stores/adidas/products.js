@@ -18,9 +18,10 @@ const getProductsByPage = async (args) => {
     ? `${args.url}&start=${STORES[storeKey].totalProductsPerPage * (args.page - 1)}`
     : `${args.url}?start=${STORES[storeKey].totalProductsPerPage * (args.page - 1)}`;
   try {
-    const dom = await getDataUrl(url, true, {});
+    const dom = await getDataUrl(url, {});
+    const info = eval([...dom.window.document.getElementsByTagName('script')].find(el => el.text.includes('window.DATA_STORE')).text.replace('window.DATA_STORE =', '').trim());
     const productsInfo = [];
-    const products = dom.window.DATA_STORE.plp.itemList.items;
+    const products = info.plp.itemList.items;
                   
     products.forEach(product => {
       const normalPrice = product.price;
@@ -67,11 +68,9 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (category) => {
   try {
-    const dom = await getDataUrl(category.url, true, {});
-    const totalProducts = dom.window.DATA_STORE.plp.itemList.count;
-    return totalProducts < STORES[storeKey].totalProductsPerPage
-      ? 1
-      : Math.round(totalProducts / STORES[storeKey].totalProductsPerPage);
+    const dom = await getDataUrl(category.url, {});
+    const totalPages = parseInt(dom.window.document.querySelector('[data-auto-id="pagination-pages-container"]').textContent.replace('de ', '').trim());
+    return totalPages;
   } catch (err) {
     return 1;
   }

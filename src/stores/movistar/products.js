@@ -15,10 +15,14 @@ let lastVersion = 1;
  */
 const getProductsByPage = async (args) => {
   try {
-    const dom = await getDataUrl(`${args.url}?p=${args.page}`, true);
+    const dom = await getDataUrl(`${args.url}?p=${args.page}`);
     const productsInfo = [];
-    const products = dom.window.products;
-                  
+    const products = [];
+    [...dom.window.document.getElementsByTagName('script')]
+    .filter(el => el.text.includes('products.push'))
+    .forEach(script => {
+      eval(script.text);
+    });
     products.forEach(product => {
       const normalPrice = dom.window.document.querySelector(`.product-item-link[data-crosss-id-catalog="${product.id}"] .precio_normal .price`)
         ? transformPrice(dom.window.document.querySelector(`.product-item-link[data-crosss-id-catalog="${product.id}"] .precio_normal .price`).textContent)
@@ -67,7 +71,7 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (category) => {
   try {
-    const dom = await getDataUrl(category.url, true);
+    const dom = await getDataUrl(category.url);
     const totalProducts = parseInt(dom.window.document.querySelector('.toolbar-number').textContent.trim().split(' ').pop());
     return totalProducts < STORES[storeKey].totalProductsPerPage
       ? 1

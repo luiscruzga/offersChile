@@ -16,31 +16,15 @@ const replaceAll = (str, term, replacement) => {
   return str.replace(new RegExp(escapeRegExp(term), 'g'), replacement).trim();
 };
 
-const getDataUrl = async(url, runScripts=false, headers = DEFAULT_HEADERS) => {
+const getDataUrl = async(url, headers = DEFAULT_HEADERS) => {
   try {
-    let dom;
     const body = await axios({
       method: 'GET',
       url,
       headers
     }).then(res => res.data);
 
-    dom = parseHTML(body);
-
-    // Execute scripts for simulate virtual console
-    let { document, window }= dom;
-    let errors = 0;
-    [...dom.window.document.getElementsByTagName('script')]
-    .filter(el => el.text !== '')
-    .forEach(script => {
-      try {
-        const F = new Function(script.text);
-        F();
-      } catch(e) {
-        errors++;
-      }
-    });
-    dom.window = window;
+    const dom = parseHTML(body);
     return dom; 
   } catch (e) {
     return Promise.reject(e.message);
@@ -78,7 +62,6 @@ const axiosPost = async(url, body, headers={}) => {
 }
 
 const axiosPostDom = async(url, body, headers={}) => {
-  let dom;
   try {
     const params = new URLSearchParams();
     for (let key in body) {
@@ -90,9 +73,8 @@ const axiosPostDom = async(url, body, headers={}) => {
       data: params,
       headers
     }).then(res => res.data);
-    //fs.writeFileSync('pruebaabcdin.html', data);
-    dom = new JSDOM(data);
-    dom.dom.window.onerror = function (msg) {}
+
+    const dom = parseHTML(data);
     return dom;
   } catch (err) {
     log.error(`[axiosPostDom][${url}]: `, err.message);

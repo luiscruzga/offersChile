@@ -32,8 +32,9 @@ directories.forEach((directory) => {
 
     const endDate = new Date();
     const finalTime = diffMinutes(startDate, endDate);
+    COUNT_STORES_ENDS++;
     log.end('================================================================================');
-    log.end(`Proceso Finalizado Correctamente[${STORES[storeKey].name}][${totalProducts}], duración total ${finalTime} minutos`);
+    log.end(`Proceso Finalizado Correctamente[${STORES[storeKey].name}][${totalProducts}][${COUNT_STORES_ENDS} de ${TOTAL_COUNT_STORES}], duración total ${finalTime} minutos`);
     log.end('================================================================================');
   }
 });

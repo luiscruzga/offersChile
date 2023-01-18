@@ -1,5 +1,7 @@
 require('dotenv').config();
 global.mongoose = require('mongoose');
+global.TOTAL_COUNT_STORES = 0;
+global.COUNT_STORES_ENDS = 0;
 const fs = require('fs');
 const path = require('path');
 const { Logger } = require('./utils/logger');
@@ -18,6 +20,14 @@ if (filterStore !== '') {
 if (excludedStores !== '') {
   excludedStores = excludedStores.split(';');
 }
+
+// Set TOTAL_COUNT_STORES 
+TOTAL_COUNT_STORES = Object.keys(STORES).filter(store => 
+    (
+      (filterStore.length === 0 || filterStore.includes(store))
+      && (excludedStores.length === 0 || !excludedStores.includes(store))
+    )
+  ).length;
 
 // Clear logs
 if (process.env.CLEAR_LOGS) {
@@ -39,6 +49,7 @@ const main = async () => {
   // Connect to PG BD
   await PGConnect();
 
+  let promises = [];
   // Run sync stores
   const syncStores = Object.keys(STORES).filter(key => !STORES[key].runAsync);
   for (let i=0; i<syncStores.length; i++) {
@@ -48,11 +59,12 @@ const main = async () => {
       && (excludedStores === '' || (excludedStores !== '' && !excludedStores.includes(store)))  
     ) 
     {
-      await storesMain[store].main();
+      if (process.env.EXECUTE_ALL_ASYNC) promises.push(storesMain[store].main());
+      else await storesMain[store].main();
     }
   };
 
-  let promises = [];
+  
   // Run async first
   Object.keys(STORES).filter(key => STORES[key].runAsync).forEach(store => {
     if (

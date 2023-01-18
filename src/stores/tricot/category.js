@@ -1,6 +1,6 @@
 const storeKey = 'tricot';
 const { STORES } = require('../../config/config.json');
-const { getDataUrl, saveFile } = require("../../utils");
+const { saveFile } = require("../../utils");
 const menus = require('./menus.json');
 
 /**

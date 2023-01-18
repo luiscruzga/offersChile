@@ -181,14 +181,16 @@
       "name": "Ripley",
       "baseUrl": "https://simple.ripley.cl",
       "allowedCategories": [],
-      "runAsync": true
+      "runAsync": true,
+      "limitPages": true
     },
     "paris": {
       "name": "Paris",
       "baseUrl": "https://www.paris.cl",
       "allowedCategories": ["electro", "tecno", "outlet"],
       "totalProductsPerPage": 24,
-      "runAsync": true
+      "runAsync": true,
+      "limitPages": true
     },
     "falabella": {
       "name": "Falabella",
@@ -196,7 +198,8 @@
       "allowedCategories": [],
       "excludedCategories": ["automotriz", "dormitorio", "bebés", "otras categorías", "organización", "Arriendo", "Tejido"],
       "delayByCategory": true,
-      "runAsync": true
+      "runAsync": true,
+      "limitPages": true
     }
   }
 }

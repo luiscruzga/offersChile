@@ -62,7 +62,7 @@ const getUrlCategories = (categories) => {
 */
 const getCategories = async () => {
   log.info(`Getting categories of [${STORES[storeKey].name}]`);
-  const dom = await getDataUrl(STORES[storeKey].baseUrl, true);
+  const dom = await getDataUrl(STORES[storeKey].baseUrl);
   
   const data = JSON.parse(dom.window.document.getElementById('__NEXT_DATA__').textContent);
   const rootCategories = data.props.pageProps.page.containers.find(el => el.key === 'header-med-categories-menu').components[0].data.rootCategories;

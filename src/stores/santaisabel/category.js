@@ -31,9 +31,9 @@ const getUrlCategories = (categories) => {
 const getCategories = async () => {
   try {
     log.info(`Getting categories of [${STORES[storeKey].name}]`);
-    const dom = await getDataUrl(STORES[storeKey].categoriesUrl, true);
-    
-    let categoriesInfo = getUrlCategories(JSON.parse(dom.window.__renderData).menu.acf.items);
+    const dom = await getDataUrl(STORES[storeKey].categoriesUrl);
+    const __renderData = JSON.parse([...dom.window.document.getElementsByTagName('script')].find(el => el.text.includes('__renderData')).text.replace('window.__renderData =', '').trim().slice(0,-1));
+    let categoriesInfo = getUrlCategories(JSON.parse(__renderData).menu.acf.items);
     if (STORES[storeKey].allowedCategories.length > 0) {
       categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
     }

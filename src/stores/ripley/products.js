@@ -15,18 +15,11 @@ let lastVersion = 1;
  */
 const getProductsByPage = async (args) => {
   try {
-    const dom = await getDataUrl(`${args.url}?page=${args.page}&orderBy=price_asc`, true);
+    const dom = await getDataUrl(`${args.url}?page=${args.page}&orderBy=price_asc`);
     const productsInfo = [];
-    let pages, listProducts;
-    if(typeof dom.window.__PRELOADED_STATE__ !== 'undefined'
-      && typeof dom.window.__PRELOADED_STATE__.pagination !== 'undefined'
-    ){
-      pages = {total: dom.window.__PRELOADED_STATE__.pagination.totalPages, current: dom.window.__PRELOADED_STATE__.pagination.actualPage};
-      listProducts = dom.window.__PRELOADED_STATE__.products;
-    }else{
-      paginas = {total: 0, actual: 0};
-      listProducts = [];
-    }
+    const info = JSON.parse([...dom.window.document.getElementsByTagName('script')].find(el => el.text.includes('window.__PRELOADED_STATE__')).text.replace('window.__PRELOADED_STATE__ =', '').trim().slice(0,-1));
+    let listProducts = [];
+    listProducts = info.products;
                   
     listProducts.forEach(product => {
       productsInfo.push({
@@ -53,7 +46,6 @@ const getProductsByPage = async (args) => {
       
     return {
       category: args.category.name,
-      pages: pages,
       products: productsInfo
     };
   } catch (e){
@@ -71,8 +63,9 @@ const getProductsByPage = async (args) => {
  */
 const getTotalPages = async (category) => {
   try {
-    const dom = await getDataUrl(category.url, true);
-    return dom.window.__PRELOADED_STATE__.pagination ? dom.window.__PRELOADED_STATE__.pagination.totalPages : 1;
+    const dom = await getDataUrl(category.url);
+    const info = JSON.parse([...dom.window.document.getElementsByTagName('script')].find(el => el.text.includes('window.__PRELOADED_STATE__')).text.replace('window.__PRELOADED_STATE__ =', '').trim().slice(0,-1));
+    return info.pagination ? info.pagination.totalPages : 1;
   } catch (err) {
     return 1;
   }

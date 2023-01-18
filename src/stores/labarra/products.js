@@ -1,7 +1,7 @@
 const storeKey = 'labarra';
 const { STORES, DELAY_LIMIT, DELAY_TIME, DELAY_TIME_DEFAULT } = require('../../config/config.json');
 const STORE_NAME = STORES[storeKey].name;
-const { getDataUrl, delay, replaceAll, axiosPost } = require('../../utils/');
+const { delay, axiosPost } = require('../../utils/');
 const { saveProducts, deleteProductsByVersion } = require('../../utils/bd');
 const productsCount = STORES[storeKey].totalProductsPerPage;
 let lastVersion = 1;

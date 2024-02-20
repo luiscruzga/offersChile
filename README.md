@@ -73,7 +73,6 @@ Stores from which promotions are currently obtained
 | La Polar | [https://www.lapolar.cl](https://www.lapolar.cl) | 10 |
 | Lider | [https://www.lider.cl/catalogo](https://www.lider.cl/catalogo) | 10 |
 | Lider-Supermercado | [https://www.lider.cl/supermercado/](https://www.lider.cl/supermercado/) | 10 |
-| MicroPlay | [https://www.microplay.cl](https://www.microplay.cl) | 16 |
 | Movistar | [https://catalogo.movistar.cl](https://catalogo.movistar.cl) | 2 |
 | Olimpo Sports | [https://olimposports.cl](https://olimposports.cl) | 1 |
 | Paris | [https://www.paris.cl](https://www.paris.cl) | 88 |

@@ -115,14 +115,6 @@
       "allowedCategories": [],
       "totalProductsPerPage": 100
     },
-    "microplay": {
-      "name": "MicroPlay",
-      "baseUrl": "https://www.microplay.cl",
-      "productsUrl": "https://www.microplay.cl/productos/reader",
-      "allowedCategories": [],
-      "totalProductsPerPage": 20,
-      "useOwnProducts": true
-    },
     "movistar": {
       "name": "Movistar",
       "baseUrl": "https://catalogo.movistar.cl",

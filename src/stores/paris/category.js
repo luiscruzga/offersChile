@@ -1,53 +1,80 @@
-const storeKey = 'paris';
-const { STORES } = require('../../config/config.json');
+const storeKey = "paris";
+const { STORES } = require("../../config/config.json");
 const { getDataUrl, saveFile, replaceAll } = require("../../utils/");
 
+const getCategoryId = async (url) => {
+  const dom = await getDataUrl(url);
+  return dom.window.document.querySelector("#categoryName").value;
+};
 /**
  * Permite recorrer el listado de categorias y obtener como lista
  * @param  {object} categories - Arreglo de categorias
  */
-const getUrlCategories = (dom) => {
+const getUrlCategories = async (dom) => {
   const finalCategories = [];
   const allowedCategories = STORES[storeKey].allowedCategories;
-  var firstCategories = [...dom.window.document.querySelectorAll('li.navigation-drawer-body-mobile__list-item > a > span')];
+  const firstCategories = [
+    ...dom.window.document.querySelectorAll(
+      "ul.main-menu__list > li.main-menu__item > a > span"
+    ),
+  ];
 
-  firstCategories.forEach(el => {
-    let categoryName = (replaceAll(el.textContent, '\n', '')).trim();
+  for (const el of firstCategories) {
+    let categoryName = replaceAll(el.textContent, "\n", "").trim();
     if (
       allowedCategories.length === 0 ||
-      allowedCategories.filter(el => categoryName.toLowerCase().includes(el.toLowerCase())).length > 0) {
-      const subCategories = el.parentElement.parentElement.querySelectorAll('.subItem__link');
-      subCategories.forEach(subEl => {
-        categoryName += ` -> ${(replaceAll(subEl.textContent, '\n', '')).trim()}`;
-        const lastLevel = subEl.parentElement.querySelectorAll('ul > li > a > span');
-        lastLevel.forEach(lastEl => {
+      allowedCategories.filter((el) =>
+        categoryName.toLowerCase().includes(el.toLowerCase())
+      ).length > 0
+    ) {
+      const subCategories = el.parentElement.parentElement.querySelectorAll(
+        ".main-menu__submenu-wrapper"
+      );
+      for (const subEl of subCategories) {
+        const lastLevel = subEl.parentElement.querySelectorAll(
+          ".main-menu__submenu-list-wrapper .main-menu__submenu-item--has-submenu > ul > li.main-menu__submenu-item--show-all > a > span"
+        );
+        for (const lastEl of lastLevel) {
+          const subCatName = lastEl.textContent.replace("Ver todo", "").trim();
+          categoryName += ` -> ${replaceAll(subCatName, "\n", "").trim()}`;
+          const categoryId = await getCategoryId(lastEl.parentElement.href);
           finalCategories.push({
-            name: `${(replaceAll(`${el.textContent} -> ${subEl.textContent} -> ${lastEl.textContent}`, '\n', '')).trim()}`,
-            url: lastEl.parentElement.href
+            name: `${replaceAll(
+              `${el.textContent} -> ${subCatName}`,
+              "\n",
+              ""
+            ).trim()}`,
+            url: lastEl.parentElement.href,
+            categoryId: categoryId,
           });
-        })
-      });
+        }
+      }
     }
-  });
+  }
 
   return finalCategories;
-}
+};
 
 /**
-* Permite obtener un listado de categorias desde la misma store
-*/
+ * Permite obtener un listado de categorias desde la misma store
+ */
 const getCategories = async () => {
   log.info(`Getting categories of [${STORES[storeKey].name}]`);
   const dom = await getDataUrl(STORES[storeKey].baseUrl);
-  
-  let categoriesInfo = getUrlCategories(dom);
+
+  let categoriesInfo = await getUrlCategories(dom);
   if (STORES[storeKey].allowedCategories.length > 0) {
-    categoriesInfo = categoriesInfo.filter(category => STORES[storeKey].allowedCategories.filter(el => category.name.toLowerCase().includes(el.toLowerCase())).length > 0);
+    categoriesInfo = categoriesInfo.filter(
+      (category) =>
+        STORES[storeKey].allowedCategories.filter((el) =>
+          category.name.toLowerCase().includes(el.toLowerCase())
+        ).length > 0
+    );
   }
   saveFile(`${__dirname}/categories.json`, categoriesInfo);
   return categoriesInfo;
-}
+};
 
 module.exports = {
-  getCategories
-}
+  getCategories,
+};

@@ -1,7 +1,7 @@
-const storeKey = 'paris';
-const { STORES } = require('../../config/config.json');
+const storeKey = "paris";
+const { STORES } = require("../../config/config.json");
 const STORE_NAME = STORES[storeKey].name;
-const { getDataUrl, replaceAll } = require('../../utils/');
+const { getDataUrl, replaceAll, axiosGet } = require("../../utils/");
 let lastVersion = 1;
 
 /**
@@ -13,68 +13,103 @@ let lastVersion = 1;
  * @param {string} args.category.url - url de la categoria
  * @param {string} args.category.name - name de la categoria
  */
+
+const getProductNameUrl = (productName) => {
+  return productName
+    .toLowerCase()
+    .replace(/ /g, "-")
+    .replace(/[^a-zA-Z0-9.]/g, "");
+};
+
 const getProductsByPage = async (args) => {
   try {
-    const totalProductsPerPage = STORES[storeKey].totalProductsPerPage;
-    const url = args.url.includes('?') ? `${args.url}&start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}` : `${args.url}?start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}`;
-    const dom = await getDataUrl(url);
+    const url = STORES[storeKey].productsUrl
+      .replace(
+        "**INIT**",
+        (args.page - 1) * STORES[storeKey].totalProductsPerPage
+      )
+      .replace("**LIMIT**", STORES[storeKey].totalProductsPerPage)
+      .replace("**CATEGORY**", args.category.categoryId);
+    const data = await axiosGet(url, {
+      Platform: "web",
+      Apikey: "cl-ccom-parisapp-plp",
+    });
     const productsInfo = [];
-    const products = [...dom.window.document.querySelectorAll('.product-tile[data-product]')];
+    const products = data.payload.data.hits;
+    const productsId = products.map((product) => product.product_id);
 
-    products.forEach(el => {
-      const product = JSON.parse(el.dataset.product);
-      product.url = el.querySelector('a').href;
-
-      const images = [...el.querySelectorAll('img[itemprop="image"]')].map(img => img.dataset.src);
-      const cardPrice = product.dimension20 === '' ? 0 : parseInt(product.dimension20);
-      const offerPrice = product.dimension20 === '' ? 0 : parseInt(product.dimension20);
-      const internetPrice = parseInt(product.price);
-      let normalPrice = product.dimension19 === '' ? 0 : parseInt(product.dimension19);
-      normalPrice = normalPrice === 0 ? offerPrice : normalPrice;
-      const href = product.url;
+    const newData = await axiosGet(
+      `https://cl-ccom-parisapp-promotions.ecomm.cencosud.com/getPromotionsServiceSdk/${productsId.join(
+        ","
+      )}`,
+      {
+        Platform: "web",
+        Apikey: "cl-ccom-parisapp-promotions",
+      }
+    );
+    const newProducts = newData.payload.arrayPromo;
+    newProducts.forEach((product) => {
       productsInfo.push({
         store: STORE_NAME,
         sku: product.id,
-        name: product.name,
-        description: product.name,
+        name: product.detail_product.name,
+        description:
+          product.detail_product.short_description ||
+          product.detail_product.long_description,
         brand: product.brand,
-        url: href.includes(STORES[storeKey].baseUrl) ? href : `${STORES[storeKey].baseUrl}${href}`,
-        images: images,
-        thumbnail: images[0],
+        url: `${STORES[storeKey].baseUrl}/${getProductNameUrl(
+          product.detail_product.name
+        )}-${product.id}.html`,
+        images: product.detail_product.image_groups[0].images.map(
+          (el) => el.link
+        ),
+        thumbnail: product.detail_product.image_groups[0].images[0].link,
         category: args.category.url,
         categoryName: args.category.name,
-        discountPercentage: cardPrice !== 0
-          ? (100 - Math.round((cardPrice*100) / normalPrice))
-          : offerPrice !== 0
-          ? (100 - Math.round((offerPrice*100) / normalPrice))
-          : 0,
-        discount: cardPrice !== 0
-          ? (normalPrice - cardPrice)
-          : offerPrice !== 0
-          ? (normalPrice - offerPrice)
-          : 0,
-        normalPrice: normalPrice,
-        offerPrice: internetPrice !== 0 ? internetPrice : offerPrice,
-        cardPrice: cardPrice,
-        isOutOfStock: product.dimension21 === 'True' ? false : true,
-        isUnavailable: product.dimension21 === 'True' ? false : true,
-        version: lastVersion
+        discountPercentage:
+          product.detail_product.prices["clp-cencosud-prices"] &&
+          product.detail_product.prices["clp-cencosud-prices"] > 0
+            ? Math.round(
+                ((product.detail_product.prices["clp-list-prices"] -
+                  product.detail_product.prices["clp-cencosud-prices"]) *
+                  100) /
+                  product.detail_product.prices["clp-list-prices"]
+              )
+            : Math.round(
+                ((product.detail_product.prices["clp-list-prices"] -
+                  product.detail_product.prices["clp-internet-prices"]) *
+                  100) /
+                  product.detail_product.prices["clp-list-prices"]
+              ),
+        discount:
+          product.detail_product.prices["clp-cencosud-prices"] &&
+          product.detail_product.prices["clp-cencosud-prices"] > 0
+            ? product.detail_product.prices["clp-list-prices"] -
+              product.detail_product.prices["clp-cencosud-prices"]
+            : product.detail_product.prices["clp-list-prices"] -
+              product.detail_product.prices["clp-internet-prices"],
+        normalPrice: product.detail_product.prices["clp-list-prices"] || 0,
+        offerPrice: product.detail_product.prices["clp-internet-prices"] || 0,
+        cardPrice: product.detail_product.prices["clp-cencosud-prices"] || 0,
+        isOutOfStock: !product.detail_product.inventory.orderable,
+        isUnavailable: !product.detail_product.inventory.orderable,
+        version: lastVersion,
       });
     });
-      
+
     return {
       category: args.category.name,
-      products: productsInfo
+      products: productsInfo,
     };
-  } catch (e){
-    const totalProductsPerPage = STORES[storeKey].totalProductsPerPage;
-    log.error(`[${STORE_NAME}][${args.url}?start=${totalProductsPerPage*(args.page-1)}&sz=${totalProductsPerPage}]`, e);
+  } catch (e) {
+    log.error(`[${STORE_NAME}][${STORES[storeKey].productsUrl}]`, e);
     return {
       category: args.category.name,
       products: [],
     };
   }
-}
+};
+
 /**
  * Permite obtener el total de páginas de una categoria
  * @param  {string} url - URL de la categoria de la cual se desea obtener el total de páginas
@@ -83,14 +118,25 @@ const getProductsByPage = async (args) => {
 const getTotalPages = async (category) => {
   try {
     const dom = await getDataUrl(category.url);
-    const totalProducts = parseInt(replaceAll(dom.window.document.querySelector('.total-products > span').textContent, '\n', ''));
+    const totalProducts = parseInt(
+      replaceAll(
+        replaceAll(
+          dom.window.document.querySelector(".total-products > span")
+            .textContent,
+          "\n",
+          ""
+        ),
+        ",",
+        ""
+      )
+    );
     return Math.round(totalProducts / STORES[storeKey].totalProductsPerPage);
   } catch (err) {
     return 1;
   }
-}
+};
 
 module.exports = {
   getProductsByPage,
   getTotalPages,
-}
+};

@@ -1,942 +1,177 @@
 [
   {
-    "name": "Electro -> Televisión -> Smart TV",
-    "url": "https://www.paris.cl/electro/television/smart-tv/"
+    "name": "Tecno -> Celulares",
+    "url": "https://www.paris.cl/tecnologia/celulares/",
+    "categoryId": "tecCelulares"
   },
   {
-    "name": "Electro -> Televisión -> Televisores LED",
-    "url": "https://www.paris.cl/electro/television/televisores-led/"
+    "name": "Tecno -> Computadores",
+    "url": "https://www.paris.cl/tecnologia/computadores/",
+    "categoryId": "tecComputadores"
   },
   {
-    "name": "Electro -> Televisión -> Oled, Qled y NanoCell",
-    "url": "https://www.paris.cl/television/televisores-oled-qled/"
+    "name": "Tecno -> Wearables",
+    "url": "https://www.paris.cl/tecnologia/wearables/",
+    "categoryId": "tecCelSmartwatchWearables"
   },
   {
-    "name": "Electro -> Televisión -> Soundbar y Home Theater",
-    "url": "https://www.paris.cl/electro/television/soundbar-home-theater/"
+    "name": "Tecno -> Consolas y VideoJuegos",
+    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/",
+    "categoryId": "tecConsolas"
   },
   {
-    "name": "Electro -> Televisión -> Streaming",
-    "url": "https://www.paris.cl/electro/television/streaming/"
+    "name": "Tecno -> Impresoras",
+    "url": "https://www.paris.cl/tecnologia/impresoras/",
+    "categoryId": "tecImpresion"
   },
   {
-    "name": "Electro -> Televisión -> Accesorios para TV",
-    "url": "https://www.paris.cl/electro/television/accesorios-televisores/"
+    "name": "Tecno -> Accesorios Computación",
+    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/",
+    "categoryId": "tecAccesorioscomputacion"
   },
   {
-    "name": "Electro -> Audio -> Parlantes Bluetooth y Portables",
-    "url": "https://www.paris.cl/electro/audio/parlantes-bluetooth-portables/"
+    "name": "Tecno -> Fotografía",
+    "url": "https://www.paris.cl/tecnologia/fotografia/",
+    "categoryId": "tecFotografia"
   },
   {
-    "name": "Electro -> Audio -> Micro y Minicomponentes",
-    "url": "https://www.paris.cl/electro/audio/micro-minicomponentes/"
+    "name": "Tecno -> Gamer",
+    "url": "https://www.paris.cl/tecnologia/gamers/",
+    "categoryId": "tecGamers"
   },
   {
-    "name": "Electro -> Audio -> Audífonos",
-    "url": "https://www.paris.cl/electro/audio/audifonos/"
+    "name": "Tecno -> Smart Home",
+    "url": "https://www.paris.cl/tecnologia/smart-home/",
+    "categoryId": "tecSmarthome"
   },
   {
-    "name": "Electro -> Audio -> Audífonos Inalámbricos",
-    "url": "https://www.paris.cl/electro/audio/audifonos-inalambricos/"
+    "name": "Tecno -> Marcas Destacadas",
+    "url": "https://www.paris.cl/tecnologia/marcas/",
+    "categoryId": "tecMarcas"
   },
   {
-    "name": "Electro -> Audio -> Mp3 y Mp4",
-    "url": "https://www.paris.cl/electro/audio/mp3-mp4/"
+    "name": "Electro y Línea Blanca -> Refrigeración",
+    "url": "https://www.paris.cl/linea-blanca/refrigeracion/",
+    "categoryId": "lblRefrigeracion"
   },
   {
-    "name": "Electro -> Audio -> Accesorios Audio",
-    "url": "https://www.paris.cl/electro/audio/accesorios/"
+    "name": "Electro y Línea Blanca -> Lavado y Secado",
+    "url": "https://www.paris.cl/linea-blanca/lavado-secado/",
+    "categoryId": "lblLavadosecado"
   },
   {
-    "name": "Electro -> Audio -> Vinilos",
-    "url": "https://www.paris.cl/electro/audio-hifi/tornamesas-vinilos/vinilos/"
+    "name": "Electro y Línea Blanca -> Cocina",
+    "url": "https://www.paris.cl/linea-blanca/cocina/",
+    "categoryId": "lblCocina"
   },
   {
-    "name": "Electro -> HIFI -> Audifonos HiFi",
-    "url": "https://www.paris.cl/electro/audio-hifi/audifonos/"
+    "name": "Electro y Línea Blanca -> Electrodomésticos",
+    "url": "https://www.paris.cl/linea-blanca/electrodomesticos/",
+    "categoryId": "lblElectrodomesticos"
   },
   {
-    "name": "Electro -> HIFI -> Home Cinema",
-    "url": "https://www.paris.cl/electro/audio-hifi/home-theater/"
+    "name": "Electro y Línea Blanca -> Climatización",
+    "url": "https://www.paris.cl/linea-blanca/climatizacion/",
+    "categoryId": "lblClimatizacion"
   },
   {
-    "name": "Electro -> HIFI -> Audio HIFI",
-    "url": "https://www.paris.cl/electro/audio-hifi/audio/"
+    "name": "Electro y Línea Blanca -> Aspirado y Limpieza",
+    "url": "https://www.paris.cl/linea-blanca/electrodomesticos/aspiradoras-enceradoras/",
+    "categoryId": "lblElcAspiradorasEnceradoras"
   },
   {
-    "name": "Electro -> HIFI -> Parlantes HIFI",
-    "url": "https://www.paris.cl/electro/audio-hifi/parlantes/"
+    "name": "Electro y Línea Blanca -> Cuidado Personal",
+    "url": "https://www.paris.cl/belleza/cuidado-personal/",
+    "categoryId": "blzCuidadopersonal"
   },
   {
-    "name": "Electro -> HIFI -> Combos HIFI",
-    "url": "https://www.paris.cl/electro/audio-hifi/combos/"
+    "name": "Electro y Línea Blanca -> Máquinas de Coser",
+    "url": "https://www.paris.cl/linea-blanca/maquinas-coser/",
+    "categoryId": "lblMaquinascoser"
   },
   {
-    "name": "Electro -> HIFI -> Tornamesas y Vinilos",
-    "url": "https://www.paris.cl/electro/audio-hifi/tornamesas-vinilos/"
+    "name": "Electro y Línea Blanca -> Calefacción",
+    "url": "https://www.paris.cl/linea-blanca/estufas/",
+    "categoryId": "lblCalefaccion"
   },
   {
-    "name": "Electro -> Elige tu pulgada -> Hasta 29\"",
-    "url": "https://www.paris.cl/electro/elige-tu-pulgada/hasta-29-pulgadas/"
+    "name": "Electro y Línea Blanca -> Equipamiento Industrial",
+    "url": "https://www.paris.cl/linea-blanca/equipamiento-industrial/",
+    "categoryId": "lblEquipamientoIndustrial"
   },
   {
-    "name": "Electro -> Elige tu pulgada -> 30\" a 39\"",
-    "url": "https://www.paris.cl/electro/elige-tu-pulgada/30-a-39-pulgadas/"
+    "name": "Electro y Línea Blanca -> Marcas Destacadas",
+    "url": "https://www.paris.cl/linea-blanca/marcas/",
+    "categoryId": "lblMarcas"
   },
   {
-    "name": "Electro -> Elige tu pulgada -> 40\" a 49\"",
-    "url": "https://www.paris.cl/electro/elige-tu-pulgada/40-a-49-pulgadas/"
+    "name": "Outlet -> TV y Audio Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-electro/",
+    "categoryId": "OutElc"
   },
   {
-    "name": "Electro -> Elige tu pulgada -> 50\" a 59\"",
-    "url": "https://www.paris.cl/electro/elige-tu-pulgada/50-a-59-pulgadas/"
+    "name": "Outlet -> Electro y Línea Blanca Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-linea-blanca/",
+    "categoryId": "OutLbl"
   },
   {
-    "name": "Electro -> Elige tu pulgada -> 60\" a 69\"",
-    "url": "https://www.paris.cl/electro/elige-tu-pulgada/60-o-mas-pulgadas/"
+    "name": "Outlet -> Tecno Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-tecno/",
+    "categoryId": "OutTec"
   },
   {
-    "name": "Electro -> Elige tu pulgada -> 70\" o más",
-    "url": "https://www.paris.cl/electro/elige-tu-pulgada/70-o-mas-pulgadas/"
+    "name": "Outlet -> Dormitorio Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-dormitorio/",
+    "categoryId": "OutDrm"
   },
   {
-    "name": "Electro -> Drones -> Drones",
-    "url": "https://www.paris.cl/electro/drones/todos/"
+    "name": "Outlet -> Muebles Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-muebles/",
+    "categoryId": "OutMbl"
   },
   {
-    "name": "Electro -> Drones -> Drones Accesorios",
-    "url": "https://www.paris.cl/electro/drones/accesorios/"
+    "name": "Outlet -> Jardín y Terraza Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-jardin-y-terraza/",
+    "categoryId": "OutJyT"
   },
   {
-    "name": "Electro -> Marcas Destacadas -> Samsung",
-    "url": "https://www.paris.cl/electro/marcas/marca-samsung/"
+    "name": "Outlet -> Deco Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deco/",
+    "categoryId": "OutDch"
   },
   {
-    "name": "Electro -> Marcas Destacadas -> Bose",
-    "url": "https://www.paris.cl/electro/marcas/bose/"
+    "name": "Outlet -> Belleza Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-belleza/",
+    "categoryId": "OutBlz"
   },
   {
-    "name": "Electro -> Marcas Destacadas -> LG",
-    "url": "https://www.paris.cl/electro/marcas/lg/"
+    "name": "Outlet -> Mujer Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-mujer/",
+    "categoryId": "OutMuj"
   },
   {
-    "name": "Electro -> Marcas Destacadas -> JBL",
-    "url": "https://www.paris.cl/electro/marcas/jbl/"
+    "name": "Outlet -> Hombre Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-hombre/",
+    "categoryId": "OutHom"
   },
   {
-    "name": "Electro -> Marcas Destacadas -> Marley",
-    "url": "https://www.paris.cl/electro/marcas/marley/"
+    "name": "Outlet -> Niños Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-ninos/",
+    "categoryId": "OutNino"
   },
   {
-    "name": "Electro -> Marcas Destacadas -> Skullcandy",
-    "url": "https://www.paris.cl/electro/marcas/skullcandy/"
+    "name": "Outlet -> Zapatos y Zapatillas Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-zapatos-y-zapatillas/",
+    "categoryId": "OutZapa"
   },
   {
-    "name": "Electro -> Marcas Destacadas -> Philips",
-    "url": "https://www.paris.cl/electro/marcas/philips/"
+    "name": "Outlet -> Deportes Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-deportes/",
+    "categoryId": "OutDepo"
   },
   {
-    "name": "Electro -> Marcas Destacadas -> Itaka",
-    "url": "https://www.paris.cl/electro/marcas/itaka/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Ducar",
-    "url": "https://www.paris.cl/electro/marcas/ducar/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Toho",
-    "url": "https://www.paris.cl/electro/marcas/toho/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Endress",
-    "url": "https://www.paris.cl/electro/marcas/endress/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Milwaukee",
-    "url": "https://www.paris.cl/electro/marcas/milwaukee/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Skil",
-    "url": "https://www.paris.cl/electro/marcas/skil/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> DeWalt",
-    "url": "https://www.paris.cl/electro/marcas/dewalt/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Makita",
-    "url": "https://www.paris.cl/electro/marcas/makita/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Black & Decker",
-    "url": "https://www.paris.cl/electro/marcas/black-decker/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Bosch",
-    "url": "https://www.paris.cl/electro/marcas/bosch/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Stanley",
-    "url": "https://www.paris.cl/electro/marcas/stanley/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Dremel",
-    "url": "https://www.paris.cl/electro/marcas/dremel/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> Sony",
-    "url": "https://www.paris.cl/electro/marcas/sony/"
-  },
-  {
-    "name": "Electro -> Marcas Destacadas -> JAM",
-    "url": "https://www.paris.cl/electro/marcas/jam/"
-  },
-  {
-    "name": "Electro -> Novedades Electro -> Hisense TV",
-    "url": "https://www.paris.cl/electro/novedades/hisense-tv/"
-  },
-  {
-    "name": "Electro -> Novedades Electro -> The Freestyle Samsung",
-    "url": "https://www.paris.cl/electro/novedades/the-freestyle-samsung/"
-  },
-  {
-    "name": "Tecno -> Celulares -> Smartphones",
-    "url": "https://www.paris.cl/tecnologia/celulares/smartphone/"
-  },
-  {
-    "name": "Tecno -> Celulares -> Básicos",
-    "url": "https://www.paris.cl/tecnologia/celulares/basicos/"
-  },
-  {
-    "name": "Tecno -> Celulares -> Accesorios de Celulares",
-    "url": "https://www.paris.cl/tecnologia/celulares/accesorios/"
-  },
-  {
-    "name": "Tecno -> Computadores -> Notebooks",
-    "url": "https://www.paris.cl/tecnologia/computadores/notebooks/"
-  },
-  {
-    "name": "Tecno -> Computadores -> PC Gamers",
-    "url": "https://www.paris.cl/tecnologia/computadores/pc-gamer/"
-  },
-  {
-    "name": "Tecno -> Computadores -> Desktop y All InOne",
-    "url": "https://www.paris.cl/tecnologia/computadores/desktop-all-in-one/"
-  },
-  {
-    "name": "Tecno -> Computadores -> Convertibles 2 en 1",
-    "url": "https://www.paris.cl/tecnologia/computadores/convertibles-2-en-1/"
-  },
-  {
-    "name": "Tecno -> Computadores -> iPad y Tablet",
-    "url": "https://www.paris.cl/tecnologia/computadores/ipad-tablet/"
-  },
-  {
-    "name": "Tecno -> Computadores -> Tablets Niños",
-    "url": "https://www.paris.cl/tecnologia/computadores/tablets-ninos/"
-  },
-  {
-    "name": "Tecno -> Computadores -> Apple",
-    "url": "https://www.paris.cl/tecnologia/computadores/apple/"
-  },
-  {
-    "name": "Tecno -> Computadores -> Torres",
-    "url": "https://www.paris.cl/tecnologia/computadores/torres/"
-  },
-  {
-    "name": "Tecno -> Wearables -> Smartwatches",
-    "url": "https://www.paris.cl/tecnologia/wearables/smartwatches/"
-  },
-  {
-    "name": "Tecno -> Wearables -> Smartwatches Niños",
-    "url": "https://www.paris.cl/tecnologia/wearables/smartwatches-ninos/"
-  },
-  {
-    "name": "Tecno -> Wearables -> Smartband",
-    "url": "https://www.paris.cl/tecnologia/wearables/smartband/"
-  },
-  {
-    "name": "Tecno -> Wearables -> Accesorios",
-    "url": "https://www.paris.cl/tecnologia/wearables/accesorios/"
-  },
-  {
-    "name": "Tecno -> Smart Home -> Seguridad y Vigilancia",
-    "url": "https://www.paris.cl/tecnologia/smart-home/seguridad-vigilancia/"
-  },
-  {
-    "name": "Tecno -> Smart Home -> Asistente de Voz",
-    "url": "https://www.paris.cl/tecnologia/smart-home/asistente-voz/"
-  },
-  {
-    "name": "Tecno -> Smart Home -> Iluminación y Calefacción",
-    "url": "https://www.paris.cl/tecnologia/smart-home/iluminacion-calefaccion/"
-  },
-  {
-    "name": "Tecno -> Smart Home -> Streaming",
-    "url": "https://www.paris.cl/tecnologia/smart-home/streaming/"
-  },
-  {
-    "name": "Tecno -> Smart Home -> Mundo Robot",
-    "url": "https://www.paris.cl/tecnologia/smart-home/mundo-robot/"
-  },
-  {
-    "name": "Tecno -> Smart Home -> Jardín Inteligente",
-    "url": "https://www.paris.cl/tecnologia/smart-home/jardin-inteligente/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Notebooks",
-    "url": "https://www.paris.cl/tecnologia/computadores/pc-gamer/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Torres",
-    "url": "https://www.paris.cl/tecnologia/gamer/torres/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Consolas",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Teclados y Mouse",
-    "url": "https://www.paris.cl/tecnologia/gamer/teclados/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Headset",
-    "url": "https://www.paris.cl/tecnologia/gamer/headset/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Sillas y Escritorios Gamer",
-    "url": "https://www.paris.cl/tecnologia/gamer/sillas-escritorios-gamer/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Comics",
-    "url": "https://www.paris.cl/tecnologia/gamer/comics/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Monitores",
-    "url": "https://www.paris.cl/tecnologia/gamer/torres/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Gabinetes",
-    "url": "https://www.paris.cl/tecnologia/gamer/gabinetes/"
-  },
-  {
-    "name": "Tecno -> Gamer -> Otros Accesorios",
-    "url": "https://www.paris.cl/tecnologia/gamer/otros-accesorios/"
-  },
-  {
-    "name": "Tecno -> Fotografía -> Réflex y Mirrorless",
-    "url": "https://www.paris.cl/tecnologia/fotografia/camaras-reflex/"
-  },
-  {
-    "name": "Tecno -> Fotografía -> Semiprofesionales",
-    "url": "https://www.paris.cl/tecnologia/fotografia/camaras-semiprofesionales/"
-  },
-  {
-    "name": "Tecno -> Fotografía -> Cámaras Compactas",
-    "url": "https://www.paris.cl/tecnologia/fotografia/camaras-compactas/"
-  },
-  {
-    "name": "Tecno -> Fotografía -> Cámaras Deportivas",
-    "url": "https://www.paris.cl/tecnologia/fotografia/camaras-deportivas/"
-  },
-  {
-    "name": "Tecno -> Fotografía -> Cámaras Seguridad",
-    "url": "https://www.paris.cl/tecnologia/fotografia/camaras-seguridad/"
-  },
-  {
-    "name": "Tecno -> Fotografía -> Cámaras de Video",
-    "url": "https://www.paris.cl/tecnologia/fotografia/camaras-video/"
-  },
-  {
-    "name": "Tecno -> Fotografía -> Accesorios de Fotografía",
-    "url": "https://www.paris.cl/tecnologia/accesorios-fotografia/"
-  },
-  {
-    "name": "Tecno -> Consolas y VideoJuegos -> PlayStation",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/playstation/"
-  },
-  {
-    "name": "Tecno -> Consolas y VideoJuegos -> Nintendo",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/nintendo/"
-  },
-  {
-    "name": "Tecno -> Consolas y VideoJuegos -> Xbox",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/xbox/"
-  },
-  {
-    "name": "Tecno -> Consolas y VideoJuegos -> Videojuegos",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/juegos/"
-  },
-  {
-    "name": "Tecno -> Consolas y VideoJuegos -> Accesorios Videojuegos",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/accesorios/"
-  },
-  {
-    "name": "Tecno -> Consolas y VideoJuegos -> Consolas Nintendo",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/consolas-nintendo/"
-  },
-  {
-    "name": "Tecno -> Consolas y VideoJuegos -> Consolas PlayStation",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/consolas-playstation/"
-  },
-  {
-    "name": "Tecno -> Consolas y VideoJuegos -> Consolas Xbox",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/consolas-xbox/"
-  },
-  {
-    "name": "Tecno -> Consolas y VideoJuegos -> Otras Consolas",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/otras-consolas/"
-  },
-  {
-    "name": "Tecno -> Impresoras -> Impresión Láser",
-    "url": "https://www.paris.cl/tecnologia/impresoras/laser/"
-  },
-  {
-    "name": "Tecno -> Impresoras -> Impresión de Tinta",
-    "url": "https://www.paris.cl/tecnologia/impresoras/tinta/"
-  },
-  {
-    "name": "Tecno -> Impresoras -> Impresoras Térmicas y Portátiles",
-    "url": "https://www.paris.cl/tecnologia/impresoras/termicas-portatiles/"
-  },
-  {
-    "name": "Tecno -> Impresoras -> Impresoras 3D",
-    "url": "https://www.paris.cl/tecnologia/impresoras/impresoras-3d/"
-  },
-  {
-    "name": "Tecno -> Impresoras -> Impresión Industrial",
-    "url": "https://www.paris.cl/tecnologia/impresoras/impresion-industrial/"
-  },
-  {
-    "name": "Tecno -> Impresoras -> Insumos y Accesorios",
-    "url": "https://www.paris.cl/tecnologia/impresoras/insumos-accesorios/"
-  },
-  {
-    "name": "Tecno -> Impresoras -> Multifuncionales",
-    "url": "https://www.paris.cl/search?cgid=tecImpMultifuncionales"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Monitores",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/monitor-gamer/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Discos Duros",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/disco-duro/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Proyectores",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/proyectores/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Mouse y Teclados",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/mouse-teclados/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Routers",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/routers/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Bolsos y Mochilas",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/bolsos-mochilas/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Audífonos y Micrófonos",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/audifonos-microfonos/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Parlantes y Subwoofer",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/parlantes-subwoofer/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Cámaras Web",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/camaras-web/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Otros Accesorios",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/otros/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Calculadoras y Teléfonos",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/calculadoras-telefonos/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Accesorios Gamer",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/gamer/"
-  },
-  {
-    "name": "Tecno -> Accesorios Computación -> Pendrives",
-    "url": "https://www.paris.cl/tecnologia/accesorios-computacion/pendrives/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Apple",
-    "url": "https://www.paris.cl/tecnologia/marcas/apple/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Huawei",
-    "url": "https://www.paris.cl/tecnologia/marcas/huawei/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> PlayStation",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/playstation/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Samsung",
-    "url": "https://www.paris.cl/tecnologia/marcas/samsung/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Nintendo",
-    "url": "https://www.paris.cl/tecnologia/consolas-videojuegos/nintendo/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Xiaomi",
-    "url": "https://www.paris.cl/tecnologia/marcas/xiaomi/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> HP",
-    "url": "https://www.paris.cl/tecnologia/marcas/hp/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Nikon",
-    "url": "https://www.paris.cl/tecnologia/marcas/nikon/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Lenovo",
-    "url": "https://www.paris.cl/tecnologia/marcas/lenovo/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Asus",
-    "url": "https://www.paris.cl/tecnologia/marcas/asus/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Acer",
-    "url": "https://www.paris.cl/tecnologia/marcas/acer/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> LG",
-    "url": "https://www.paris.cl/tecnologia/marcas/lg/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Sony",
-    "url": "https://www.paris.cl/tecnologia/marcas/sony/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Motorola",
-    "url": "https://www.paris.cl/tecnologia/marcas/motorola/"
-  },
-  {
-    "name": "Tecno -> Marcas Destacadas -> Honor",
-    "url": "https://www.paris.cl/tecnologia/marcas/honor/"
-  },
-  {
-    "name": "Tecno -> Seguridad -> Cámaras de Seguridad",
-    "url": "https://www.paris.cl/tecnologia/seguridad/camaras/"
-  },
-  {
-    "name": "Tecno -> Seguridad -> Timbres y Citófonos",
-    "url": "https://www.paris.cl/tecnologia/seguridad/timbres-citofonos/"
-  },
-  {
-    "name": "Tecno -> Seguridad -> Cerraduras",
-    "url": "https://www.paris.cl/tecnologia/seguridad/cerraduras/"
-  },
-  {
-    "name": "Tecno -> Seguridad -> Cajas de Seguridad y Candados",
-    "url": "https://www.paris.cl/tecnologia/seguridad/cajas-de-seguridad-candados/"
-  },
-  {
-    "name": "Tecno -> Seguridad -> Protecciones",
-    "url": "https://www.paris.cl/tecnologia/seguridad/protecciones/"
-  },
-  {
-    "name": "Tecno -> Seguridad -> Iluminación de Seguridad",
-    "url": "https://www.paris.cl/tecnologia/seguridad/iluminacion/"
-  },
-  {
-    "name": "Tecno -> Seguridad -> Alarmas y Sensores",
-    "url": "https://www.paris.cl/tecnologia/seguridad/alarmas-sensores/"
-  },
-  {
-    "name": "Outlet -> Electro Outlet -> Televisores Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-electro/outlet-televisores/"
-  },
-  {
-    "name": "Outlet -> Electro Outlet -> Audio Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-electro/outlet-audio/"
-  },
-  {
-    "name": "Outlet -> Electro Outlet -> Streaming Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-electro/outlet-streaming/"
-  },
-  {
-    "name": "Outlet -> Electro Outlet -> HIFI Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-electro/outlet-hifi/"
-  },
-  {
-    "name": "Outlet -> Línea Blanca Outlet -> Refrigeradores Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-linea-blanca/outlet-refrigeracion/"
-  },
-  {
-    "name": "Outlet -> Línea Blanca Outlet -> Freezer y Congeladores Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-linea-blanca/outlet-freezer/"
-  },
-  {
-    "name": "Outlet -> Línea Blanca Outlet -> Lavadoras Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-linea-blanca/outlet-lavadoras/"
-  },
-  {
-    "name": "Outlet -> Línea Blanca Outlet -> Cocinas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-linea-blanca/outlet-cocinas/"
-  },
-  {
-    "name": "Outlet -> Línea Blanca Outlet -> Hornos Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-linea-blanca/outlet-hornos/"
-  },
-  {
-    "name": "Outlet -> Línea Blanca Outlet -> Electrodomésticos Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-linea-blanca/outlet-electrodomesticos/"
-  },
-  {
-    "name": "Outlet -> Línea Blanca Outlet -> Cuidado Personal Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-linea-blanca/outlet-cuidado-personal/"
-  },
-  {
-    "name": "Outlet -> Tecno Outlet -> Celulares Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-celulares/"
-  },
-  {
-    "name": "Outlet -> Tecno Outlet -> Computadores Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-computadores/"
-  },
-  {
-    "name": "Outlet -> Tecno Outlet -> Tablets Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-ipads-y-tablets/"
-  },
-  {
-    "name": "Outlet -> Tecno Outlet -> Impresoras Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-impresoras/"
-  },
-  {
-    "name": "Outlet -> Tecno Outlet -> Consolas y Videojuegos",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-consolas-y-videojuegos/"
-  },
-  {
-    "name": "Outlet -> Tecno Outlet -> Smartwatch Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-smartwatch/"
-  },
-  {
-    "name": "Outlet -> Tecno Outlet -> Smart Home Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-tecno/outlet-smart-home/"
-  },
-  {
-    "name": "Outlet -> Dormitorio Outlet -> Ropa de Cama Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-dormitorio/outlet-ropa-de-cama/"
-  },
-  {
-    "name": "Outlet -> Dormitorio Outlet -> Muebles de Dormitorio Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-dormitorio/outlet-muebles-de-dormitorio/"
-  },
-  {
-    "name": "Outlet -> Muebles Outlet -> Living y Sala de Estar Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-muebles/outlet-living/"
-  },
-  {
-    "name": "Outlet -> Muebles Outlet -> Comedor Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-muebles/outlet-comedor/"
-  },
-  {
-    "name": "Outlet -> Muebles Outlet -> Muebles de Terraza Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-muebles/outlet-terrazas/"
-  },
-  {
-    "name": "Outlet -> Muebles Outlet -> Muebles de Oficina Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-muebles/outlet-oficina/"
-  },
-  {
-    "name": "Outlet -> Muebles Outlet -> Muebles de Dormitorio Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-dormitorio/outlet-muebles-de-dormitorio/"
-  },
-  {
-    "name": "Outlet -> Jardín y Terraza Outlet -> Parrillas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-jardin-y-terraza/outlet-parrillas/"
-  },
-  {
-    "name": "Outlet -> Jardín y Terraza Outlet -> Accesorios de Parrillas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-jardin-y-terraza/outlet-accesorios-de-parrillas/"
-  },
-  {
-    "name": "Outlet -> Jardín y Terraza Outlet -> Jardín Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-jardin-y-terraza/outlet-jardin/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Cocina Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-cocina/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Mesa Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-mesa/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Decoración Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-decoracion/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Alfombras Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-alfombras/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Baño Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-bano/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Iluminación Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-iluminacion/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Cortinas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-cortinas/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Organización Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-organizacion/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Mascotas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-mascotas/"
-  },
-  {
-    "name": "Outlet -> Deco Outlet -> Toallas de Playa Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deco/outlet-toallas-de-playa/"
-  },
-  {
-    "name": "Outlet -> Belleza Outlet -> Perfumes Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-belleza/outlet-perfumes/"
-  },
-  {
-    "name": "Outlet -> Belleza Outlet -> Maquillaje Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-belleza/outlet-maquillaje/"
-  },
-  {
-    "name": "Outlet -> Belleza Outlet -> Tratamientos y Cuidados Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-belleza/outlet-tratamientos-cuidados/"
-  },
-  {
-    "name": "Outlet -> Belleza Outlet -> Dermocosmética Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-belleza/outlet-dermocosmetica/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Poleras y Blusas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-poleras-blusas/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Jeans y Pantalones Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-jeans-pantalones/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Vestidos Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-vestidos/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Shorts Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-shorts/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Faldas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-faldas/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Enteritos y Jardineras Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-enteritos-jardineras/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Polerones Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-polerones/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Chalecos, Sweaters y Tejidos Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-chalecos-sweaters-tejidos/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Ropa Interior Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-ropa-interior/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Trajes de Baño Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-trajes-de-bano/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Carteras y Mochilas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-carteras-mochilas/"
-  },
-  {
-    "name": "Outlet -> Mujer Outlet -> Accesorios Moda Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-mujer/outlet-accesorios-moda/"
-  },
-  {
-    "name": "Outlet -> Hombre Outlet -> Poleras Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-hombre/outlet-poleras/"
-  },
-  {
-    "name": "Outlet -> Hombre Outlet -> Camisas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-hombre/outlet-camisas/"
-  },
-  {
-    "name": "Outlet -> Hombre Outlet -> Jeans y Pantalones Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-hombre/outlet-jeans-pantalones/"
-  },
-  {
-    "name": "Outlet -> Hombre Outlet -> Shorts y Bermudas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-hombre/outlet-shorts-bermudas/"
-  },
-  {
-    "name": "Outlet -> Hombre Outlet -> Polerones Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-hombre/outlet-polerones/"
-  },
-  {
-    "name": "Outlet -> Hombre Outlet -> Ropa Formal Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-hombre/outlet-ropa-formal/"
-  },
-  {
-    "name": "Outlet -> Hombre Outlet -> Ropa Interior Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-hombre/outlet-ropa-interior/"
-  },
-  {
-    "name": "Outlet -> Hombre Outlet -> Accesorios Moda Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-hombre/outlet-accesorios-moda/"
-  },
-  {
-    "name": "Outlet -> Niños Outlet -> Coches Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-coches/"
-  },
-  {
-    "name": "Outlet -> Niños Outlet -> Sillas de Autos Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-sillas-de-autos/"
-  },
-  {
-    "name": "Outlet -> Niños Outlet -> Alimentación y Cuidados Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-alimentacion-cuidado/"
-  },
-  {
-    "name": "Outlet -> Niños Outlet -> Ropa de Bebés Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-ropa-bebe/"
-  },
-  {
-    "name": "Outlet -> Niños Outlet -> Ropa de Niñas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-ropa-ninas/"
-  },
-  {
-    "name": "Outlet -> Niños Outlet -> Ropa de Niños Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-ropa-ninos/"
-  },
-  {
-    "name": "Outlet -> Niños Outlet -> Zapatos de Niñas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-zapatos-ninas/"
-  },
-  {
-    "name": "Outlet -> Niños Outlet -> Mochilas y Accesorios Moda Outlet",
-    "url": "https://www.paris.cl/outlet/ninos/mochilas-y-accesorios-moda-outlet/"
-  },
-  {
-    "name": "Outlet -> Niños Outlet -> Dormitorio Infantil Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-ninos/outlet-dormitorio-infantil/"
-  },
-  {
-    "name": "Outlet -> Zapatos y Zapatillas Outlet -> Zapatillas Mujer Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-zapatos-y-zapatillas/outlet-zapatillas-mujer/"
-  },
-  {
-    "name": "Outlet -> Zapatos y Zapatillas Outlet -> Zapatillas Hombre Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-zapatos-y-zapatillas/outlet-zapatillas-hombre/"
-  },
-  {
-    "name": "Outlet -> Zapatos y Zapatillas Outlet -> Zapatos Mujer Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-zapatos-y-zapatillas/outlet-zapatos-mujer/"
-  },
-  {
-    "name": "Outlet -> Zapatos y Zapatillas Outlet -> Zapatillas Deportivas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-zapatos-y-zapatillas/outlet-zapatillas-deportivas/"
-  },
-  {
-    "name": "Outlet -> Zapatos y Zapatillas Outlet -> Zapatos Outdoor Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-zapatos-y-zapatillas/outlet-zapatos-outdoor/"
-  },
-  {
-    "name": "Outlet -> Zapatos y Zapatillas Outlet -> Sandalias Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-zapatos-y-zapatillas/outlet-sandalias/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Ropa Deportiva Mujer Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-ropa-deportiva-mujer/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Ropa Deportiva Hombre Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-ropa-deportiva-hombre/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Parkas y Chaquetas Deportivas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-parkas-y-chaquetas-deportivas/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Bicicletas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-bicicletas/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Accesorios de Bicicletas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-accesorios-de-bicicletas/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Equipamiento Deportivo Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-equipamiento-deportivo/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Camping Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-camping/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Tiempo Libre Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-tiempo-libre/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Piscinas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-piscinas/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Accesorios para Piscinas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-accesorios-para-piscinas/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Electromovilidad Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-electromovilidad/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Disciplinas Deportivas Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-disciplinas-deportivas/"
-  },
-  {
-    "name": "Outlet -> Deportes Outlet -> Deportes Niños Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-deportes/outlet-deportes-ninos/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Juguetes Bebé Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-juguetes-bebe/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Muñecas y Peluches Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-munecas-peluches/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Autos y Radiocontrolados Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-autos-radiocontrolados/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Juguetes de Acción Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-juguetes-accion/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Didácticos y Recreativos Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-didacticos-recreativos/"
-  },
-  {
-    "name": "Outlet -> Juguetes Outlet -> Juegos de Exterior Outlet",
-    "url": "https://www.paris.cl/outlet/outlet-juguetes/outlet-juegos-exterior/"
+    "name": "Outlet -> Juguetes Outlet",
+    "url": "https://www.paris.cl/outlet/outlet-juguetes/",
+    "categoryId": "OutJug"
   }
 ]

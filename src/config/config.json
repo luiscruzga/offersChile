@@ -187,6 +187,7 @@
     "paris": {
       "name": "Paris",
       "baseUrl": "https://www.paris.cl",
+      "productsUrl": "https://cl-ccom-parisapp-plp.ecomm.cencosud.com/v2/getServicePLP/0/**INIT**/**LIMIT**?refine_1=cgid=**CATEGORY**",
       "allowedCategories": ["electro", "tecno", "outlet"],
       "totalProductsPerPage": 24,
       "runAsync": true,

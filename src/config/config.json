@@ -147,7 +147,7 @@
       "name": "WOM",
       "baseUrl": "https://store.wom.cl",
       "categoriesUrl": "https://store.wom.cl/page-data/sq/d/861128663.json",
-      "productsUrl": "https://store-srv.wom.cl/rest/V1/content/getList?searchCriteria[filterGroups][0][filters][0][field]=attribute_set_id&searchCriteria[filterGroups][0][filters][0][value]=11&searchCriteria[filterGroups][1][filters][0][field]=type_id&searchCriteria[filterGroups][1][filters][0][value]=configurable&searchCriteria[pageSize]=50&searchCriteria[currentPage]=**PAGE**&searchCriteria[sortOrders][0][field]=&searchCriteria[filterGroups][10][filters][0][field]=status&searchCriteria[filterGroups][10][filters][0][value]=1&product_type=**CATEGORY_ID**",
+      "productsUrl": "https://store-srv.wom.cl/rest/V1/content/getList?searchCriteria[filterGroups][0][filters][0][field]=attribute_set_id&searchCriteria[filterGroups][0][filters][0][value]=11&searchCriteria[filterGroups][1][filters][0][field]=type_id&searchCriteria[filterGroups][1][filters][0][value]=configurable&searchCriteria[pageSize]=100&searchCriteria[currentPage]=**PAGE**&searchCriteria[sortOrders][0][field]=&searchCriteria[filterGroups][10][filters][0][field]=status&searchCriteria[filterGroups][10][filters][0][value]=1&product_type=**CATEGORY_ID**",
       "allowedCategories": ["Equipos -> Portabilidad", "Equipos -> Linea Nueva", "Equipos -> Renovación", "Equipos -> Prepago"],
       "categoriesId": [
         {
@@ -167,7 +167,7 @@
           "id": 4
         }
       ],
-      "totalProductsPerPage": 18
+      "totalProductsPerPage": 100
     },
     "ripley": {
       "name": "Ripley",

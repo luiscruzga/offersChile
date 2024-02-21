@@ -1,50 +1,34 @@
 [
   {
-    "name": "Liquidación Verano",
-    "url": "https://www.abcdin.cl/verano"
-  },
-  {
-    "name": "Ofertas",
-    "url": "https://www.abcdin.cl/ofertas"
-  },
-  {
-    "name": "Electro",
-    "url": "https://www.abcdin.cl/electro"
+    "name": "Tecnología",
+    "url": "https://www.abcdin.cl/tecnologia/"
   },
   {
     "name": "Línea Blanca",
-    "url": "https://www.abcdin.cl/linea-blanca"
-  },
-  {
-    "name": "Telefonía",
-    "url": "https://www.abcdin.cl/telefonia"
-  },
-  {
-    "name": "Computación",
-    "url": "https://www.abcdin.cl/computacion"
-  },
-  {
-    "name": "Dormitorio",
-    "url": "https://www.abcdin.cl/dormitorio"
+    "url": "https://www.abcdin.cl/linea-blanca/"
   },
   {
     "name": "Muebles",
-    "url": "https://www.abcdin.cl/muebles"
+    "url": "https://www.abcdin.cl/muebles/"
   },
   {
-    "name": "Outdoor y Motos",
-    "url": "https://www.abcdin.cl/outdoor-y-motos"
+    "name": "Dormitorio",
+    "url": "https://www.abcdin.cl/dormitorio/"
   },
   {
-    "name": "Entretenimiento",
-    "url": "https://www.abcdin.cl/entretenimiento"
+    "name": "Hogar",
+    "url": "https://www.abcdin.cl/hogar/"
   },
   {
-    "name": "Infantil",
-    "url": "https://www.abcdin.cl/infantil"
+    "name": "Deportes",
+    "url": "https://www.abcdin.cl/deportes/"
   },
   {
-    "name": "Nuevas Categorías",
-    "url": "https://www.abcdin.cl/otras"
+    "name": "Niños",
+    "url": "https://www.abcdin.cl/ninos/"
+  },
+  {
+    "name": "Otras Líneas",
+    "url": "https://www.abcdin.cl/otras-lineas/"
   }
 ]

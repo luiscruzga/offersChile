@@ -1,107 +1,31 @@
 [
   {
-    "name": "Liquidación -> Liquidación mujer",
-    "url": "https://www.falabella.com/falabella-cl/category/cat7330051/Mujer?facetSelected=true&f.range.derived.variant.discount_from=20%25+dcto+y+m%C3%A1s"
-  },
-  {
-    "name": "Liquidación -> Liquidación hombre",
-    "url": "https://www.falabella.com/falabella-cl/category/cat7450065/Hombre?facetSelected=true&f.range.derived.variant.discount=20%25+dcto+y+m%C3%A1s"
-  },
-  {
-    "name": "Liquidación -> Liquidación hogar y jardín",
-    "url": "https://www.falabella.com/falabella-cl/collection/liquidacion-hogar-y-jardin"
-  },
-  {
-    "name": "Liquidación -> Liquidación tecnología",
-    "url": "https://www.falabella.com/falabella-cl/collection/liquidacion-tecnologia"
-  },
-  {
-    "name": "Liquidación -> Liquidación electro",
-    "url": "https://www.falabella.com/falabella-cl/collection/liquidacion-electro"
-  },
-  {
-    "name": "Liquidación -> Liquidación deporte",
-    "url": "https://www.falabella.com/falabella-cl/collection/liquidacion-deportes"
-  },
-  {
-    "name": "Liquidación -> Liquidación mejoramiento del hogar",
-    "url": "https://www.falabella.com/falabella-cl/collection/liquidacion-mejoramiento-hogar-y-auto"
-  },
-  {
-    "name": "Vuelta a clases -> Uniformes por talla",
+    "name": "Escolares -> Uniformes por talla",
     "url": "https://www.falabella.com/falabella-cl/collection/colegial"
   },
   {
-    "name": "Vuelta a clases -> Uniformes de niña",
-    "url": "https://www.falabella.com/falabella-cl/category/cat1550048/Uniformes-Escolares-Ninas"
+    "name": "Escolares -> Uniformes de niña",
+    "url": "https://www.falabella.com/falabella-cl/collection/colegial-ninas"
   },
   {
-    "name": "Vuelta a clases -> Uniformes de niño",
-    "url": "https://www.falabella.com/falabella-cl/category/cat1550046/Uniformes-Escolares-Ninos"
+    "name": "Escolares -> Uniformes de niño",
+    "url": "https://www.falabella.com/falabella-cl/collection/colegial-nino"
   },
   {
-    "name": "Vuelta a clases -> Zapatos y zapatillas",
-    "url": "https://www.falabella.com/falabella-cl/category/cat1530008/Zapatos-Escolares"
+    "name": "Escolares -> Mochilas",
+    "url": "https://www.falabella.com/falabella-cl/collection/mochilas"
   },
   {
-    "name": "Vuelta a clases -> Arma tu lista de útiles",
-    "url": "https://www.falabella.com/falabella-cl/category/cat11740010/Lapices-y-utiles-escolares"
+    "name": "Escolares -> Zapatos y zapatillas",
+    "url": "https://www.falabella.com/falabella-cl/collection/zapatos-y-zapatillas-escolares"
   },
   {
-    "name": "Vuelta a clases -> Mochilas",
-    "url": "https://www.falabella.com/falabella-cl/category/cat1530005/Mochilas-Escolares"
+    "name": "Escolares -> Computación y escritorios",
+    "url": "https://www.falabella.com/falabella-cl/category/cat40052/Computadores"
   },
   {
-    "name": "Vuelta a clases -> Clases online",
-    "url": "https://www.falabella.com/falabella-cl/category/cat40052/Computadores?isPLP=1"
-  },
-  {
-    "name": "Vuelta a clases -> Mejores marcas",
-    "url": "https://www.falabella.com/falabella-cl/brand/MAUI%20AND%20SONS?&f.product.L1_category_paths=cat13550007%7C%7CNi%C3%B1os+y+Jugueter%C3%ADa%2Fcat1530002%7C%7CEscolares"
-  },
-  {
-    "name": "Pisos, pinturas y terminaciones -> Pisos y revestimientos",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10741/Pisos-y-revestimientos"
-  },
-  {
-    "name": "Pisos, pinturas y terminaciones -> Adhesivos y fragües",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10742/Frag-es"
-  },
-  {
-    "name": "Pisos, pinturas y terminaciones -> Pinturas",
-    "url": "https://www.falabella.com/falabella-cl/category/cat20792242/Pinturas"
-  },
-  {
-    "name": "Pisos, pinturas y terminaciones -> Cerraduras y quincallería",
-    "url": "https://www.falabella.com/falabella-cl/category/cat20792436/Cerraduras-y-quincalleria"
-  },
-  {
-    "name": "Pisos, pinturas y terminaciones -> Protecciones",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10745/Protecciones-para-Puertas-y-Ventanas"
-  },
-  {
-    "name": "Pisos, pinturas y terminaciones -> Puertas",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10743/Puertas"
-  },
-  {
-    "name": "Pisos, pinturas y terminaciones -> Ventanas",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10744/Ventanas"
-  },
-  {
-    "name": "Celulares y planes -> Celulares y teléfonos",
-    "url": "https://www.falabella.com/falabella-cl/category/cat2018/Celulares-y-Telefonos"
-  },
-  {
-    "name": "Celulares y planes -> Marcas destacadas",
-    "url": "https://www.falabella.com/falabella-cl/category/cat720161/Smartphones"
-  },
-  {
-    "name": "Celulares y planes -> Accesorios celulares",
-    "url": "https://www.falabella.com/falabella-cl/category/cat70014/Accesorios-Celulares"
-  },
-  {
-    "name": "Celulares y planes -> Wearables",
-    "url": "https://www.falabella.com/falabella-cl/category/cat7190053/Wearables"
+    "name": "Escolares -> Útiles y libros ",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11449/Papeleria-y-Articulos-de-escritorio?isPLP=1"
   },
   {
     "name": "Tecnología -> TV",
@@ -129,15 +53,35 @@
   },
   {
     "name": "Tecnología -> Fotografía",
-    "url": "https://www.falabella.com/falabella-cl/category/cat2038/Fotografia?isLanding=true"
+    "url": "https://www.falabella.com/falabella-cl/category/cat2038/Fotografia"
   },
   {
     "name": "Tecnología -> Smart home",
     "url": "https://www.falabella.com/falabella-cl/category/cat7190093/Smart-Home"
   },
   {
-    "name": "Tecnología -> Notebooks",
-    "url": "https://www.falabella.com/falabella-cl/category/cat70057/Notebooks"
+    "name": "Tecnología -> Seguro de Viaje",
+    "url": "https://www.falabella.com/falabella-cl/page/seguros-falabella"
+  },
+  {
+    "name": "Celulares y planes -> Celulares y teléfonos",
+    "url": "https://www.falabella.com/falabella-cl/category/cat2018/Celulares-y-Telefonos"
+  },
+  {
+    "name": "Celulares y planes -> Marcas destacadas",
+    "url": "https://www.falabella.com/falabella-cl/category/cat720161/Smartphones"
+  },
+  {
+    "name": "Celulares y planes -> Accesorios celulares",
+    "url": "https://www.falabella.com/falabella-cl/category/cat70014/Accesorios-Celulares"
+  },
+  {
+    "name": "Celulares y planes -> Wearables",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7190053/Wearables"
+  },
+  {
+    "name": "Celulares y planes -> Productos destacados",
+    "url": "https://www.falabella.com/falabella-cl/category/cat720161/Smartphones?facetSelected=true&f.product.brandName=apple%3A%3Asamsung"
   },
   {
     "name": "Electrohogar -> Electrodomésticos cocina",
@@ -161,7 +105,7 @@
   },
   {
     "name": "Electrohogar -> Máquinas de coser",
-    "url": "https://www.falabella.com/falabella-cl/page/costuras"
+    "url": "https://www.falabella.com/falabella-cl/category/cat2024/Maquinas-de-Coser"
   },
   {
     "name": "Electrohogar -> Equipamiento industrial",
@@ -178,6 +122,186 @@
   {
     "name": "Electrohogar -> Calefacción",
     "url": "https://www.falabella.com/falabella-cl/category/cat7170003/Calefaccion"
+  },
+  {
+    "name": "Electrohogar -> Seguro de Hogar",
+    "url": "https://www.falabella.com/falabella-cl/page/seguros-falabella"
+  },
+  {
+    "name": "Belleza y salud -> Ver todo",
+    "url": "https://www.falabella.com/falabella-cl/collection/todobelleza"
+  },
+  {
+    "name": "Belleza y salud -> Perfumes",
+    "url": "https://www.falabella.com/falabella-cl/category/cat2069/Perfumes"
+  },
+  {
+    "name": "Belleza y salud -> Maquillaje",
+    "url": "https://www.falabella.com/falabella-cl/category/cat690199/Maquillaje"
+  },
+  {
+    "name": "Belleza y salud -> Manos y pies",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7660015/Cuidado-de-manos-y-pies"
+  },
+  {
+    "name": "Belleza y salud -> Cuidado de la piel",
+    "url": "https://www.falabella.com/falabella-cl/category/cat3214/Cuidado-del-Rostro"
+  },
+  {
+    "name": "Belleza y salud -> Dermocosmética",
+    "url": "https://www.falabella.com/falabella-cl/collection/dermocosmetica"
+  },
+  {
+    "name": "Belleza y salud -> Tendencias y novedades",
+    "url": "https://www.falabella.com/falabella-cl/collection/belleza-coreana"
+  },
+  {
+    "name": "Belleza y salud -> Cuidado capilar y barbería",
+    "url": "https://www.falabella.com/falabella-cl/category/cat9440008/Cuidado-Capilar"
+  },
+  {
+    "name": "Belleza y salud -> Salud",
+    "url": "https://www.falabella.com/falabella-cl/category/cat14090015/Salud"
+  },
+  {
+    "name": "Belleza y salud -> Marcas destacadas",
+    "url": "https://tienda.falabella.com/falabella-cl/page/belleza-f"
+  },
+  {
+    "name": "Belleza y salud -> Bienestar",
+    "url": "https://www.falabella.com/falabella-cl/collection/bienestar"
+  },
+  {
+    "name": "Belleza y salud -> Seguro de Vida y Salud",
+    "url": "https://www.falabella.com/falabella-cl/page/seguros-falabella"
+  },
+  {
+    "name": "Mujer -> Ropa",
+    "url": "https://www.falabella.com/falabella-cl/category/cat20002/Moda-Mujer"
+  },
+  {
+    "name": "Mujer -> Zapatos",
+    "url": "https://www.falabella.com/falabella-cl/category/cat12440001/Zapatos"
+  },
+  {
+    "name": "Mujer -> Ropa interior y pijamas",
+    "url": "https://www.falabella.com/falabella-cl/category/cat13140017/Ropa-Interior-y-Pijamas"
+  },
+  {
+    "name": "Mujer -> Accesorios",
+    "url": "https://www.falabella.com/falabella-cl/category/cat2017/Accesorios"
+  },
+  {
+    "name": "Mujer -> Segmentos y ocasiones",
+    "url": "https://www.falabella.com/falabella-cl/category/cat20002/Moda-Mujer"
+  },
+  {
+    "name": "Mujer -> Marcas de lujo",
+    "url": "https://www.falabella.com/falabella-cl/collection/marcas-premium-accesorios"
+  },
+  {
+    "name": "Mujer -> Tendencias e inspiración",
+    "url": "https://tienda.falabella.com/falabella-cl/page/moda-f"
+  },
+  {
+    "name": "Mujer -> Marcas destacadas",
+    "url": "https://tienda.falabella.com/falabella-cl/page/marcas-destacadas"
+  },
+  {
+    "name": "Hombre -> Ropa",
+    "url": "https://www.falabella.com/falabella-cl/category/cat1320008/Moda-Hombre"
+  },
+  {
+    "name": "Hombre -> Zapatos",
+    "url": "https://www.falabella.com/falabella-cl/category/cat1720006/Zapatos"
+  },
+  {
+    "name": "Hombre -> Ropa deportiva",
+    "url": "https://www.falabella.com/falabella-cl/category/cat6930003/Ropa-deportiva-hombre"
+  },
+  {
+    "name": "Hombre -> Cuidado personal",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7660002/Belleza?facetSelected=true&f.product.attribute.G%C3%A9nero=Hombre"
+  },
+  {
+    "name": "Hombre -> Ropa interior y pijamas",
+    "url": "https://www.falabella.com/falabella-cl/category/cat5260002/Ropa-interior"
+  },
+  {
+    "name": "Hombre -> Accesorios",
+    "url": "https://www.falabella.com/falabella-cl/collection/accesorios-hombre"
+  },
+  {
+    "name": "Hombre -> Tendencias e inspiración",
+    "url": "https://tienda.falabella.com/falabella-cl/page/moda-hombre"
+  },
+  {
+    "name": "Hombre -> Marcas destacadas",
+    "url": "https://www.falabella.com/falabella-cl/category/cat1320008/Moda-Hombre"
+  },
+  {
+    "name": "Niños y juguetería -> Ropa de niñas por edad",
+    "url": "https://www.falabella.com/falabella-cl/category/cat12850003/Ropa-de-ninas"
+  },
+  {
+    "name": "Niños y juguetería -> Ropa de niñas por tipo",
+    "url": "https://www.falabella.com/falabella-cl/category/cat12850003/Ropa-de-ninas"
+  },
+  {
+    "name": "Niños y juguetería -> Ropa de niños por edad",
+    "url": "https://www.falabella.com/falabella-cl/category/cat12850002/Ropa-de-ninos"
+  },
+  {
+    "name": "Niños y juguetería -> Ropa de niños por tipo",
+    "url": "https://www.falabella.com/falabella-cl/category/cat12850002/Ropa-de-ninos"
+  },
+  {
+    "name": "Niños y juguetería -> Zapatos",
+    "url": "https://www.falabella.com/falabella-cl/collection/ver-todo-zapatos-infantil"
+  },
+  {
+    "name": "Niños y juguetería -> Juguetes",
+    "url": "https://www.falabella.com/falabella-cl/category/cat14680031/Jugueteria"
+  },
+  {
+    "name": "Niños y juguetería -> Marcas destacadas",
+    "url": "https://www.falabella.com/falabella-cl/collection/marcas-destacadas-jugueteria"
+  },
+  {
+    "name": "Niños y juguetería -> Juguetería por edad",
+    "url": "https://www.falabella.com/falabella-cl/category/cat14680031/Juguetes"
+  },
+  {
+    "name": "Niños y juguetería -> Juegos de exterior",
+    "url": "https://www.falabella.com/falabella-cl/category/cat690277/Juegos-de-exterior"
+  },
+  {
+    "name": "Niños y juguetería -> Seguro de Vida y Salud",
+    "url": "https://www.falabella.com/falabella-cl/page/seguros-falabella"
+  },
+  {
+    "name": "Zapatos -> Tendencias e inspiración",
+    "url": "https://www.falabella.com/falabella-cl/collection/ver-todo-zapatos"
+  },
+  {
+    "name": "Zapatos -> Mujer",
+    "url": "https://www.falabella.com/falabella-cl/category/cat12440001/Zapatos"
+  },
+  {
+    "name": "Zapatos -> Hombre",
+    "url": "https://www.falabella.com/falabella-cl/category/cat1720006/Zapatos"
+  },
+  {
+    "name": "Zapatos -> Infantil",
+    "url": "https://www.falabella.com/falabella-cl/collection/ver-todo-zapatos-infantil"
+  },
+  {
+    "name": "Zapatos -> Mejores marcas",
+    "url": "https://tienda.falabella.com/falabella-cl/page/zapatos-mejores-marcas"
+  },
+  {
+    "name": "Zapatos -> Más marcas",
+    "url": "https://www.falabella.com/falabella-cl/collection/ver-todo-zapatos"
   },
   {
     "name": "Cocina y baño -> Cocina",
@@ -212,12 +336,12 @@
     "url": "https://www.falabella.com/falabella-cl/category/cat2006/Menaje-Bano"
   },
   {
-    "name": "Decoración e iluminación -> Decoración",
-    "url": "https://www.falabella.com/falabella-cl/category/cat2026/Decoracion"
+    "name": "Decoración e iluminación -> Marcas destacadas",
+    "url": "https://www.falabella.com/falabella-cl/category/cat2026/Decoracion-e-iluminacion?facetSelected=true&f.product.brandName=amoble%3A%3Abazhars%3A%3Acalma+house%3A%3Acap+dor%3A%3Acasa+cantabria%3A%3Acrate+%26+barrel%3A%3Aeglo%3A%3Afatboy%3A%3Aform+design%3A%3Aistanwool%3A%3Amilk%3A%3Asur+dise%C3%B1o%3A%3Athe+garden"
   },
   {
-    "name": "Decoración e iluminación -> Alfombras y cubrepisos",
-    "url": "https://www.falabella.com/falabella-cl/category/cat2002/Alfombras-y-cubrepisos"
+    "name": "Decoración e iluminación -> Decoración",
+    "url": "https://www.falabella.com/falabella-cl/category/cat2026/Decoracion"
   },
   {
     "name": "Decoración e iluminación -> Cortinas y rollers",
@@ -228,8 +352,8 @@
     "url": "https://www.falabella.com/falabella-cl/category/CATG10081/Iluminacion-Interior"
   },
   {
-    "name": "Decoración e iluminación -> Iluminación exterior",
-    "url": "https://www.falabella.com/falabella-cl/category/cat14250003/Iluminacion-Exterior"
+    "name": "Decoración e iluminación -> Alfombras y cubrepisos",
+    "url": "https://www.falabella.com/falabella-cl/category/cat2002/Alfombras-y-cubrepisos"
   },
   {
     "name": "Decoración e iluminación -> Tendencias e inspiración",
@@ -240,7 +364,19 @@
     "url": "https://www.falabella.com/falabella-cl/category/cat14240003/Decoracion-de-exterior"
   },
   {
-    "name": "Jardín y terraza -> Terraza",
+    "name": "Decoración e iluminación -> Iluminación exterior",
+    "url": "https://www.falabella.com/falabella-cl/category/cat14250003/Iluminacion-Exterior"
+  },
+  {
+    "name": "Decoración e iluminación -> Seguro de Hogar",
+    "url": "https://www.falabella.com/falabella-cl/page/seguros-falabella"
+  },
+  {
+    "name": "Decoración e iluminación -> Marcas Destacadas",
+    "url": "https://tienda.falabella.com/falabella-cl/collection/ver-todo-crate"
+  },
+  {
+    "name": "Jardín y terraza -> Terrazas",
     "url": "https://www.falabella.com/falabella-cl/category/CATG10503/Terrazas"
   },
   {
@@ -268,6 +404,10 @@
     "url": "https://www.falabella.com/falabella-cl/category/cat18320015/Herramientas-y-maquinaria-de-jardin"
   },
   {
+    "name": "Jardín y terraza -> Seguro de Hogar",
+    "url": "https://www.falabella.com/falabella-cl/page/seguros-falabella"
+  },
+  {
     "name": "Deportes y aire libre -> Ropa deportiva mujer",
     "url": "https://www.falabella.com/falabella-cl/category/cat6930168/Ropa-deportiva-mujer"
   },
@@ -276,8 +416,8 @@
     "url": "https://www.falabella.com/falabella-cl/category/cat6930003/Ropa-Deportiva-Hombre"
   },
   {
-    "name": "Deportes y aire libre -> Bicicletas",
-    "url": "https://www.falabella.com/falabella-cl/category/cat70007/Bicicletas"
+    "name": "Deportes y aire libre -> Ciclismo",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7280237/Ciclismo"
   },
   {
     "name": "Deportes y aire libre -> Fitness",
@@ -292,6 +432,10 @@
     "url": "https://www.falabella.com/falabella-cl/category/cat18260007/Electromovilidad"
   },
   {
+    "name": "Deportes y aire libre -> Vitaminas y suplementos",
+    "url": "https://www.falabella.com/falabella-cl/category/cat11342105/Vitaminas-y-suplementos"
+  },
+  {
     "name": "Deportes y aire libre -> Disciplinas",
     "url": "https://www.falabella.com/falabella-cl/category/CATG19057/Deportes-Colectivos"
   },
@@ -300,212 +444,100 @@
     "url": "https://www.falabella.com/falabella-cl/collection/deporte-marcas-destacadas"
   },
   {
-    "name": "Mujer -> Tendencias e inspiración",
-    "url": "https://tienda.falabella.com/falabella-cl/page/moda-f"
+    "name": "Deportes y aire libre -> Seguro de Viaje",
+    "url": "https://www.falabella.com/falabella-cl/page/seguros-falabella"
   },
   {
-    "name": "Mujer -> Segmentos y ocasiones",
-    "url": "https://www.falabella.com/falabella-cl/category/cat11670003/Especiales"
+    "name": "Mascotas -> Perros",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11619/Perros"
   },
   {
-    "name": "Mujer -> Zapatos",
-    "url": "https://www.falabella.com/falabella-cl/category/cat12440001/Zapatos"
+    "name": "Mascotas -> Gatos",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11620/Gatos"
   },
   {
-    "name": "Mujer -> Ropa",
-    "url": "https://www.falabella.com/falabella-cl/category/cat20002/Moda-Mujer"
+    "name": "Mascotas -> Aves",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11621/Pajaros-y-Aves"
   },
   {
-    "name": "Mujer -> Marcas de lujo",
-    "url": "https://www.falabella.com/falabella-cl/collection/marcas-premium-accesorios"
+    "name": "Mascotas -> Conejos y hámsters",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11623/Conejos-y-hamster"
   },
   {
-    "name": "Mujer -> Ropa interior y pijamas",
-    "url": "https://www.falabella.com/falabella-cl/category/cat13140017/Ropa-Interior-y-Pijamas"
-  },
-  {
-    "name": "Mujer -> Accesorios",
-    "url": "https://www.falabella.com/falabella-cl/category/cat2017/Accesorios"
-  },
-  {
-    "name": "Mujer -> Marcas destacadas",
-    "url": "https://tienda.falabella.com/falabella-cl/page/marcas-destacadas"
-  },
-  {
-    "name": "Niños y juguetería -> Ropa de niñas por edad",
-    "url": "https://www.falabella.com/falabella-cl/category/cat12850003/Ropa-de-ninas"
-  },
-  {
-    "name": "Niños y juguetería -> Ropa de niñas por tipo",
-    "url": "https://www.falabella.com/falabella-cl/category/cat12850003/Ropa-de-ninas"
-  },
-  {
-    "name": "Niños y juguetería -> Ropa de niños por edad",
-    "url": "https://www.falabella.com/falabella-cl/category/cat12850002/Ropa-de-ninos"
-  },
-  {
-    "name": "Niños y juguetería -> Ropa de niños por tipo",
-    "url": "https://www.falabella.com/falabella-cl/category/cat12850002/Ropa-de-ninos"
-  },
-  {
-    "name": "Niños y juguetería -> Zapatos",
-    "url": "https://www.falabella.com/falabella-cl/collection/Ver-Todo-Zapatos-Ninos"
-  },
-  {
-    "name": "Niños y juguetería -> Juguetes",
-    "url": "https://www.falabella.com/falabella-cl/category/cat14680031/Jugueteria"
-  },
-  {
-    "name": "Niños y juguetería -> Juguetería por edad",
-    "url": "https://www.falabella.com/falabella-cl/category/cat14680031/Juguetes"
-  },
-  {
-    "name": "Niños y juguetería -> Juegos de exterior",
-    "url": "https://www.falabella.com/falabella-cl/category/cat690277/Juegos-de-exterior"
-  },
-  {
-    "name": "Hombre -> Tendencias e inspiración",
-    "url": "https://tienda.falabella.com/falabella-cl/page/moda-hombre"
-  },
-  {
-    "name": "Hombre -> Zapatos",
-    "url": "https://www.falabella.com/falabella-cl/category/cat1720006/Zapatos"
-  },
-  {
-    "name": "Hombre -> Ropa interior y pijamas",
-    "url": "https://www.falabella.com/falabella-cl/category/cat5260002/Ropa-interior"
-  },
-  {
-    "name": "Hombre -> Ropa",
-    "url": "https://www.falabella.com/falabella-cl/category/cat1320008/Moda-Hombre"
-  },
-  {
-    "name": "Hombre -> Cuidado personal",
-    "url": "https://www.falabella.com/falabella-cl/category/cat7660002/Belleza?facetSelected=true&f.product.attribute.G%C3%A9nero=Hombre"
-  },
-  {
-    "name": "Hombre -> Ropa deportiva",
-    "url": "https://www.falabella.com/falabella-cl/category/cat6930003/Ropa-deportiva-hombre"
-  },
-  {
-    "name": "Hombre -> Accesorios",
-    "url": "https://www.falabella.com/falabella-cl/collection/accesorios-hombre"
-  },
-  {
-    "name": "Hombre -> Marcas destacadas",
-    "url": "https://www.falabella.com/falabella-cl/category/cat5420004/Marcas--Destacadas"
-  },
-  {
-    "name": "Zapatos -> Tendencias e inspiración",
-    "url": "https://tienda.falabella.com/falabella-cl/page/zapatos-mejores-marcas"
-  },
-  {
-    "name": "Zapatos -> Mujer",
-    "url": "https://www.falabella.com/falabella-cl/category/cat12440001/Zapatos"
-  },
-  {
-    "name": "Zapatos -> Hombre",
-    "url": "https://www.falabella.com/falabella-cl/category/cat1720006/Zapatos"
-  },
-  {
-    "name": "Zapatos -> Infantil",
-    "url": "https://www.falabella.com/falabella-cl/collection/Ver-Todo-Zapatos-Ninos"
-  },
-  {
-    "name": "Zapatos -> Mejores marcas",
-    "url": "https://tienda.falabella.com/falabella-cl/page/zapatos-mejores-marcas"
-  },
-  {
-    "name": "Zapatos -> Más marcas",
-    "url": "https://www.falabella.com/falabella-cl/collection/ver-todo-zapatos"
-  },
-  {
-    "name": "Mascotas -> Alimentos",
-    "url": "https://www.falabella.com/falabella-cl/collection/alimentos-de-mascotas"
-  },
-  {
-    "name": "Mascotas -> Camas y casas",
-    "url": "https://www.falabella.com/falabella-cl/collection/camas-y-casas-de-mascotas"
-  },
-  {
-    "name": "Mascotas -> Juguetes y entretención",
-    "url": "https://www.falabella.com/falabella-cl/collection/juguetes-de-mascotas"
+    "name": "Mascotas -> Tortugas, peces y reptiles",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11622/Tortugas--peces-y-reptiles"
   },
   {
     "name": "Mascotas -> Pet lovers",
     "url": "https://www.falabella.com/falabella-cl/seller/Petfy"
   },
   {
-    "name": "Mascotas -> Higiene y cuidados",
-    "url": "https://www.falabella.com/falabella-cl/collection/higiene-y-cuidados-de-mascotas"
-  },
-  {
-    "name": "Mascotas -> Ropa y accesorios",
-    "url": "https://www.falabella.com/falabella-cl/collection/ropa-y-accesorios-de-mascotas"
-  },
-  {
-    "name": "Mascotas -> Arnés, collares y correas",
-    "url": "https://www.falabella.com/falabella-cl/collection/arnes-collares-y-correas-de-mascotas"
-  },
-  {
     "name": "Mascotas -> Marcas destacadas",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG11652/Alimento-para-perros?facetSelected=true&f.product.brandName=vitalcan"
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11652/Alimento-para-perros?facetSelected=true&f.product.brandName=acana%3A%3Abravery%3A%3Adog+chow%3A%3Ahills%3A%3Amaster+dog%3A%3Apetizoos%3A%3Ataste+of+the+wild"
   },
   {
-    "name": "Herramientas y maquinarias -> Herramientas eléctricas",
-    "url": "https://www.falabella.com/falabella-cl/category/cat18320014/Herramientas-electricas-e-inalambricas"
+    "name": "Mascotas -> Club Mascotas F",
+    "url": "https://tienda.falabella.com/falabella-cl/page/mascotas-f"
   },
   {
-    "name": "Herramientas y maquinarias -> Máquinas y complementos",
-    "url": "https://www.falabella.com/falabella-cl/category/cat18320016/Maquinarias-y-complementos"
+    "name": "Supermercado -> Botillería",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10193/Botilleria"
   },
   {
-    "name": "Herramientas y maquinarias -> Herramientas manuales",
-    "url": "https://www.falabella.com/falabella-cl/category/cat20791939/Herramientas-manuales"
+    "name": "Supermercado -> Despensa",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10194/Despensa"
   },
   {
-    "name": "Herramientas y maquinarias -> Jardín",
-    "url": "https://www.falabella.com/falabella-cl/category/cat18320015/Herramientas-y-maquinaria-de-jardin"
+    "name": "Supermercado -> Panadería",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10198/Panaderia-y-pasteleria"
   },
   {
-    "name": "Herramientas y maquinarias -> Medición y trazado",
-    "url": "https://www.falabella.com/falabella-cl/category/cat18320017/Herramientas-de-medicion-y-trazado"
+    "name": "Supermercado -> Carnes",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10192/Carnes"
   },
   {
-    "name": "Belleza y salud -> Perfumes",
-    "url": "https://www.falabella.com/falabella-cl/category/cat2069/Perfumes"
+    "name": "Supermercado -> Dulces y snacks",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10200/Dulces-y-snacks"
   },
   {
-    "name": "Belleza y salud -> Maquillaje",
-    "url": "https://www.falabella.com/falabella-cl/category/cat690199/Maquillaje"
+    "name": "Supermercado -> Lácteos, frescos y congelados",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10196/Lacteos-y-frescos"
   },
   {
-    "name": "Belleza y salud -> Manos y pies",
-    "url": "https://www.falabella.com/falabella-cl/category/cat7660015/Cuidado-de-manos-y-pies"
+    "name": "Supermercado -> Frutas y verduras",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10197/Frutas-y-verduras"
   },
   {
-    "name": "Belleza y salud -> Cuidado de la piel",
-    "url": "https://www.falabella.com/falabella-cl/category/cat3214/Cuidado-del-Rostro"
+    "name": "Supermercado -> Aseo y limpieza",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10598/Aseo-y-limpieza"
   },
   {
-    "name": "Belleza y salud -> Dermocosmética",
-    "url": "https://www.falabella.com/falabella-cl/collection/ver-todo-dermocosmetica"
+    "name": "Supermercado -> Cuidado personal",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11198/Cuidado-personal"
   },
   {
-    "name": "Belleza y salud -> Cuidado capilar y barbería",
-    "url": "https://www.falabella.com/falabella-cl/category/cat9440008/Cuidado-Capilar"
+    "name": "Supermercado -> Recetas",
+    "url": "https://tottus.falabella.com/tottus-cl/page/recetas?sid=HO_RE_REC_140"
   },
   {
-    "name": "Belleza y salud -> Salud",
-    "url": "https://www.falabella.com/falabella-cl/category/cat14090015/Salud"
+    "name": "Música, libros y papelería -> Instrumentos musicales",
+    "url": "https://www.falabella.com/falabella-cl/category/cat3117/Instrumentos-Musicales?isPLP=1"
   },
   {
-    "name": "Belleza y salud -> Marcas destacadas",
-    "url": "https://tienda.falabella.com/falabella-cl/page/belleza-f"
+    "name": "Música, libros y papelería -> Arte y manualidades",
+    "url": "https://www.falabella.com/falabella-cl/category/cat90073/Arte-y-manualidades"
   },
   {
-    "name": "Belleza y salud -> Bienestar",
-    "url": "https://www.falabella.com/falabella-cl/collection/bienestar"
+    "name": "Música, libros y papelería -> Libros",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11448/Libros?isPLP=1"
+  },
+  {
+    "name": "Música, libros y papelería -> Artículos de librería",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11449/Articulos-de-escritorio-y-papeleria?isPLP=1"
+  },
+  {
+    "name": "Música, libros y papelería -> Fiestas y celebraciones",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG11451/Fiestas-y-celebraciones"
   },
   {
     "name": "Construcción -> Materiales de construcción",
@@ -560,63 +592,95 @@
     "url": "https://www.falabella.com/falabella-cl/category/CATG10737/Electricidad"
   },
   {
-    "name": "Supermercado -> Botillería",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10193/Botilleria"
+    "name": "Herramientas y maquinarias -> Herramientas eléctricas",
+    "url": "https://www.falabella.com/falabella-cl/category/cat18320014/Herramientas-electricas-e-inalambricas"
   },
   {
-    "name": "Supermercado -> Despensa",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10194/Despensa"
+    "name": "Herramientas y maquinarias -> Máquinas y complementos",
+    "url": "https://www.falabella.com/falabella-cl/category/cat18320016/Maquinarias-y-complementos"
   },
   {
-    "name": "Supermercado -> Desayuno",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10199/Desayunos"
+    "name": "Herramientas y maquinarias -> Herramientas manuales",
+    "url": "https://www.falabella.com/falabella-cl/category/cat20791939/Herramientas-manuales"
   },
   {
-    "name": "Supermercado -> Panadería",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10198/Panaderia-y-pasteleria"
+    "name": "Herramientas y maquinarias -> Jardín",
+    "url": "https://www.falabella.com/falabella-cl/category/cat18320015/Herramientas-y-maquinaria-de-jardin"
   },
   {
-    "name": "Supermercado -> Carnes",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10192/Carnes"
+    "name": "Herramientas y maquinarias -> Medición y trazado",
+    "url": "https://www.falabella.com/falabella-cl/category/cat18320017/Herramientas-de-medicion-y-trazado"
   },
   {
-    "name": "Supermercado -> Dulces y snacks",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10200/Dulces-y-snacks"
+    "name": "Herramientas y maquinarias -> Herramientas por especialidad",
+    "url": "https://www.falabella.com/falabella-cl/collection/herramientas-por-especialidad"
   },
   {
-    "name": "Supermercado -> Lácteos, frescos y congelados",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10196/Lacteos-y-frescos"
+    "name": "Herramientas y maquinarias -> Marcas destacadas",
+    "url": "https://www.falabella.com/falabella-cl/category/cat8620074/Herramientas-y-maquinas?facetSelected=true&f.product.brandName=bauker%3A%3Ablack%26decker%3A%3Ablack%2Bdecker%3A%3Abosch%3A%3Adewalt%3A%3Aeinhell%3A%3Amakita%3A%3Aredline%3A%3Aredline+professional%3A%3Astanley%3A%3Astanley+jr%3A%3Atotal+tools%3A%3Atotaltools%3A%3Aubermann"
   },
   {
-    "name": "Supermercado -> Frutas y verduras",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10197/Frutas-y-verduras"
+    "name": "Pisos, pinturas y terminaciones -> Pisos y revestimientos",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10741/Pisos-y-revestimientos"
   },
   {
-    "name": "Supermercado -> Aseo y limpieza",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG10598/Aseo-y-limpieza"
+    "name": "Pisos, pinturas y terminaciones -> Adhesivos y fragües",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10739/Adhesivos--siliconas-y-selladores"
   },
   {
-    "name": "Supermercado -> Cuidado personal",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG11198/Cuidado-personal"
+    "name": "Pisos, pinturas y terminaciones -> Pinturas",
+    "url": "https://www.falabella.com/falabella-cl/category/cat20792242/Pinturas"
   },
   {
-    "name": "Música, libros y papelería -> Instrumentos musicales",
-    "url": "https://www.falabella.com/falabella-cl/category/cat3117/Instrumentos-Musicales?isPLP=1"
+    "name": "Pisos, pinturas y terminaciones -> Cerraduras y quincallería",
+    "url": "https://www.falabella.com/falabella-cl/category/cat20792436/Cerraduras-y-quincalleria"
   },
   {
-    "name": "Música, libros y papelería -> Arte y manualidades",
-    "url": "https://www.falabella.com/falabella-cl/category/cat90073/Arte-y-manualidades"
+    "name": "Pisos, pinturas y terminaciones -> Protecciones",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10745/Protecciones-para-Puertas-y-Ventanas"
   },
   {
-    "name": "Música, libros y papelería -> Libros",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG11448/Libros?isPLP=1"
+    "name": "Pisos, pinturas y terminaciones -> Puertas",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10743/Puertas"
   },
   {
-    "name": "Música, libros y papelería -> Artículos de librería",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG11449/Articulos-de-escritorio-y-papeleria?isPLP=1"
+    "name": "Pisos, pinturas y terminaciones -> Ventanas",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10744/Ventanas"
   },
   {
-    "name": "Música, libros y papelería -> Fiestas y celebraciones",
-    "url": "https://www.falabella.com/falabella-cl/category/CATG11451/Fiestas-y-celebraciones"
+    "name": "Pisos, pinturas y terminaciones -> Seguro de Hogar",
+    "url": "https://www.falabella.com/falabella-cl/page/seguros-falabella"
+  },
+  {
+    "name": "Liquidación  -> Tecnología y telefonía",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7090034/Tecnologia"
+  },
+  {
+    "name": "Liquidación  -> Electrodomésticos",
+    "url": "https://www.falabella.com/falabella-cl/category/cat16510006/Electrohogar"
+  },
+  {
+    "name": "Liquidación  -> Niños y juguetería",
+    "url": "https://www.falabella.com/falabella-cl/category/cat13550007/Ninos-y-Jugueteria"
+  },
+  {
+    "name": "Liquidación  -> Mujer",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7330051/Mujer"
+  },
+  {
+    "name": "Liquidación  -> Hombre",
+    "url": "https://www.falabella.com/falabella-cl/category/cat7450065/Hombre"
+  },
+  {
+    "name": "Liquidación  -> Deporte",
+    "url": "https://www.falabella.com/falabella-cl/page/tienda-de-deporte"
+  },
+  {
+    "name": "Liquidación  -> Mejoramiento del hogar",
+    "url": "https://www.falabella.com/falabella-cl/category/CATG10005/Ferreteria-y-construccion"
+  },
+  {
+    "name": "Liquidación  -> Belleza",
+    "url": "https://www.falabella.com/falabella-cl/collection/todobelleza"
   }
 ]
